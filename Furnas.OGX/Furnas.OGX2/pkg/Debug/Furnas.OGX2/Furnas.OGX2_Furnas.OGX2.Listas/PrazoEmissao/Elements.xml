@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{cee130c7-efed-438a-b5b6-5036408aa6c6}"
+       Name="PrazoEmissao"
+       DisplayName="Prazo após emissão Do PMI/Resolução Aneel (meses)"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

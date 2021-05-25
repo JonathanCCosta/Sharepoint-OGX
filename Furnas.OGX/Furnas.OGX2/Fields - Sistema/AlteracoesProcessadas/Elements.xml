@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{74e0080b-1a62-4dd9-b06a-e478cce37bf0}"
+       Name="AlteracoesProcessadas"
+       DisplayName="Colunas Alteradas"
+       Type="Note"
+       NumLines="6"
+       RichText="FALSE"
+       Required="FALSE"
+       ShowInDisplayForm="FALSE"
+       ShowInEditForm="FALSE"
+       ShowInNewForm="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

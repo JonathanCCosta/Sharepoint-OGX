@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{8b8b79e1-5d00-4210-a2c6-8f13672ae666}"
+       Name="NumeroSGPRM"
+       DisplayName="No. SGPMR"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

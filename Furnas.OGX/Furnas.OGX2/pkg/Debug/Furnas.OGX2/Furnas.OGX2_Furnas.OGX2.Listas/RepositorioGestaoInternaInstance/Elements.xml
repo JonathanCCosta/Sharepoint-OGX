@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Repositório Gestão Interna" OnQuickLaunch="TRUE" TemplateType="10005" Url="Lists/RepositorioGestaoInterna" Description="My List Instance"></ListInstance>
+</Elements>

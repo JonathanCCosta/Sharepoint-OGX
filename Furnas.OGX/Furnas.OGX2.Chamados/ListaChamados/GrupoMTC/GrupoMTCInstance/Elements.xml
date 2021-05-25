@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Grupo MTC" OnQuickLaunch="FALSE" TemplateType="10016" Url="Lists/GrupoMTC" Description="Cadastro Grupo MTC para complementar as informações sobre Manual Técnico de Campo"></ListInstance>
+</Elements>

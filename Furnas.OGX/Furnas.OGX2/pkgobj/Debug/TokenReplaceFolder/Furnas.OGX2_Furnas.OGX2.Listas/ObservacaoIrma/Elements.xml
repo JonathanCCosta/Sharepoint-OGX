@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{a0bcf83d-78a5-4650-909a-e87ce4de86ed}"
+       Name="ObservacaoIrma"
+       DisplayName="Observação"
+       Type="Note"
+       NumLines="6"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

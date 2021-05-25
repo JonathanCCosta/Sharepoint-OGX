@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{56cb6252-4d52-4b12-8745-bded14ee9c83}"
+       Name="IdentificacaoEquipamento"
+       DisplayName="Identificação Do equipamento a ser substituído (número operativo, Do unifilar, etc.)"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

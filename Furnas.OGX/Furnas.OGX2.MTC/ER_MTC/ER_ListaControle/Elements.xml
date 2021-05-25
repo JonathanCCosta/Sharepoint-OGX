@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Receivers ListUrl="Lists/ManualTecnico">
+      <Receiver>
+        <Name>ER_ListaControleItemAdded</Name>
+        <Type>ItemAdded</Type>
+        <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+        <Class>Furnas.OGX2.MTC.ER_MTC.ER_ListaControle.ER_ListaControle</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+<Receiver>
+<Name>ER_ListaControleItemUpdating</Name>
+<Type>ItemUpdating</Type>
+<Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+<Class>Furnas.OGX2.MTC.ER_MTC.ER_ListaControle.ER_ListaControle</Class>
+<SequenceNumber>10000</SequenceNumber>
+</Receiver>
+<Receiver>
+<Name>ER_ListaControleItemUpdated</Name>
+<Type>ItemUpdated</Type>
+<Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+<Class>Furnas.OGX2.MTC.ER_MTC.ER_ListaControle.ER_ListaControle</Class>
+<SequenceNumber>10000</SequenceNumber>
+</Receiver>
+<Receiver>
+<Name>ER_ListaControleItemDeleting</Name>
+<Type>ItemDeleting</Type>
+<Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+<Class>Furnas.OGX2.MTC.ER_MTC.ER_ListaControle.ER_ListaControle</Class>
+<SequenceNumber>10000</SequenceNumber>
+</Receiver>
+<Receiver>
+<Name>ER_ListaControleItemAdding</Name>
+<Type>ItemAdding</Type>
+<Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+<Class>Furnas.OGX2.MTC.ER_MTC.ER_ListaControle.ER_ListaControle</Class>
+<SequenceNumber>10000</SequenceNumber>
+</Receiver>
+</Receivers>
+</Elements>

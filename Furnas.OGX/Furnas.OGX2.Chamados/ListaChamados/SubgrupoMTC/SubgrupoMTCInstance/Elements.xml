@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Subgrupo MTC" OnQuickLaunch="FALSE" TemplateType="10017" Url="Lists/SubgrupoMTC" Description="Cadastrar Subgrupo MTC para complementar as informações sobre Manual Técnico de Campo"></ListInstance>
+</Elements>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{d7606eb1-5310-4290-a06f-10189fd2a6e4}"
+       Name="EsclarecimentosGerencia"
+       DisplayName="Esclarecimentos Gerência"
+       Type="Note"
+       NumLines="6"
+       AppendOnly="TRUE"
+       Required="FALSE"
+       ShowInNewForm="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

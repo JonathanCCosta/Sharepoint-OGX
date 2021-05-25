@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{bb1b4522-d8db-4928-953e-5fbdbdbcbdd0}"
+       Name="ConsideracoesGestaoAtivos"
+       DisplayName="Consideracões de Gestão de Ativos"
+       Type="Note"
+       NumLines="6"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

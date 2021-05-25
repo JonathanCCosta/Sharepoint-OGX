@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100936B99F1C5B94E99AC7D671F237594FE" Name="Plano de Reforço" Group="Custom Content Types" Description="Crie um Plano" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{5afe4fcc-a4c9-4aa8-be01-13ddce442d99}" DisplayName="Ciclo" Required="TRUE" Name="Ciclo" />
+      <FieldRef ID="{55cd969e-207c-4623-839a-53310b3a4af0}" DisplayName="Região" Required="FALSE" Name="Regiao" />
+      <FieldRef ID="{be390bdd-756b-4e37-8b0b-ca7c78f96648}" DisplayName="Agente" Required="FALSE" Name="Agente" />
+      <FieldRef ID="{baf38cdc-3d36-4fb0-b50d-5913fba1b686}" DisplayName="Instalação" Required="FALSE" Name="Instalacao" />
+      <FieldRef ID="{65e1f5c1-7a09-47c4-a72f-4a02ce230a8e}" DisplayName="(KV)" Required="FALSE" Name="KV" />
+      <FieldRef ID="{b6d05992-58b4-448f-9cf4-a949a37832e4}" DisplayName="Tipo de Agente" Required="FALSE" Name="TipoAgente" />
+      <FieldRef ID="{a86213e0-5a99-4bc5-b842-5aac73911bf1}" DisplayName="Função de Transmissão" Required="FALSE" Name="FuncaoTransmissao" />
+      <FieldRef ID="{27e751be-fc99-4828-9164-a6e653bf48ec}" DisplayName="Origem da Indicação" Required="FALSE" Name="OrigemIndicacao" NumLines="6" />
+      <FieldRef ID="{9f3362f5-7ff3-4a31-9005-4bc97f0b2fa0}" DisplayName="Tipo de Revitalização" Required="FALSE" Name="TipoRevitalizacao" />
+      <FieldRef ID="{a378b7b4-4b74-4a63-8c20-32dde1ae90a4}" DisplayName="Revitalização Necessária" Required="FALSE" Name="RevitalizacaoNecessaria" NumLines="6" />
+      <FieldRef ID="{d827618e-2d03-47e7-9b01-9c5350387877}" DisplayName="Justificativa" Required="FALSE" Name="Justificativa" NumLines="6" />
+      <FieldRef ID="{aab224f3-4736-4718-8b03-895c4d5cd3c2}" DisplayName="Justificativa da Exclusão" Required="FALSE" Name="JustificativaExclusao" NumLines="6" />
+      <FieldRef ID="{9b51e4b7-9943-4082-add4-4bb71cb78b65}" DisplayName="Observação" Required="FALSE" Name="Observacao" NumLines="6" />
+      <FieldRef ID="{20f2996d-69d4-4fd7-adf1-346dffd1a1d3}" DisplayName="Classificação Furnas" Required="FALSE" Name="Classificacao" />
+      <FieldRef ID="{cee130c7-efed-438a-b5b6-5036408aa6c6}" DisplayName="Prazo após emissão Do PMI/Resolução Aneel (meses)" Required="FALSE" Name="PrazoEmissao" />
+      <FieldRef ID="{05d84dc1-b06a-43c9-b923-094e2d91d21d}" DisplayName="Projeto que Originou a Indicação" Required="FALSE" Name="ProjetoOriginouIndicacao" />
+      <FieldRef ID="{94318729-d2fc-43f1-9937-76a3d271daee}" DisplayName="N° da recomendação no SGR" Required="FALSE" Name="NumeroRecomendacao" />
+      <FieldRef ID="{cec8b5b8-3193-4c7c-90a1-632ddf1c3159}" DisplayName="Custo Estimado (R$)" Required="FALSE" Name="CustoEstimado" />
+      <FieldRef ID="{d0fd8121-7d5e-46b8-b587-7495d3a19f19}" DisplayName="Descrição Do equipamento a ser substituído ou dos componentes da linha" Required="FALSE" Name="DescricaoEquipamento" NumLines="6" />
+      <FieldRef ID="{56cb6252-4d52-4b12-8745-bded14ee9c83}" DisplayName="Identificação Do equipamento a ser substituído (número operativo, Do unifilar, etc.)" Required="FALSE" Name="IdentificacaoEquipamento" />
+      <FieldRef ID="{9142a47e-e528-4377-8ee1-29f020483473}" DisplayName="Evidência que justifique a Melhoria ou Reforço" Required="FALSE" Name="EvidenciaJustificada" NumLines="6" />
+      <FieldRef ID="{eccc528e-ccba-45a3-9e24-00ee697d17d9}" DisplayName="Fabricante" Required="FALSE" Name="Fabricante" />
+      <FieldRef ID="{922dbba5-5e49-4f65-852b-a1df91492eb5}" DisplayName="Modelo" Required="FALSE" Name="Modelo" />
+      <FieldRef ID="{49d0933b-018a-4b8f-8f7a-ce4e75c371a2}" DisplayName="N° Série" Required="FALSE" Name="NumeroSerie" />
+      <FieldRef ID="{4b4cc06f-cefa-47ae-9ddf-9d1ed8793afa}" DisplayName="Ano Início em Operação" Required="FALSE" Name="AnoIncioOperacao" />
+      <FieldRef ID="{80b6e3bf-3033-4671-a11a-afed51f866bd}" DisplayName="Taxa de Depreciação (MCPSE – versão 9)" Required="FALSE" Name="TaxaDepreciacao" />
+      <FieldRef ID="{c16f3bd9-61ed-4c8c-ad22-2c67ffdf643f}" DisplayName="Ano Final de Vida Útil" Required="FALSE" Name="AnoFinalDaVida" />
+      <FieldRef ID="{dea7a3e6-5b86-4b16-a15e-65791e6402fb}" DisplayName="Substituir nos próximos 4 anos (a partir de 1º de fevereiro Do ano corrente)?" Required="FALSE" Name="Substituir4Anos" />
+      <FieldRef ID="{c9033d97-c6dc-46b0-b103-f324939d1be6}" DisplayName="Equipamento apto a permanecer por tempo adicional à Vida Útil" Required="FALSE" Name="EquipamentoApto" />
+      <FieldRef ID="{43c3c235-98c0-4381-897c-d726ec1cd480}" DisplayName="Ações propostas" Required="FALSE" Name="AcoesPropostas" NumLines="6" />
+      <FieldRef ID="{9609a081-b500-474f-adf9-2076381dfa63}" DisplayName="Aumento de vida útil esperado, a partir da implantação Do reforço(anos)" Required="FALSE" Name="AumentoVidaUtil" />
+      <FieldRef ID="{f3706f24-c843-482b-bc86-e8b1a25fd86d}" DisplayName="Valor a ser investido(R$)" Required="FALSE" Name="ValorInvestido" />
+      <FieldRef ID="{6f9f3975-d1d7-45c9-b7c8-33c6aeae78a5}" DisplayName="Situação da Análise" Required="FALSE" Name="SituacaoAnalise" />
+      <FieldRef ID="{5ab8fd91-4200-4d66-aa03-082f8784020b}" DisplayName="Indicações" Required="FALSE" Name="Indicacao" />
+      <FieldRef ID="{b387bf42-257c-42e1-aac3-ade79eca2193}" DisplayName="Observação ONS" Required="FALSE" Name="ObservacaoONS" NumLines="6" />
+      <FieldRef ID="{ca4b47e0-217c-43f4-ba55-c929577b01b3}" DisplayName="Classificação ONS" Required="FALSE" Name="ClassificacaoM" />
+      <FieldRef ID="{21bcc761-3c2b-42ae-9310-2762cb8d6b78}" DisplayName="Responsável pela Análise" Required="FALSE" Name="ResponsavelAnalise" />
+      <FieldRef ID="{ab55706c-3fd3-4dea-97f6-922e93477a58}" DisplayName="Data de Necessidade Sistêmica" Required="FALSE" Name="DataNecessidadeSistemica" Format="DateOnly" />
+      <FieldRef ID="{06822011-ff6f-42df-9e63-da0536baae53}" DisplayName="Oficio/Resolução/Autorização ANEEL relativa a substituição Do equipamento/PMI" Required="FALSE" Name="Oficio" />
+      <FieldRef ID="{2ce2cf06-efc9-4cf7-aac3-eeb805a29b29}" DisplayName="Data da Autorização/Emissão PMI" Required="FALSE" Name="DataAutorizacao" Format="DateOnly" />
+      <FieldRef ID="{6de73962-63e9-40c6-8371-53133309def1}" DisplayName="Previsão da Implantação" Required="FALSE" Name="PrevisaoImplantacao" Format="DateOnly" />
+      <FieldRef ID="{2677f60d-f7ba-4039-aa2e-aac5a1cba900}" DisplayName="Status da Revitalização" Required="FALSE" Name="StatusRevitalizacao" />
+      <FieldRef ID="{f370c0f8-8955-4694-baa5-b2554975e790}" DisplayName="Aquisição de Materiais - Início" Required="FALSE" Name="AquisicaoMateriaisInicio" Format="DateOnly" />
+      <FieldRef ID="{87259042-6e52-452a-a949-fa9968d03b57}" DisplayName="Aquisição de Materiais - Fim" Required="FALSE" Name="AquisicaoMateriaisFim" Format="DateOnly" />
+      <FieldRef ID="{100ba749-ac02-4772-955d-ad49e71fea5a}" DisplayName="Obras Civis - Início" Required="FALSE" Name="InicioObrasCivis" Format="DateOnly" />
+      <FieldRef ID="{baa028f7-c53b-4d75-8661-47f625894836}" DisplayName="Obras Civis - Fim" Required="FALSE" Name="FimObrasCivis" Format="DateOnly" />
+      <FieldRef ID="{b1f57e11-6926-4385-86b2-527a7b2604c2}" DisplayName="Montagem Eletromecânica - Início" Required="FALSE" Name="InicioMontagemEletromecanica" Format="DateOnly" />
+      <FieldRef ID="{daa2230e-880f-4dff-9544-1737eb4cc133}" DisplayName="Montagem Eletromecânica - Fim" Required="FALSE" Name="FimMontagemEletromecanica" Format="DateOnly" />
+      <FieldRef ID="{c820fbfa-da6f-45b0-a2c4-89138efd8a03}" DisplayName="Comissionamento - Início" Required="FALSE" Name="InicioComissionamento" Format="DateOnly" />
+      <FieldRef ID="{20080975-371e-4120-928b-1107b980589f}" DisplayName="Comissionamento - Fim" Required="FALSE" Name="FimComissionamento" Format="DateOnly" />
+      <FieldRef ID="{dd569fb2-a5af-4498-9ea9-1f655390eb04}" DisplayName="Operação Comercial" Required="FALSE" Name="OperacaoComercial" Format="DateOnly" />
+      <FieldRef ID="{9425e97e-6daf-4f67-b3db-5690eb2fd8ed}" DisplayName="Observações Gerais" Required="FALSE" Name="ObservacaoGeral" NumLines="6" />
+      <FieldRef ID="{6861b146-730f-4820-abc3-fbeaeb484e24}" DisplayName="Numeração PMI / PMIS" Required="FALSE" Name="NumeracaoPMI" />
+      <FieldRef ID="{7c73a62e-4c2e-469d-8897-31ad0b09a0ef}" DisplayName="Nome do Ciclo" Required="FALSE" Name="CicloAtualizacao" />
+      <FieldRef ID="{f41b7a84-d262-4b29-ad3e-e2ca94f6b47a}" DisplayName="ID Documento" Required="FALSE" Name="IDDocumento" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInNewForm="FALSE" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

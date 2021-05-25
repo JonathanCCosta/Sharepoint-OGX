@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="JSManual\" Type="ElementManifest" />
+    <ProjectItemFile Source="ManualTecnico.js" Target="JSManual\" Type="ElementFile" />
+    <ProjectItemFile Source="HillbillyCascade.js" Target="JSManual\" Type="ElementFile" />
+    <ProjectItemFile Source="EditManualTecnico.js" Target="JSManual\" Type="ElementFile" />
+    <ProjectItemFile Source="DispManualTecnico.js" Target="JSManual\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

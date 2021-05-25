@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{960179bb-c9b3-4e91-aee4-491fca05a0dc}"
+       Name="StatusSolicitacao"
+       DisplayName="Status da solicitação"
+       Type="Choice"
+       ShowInNewForm="FALSE"
+       Required="TRUE"
+       Group="Custom Site Columns">
+    <CHOICES>
+      <CHOICE>Solicitado</CHOICE>
+      <CHOICE>Cadastrado</CHOICE>
+      <CHOICE>Aprovado</CHOICE>
+      <CHOICE>Rejeitado</CHOICE>
+    </CHOICES>
+    <Default>Solicitado</Default>
+  </Field>
+</Elements>

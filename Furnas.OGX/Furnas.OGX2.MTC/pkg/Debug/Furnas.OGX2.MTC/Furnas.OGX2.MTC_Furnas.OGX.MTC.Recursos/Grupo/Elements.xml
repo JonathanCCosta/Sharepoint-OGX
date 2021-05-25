@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{633b218e-4b5d-4f18-b1f4-2ff465548fe7}"
+       Name="Grupo"
+       DisplayName="Grupo"
+       Type="Lookup" 
+       List="Lists/GrupoMTC" 
+       ShowField="DescricaoGrupo" 
+       Required="TRUE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

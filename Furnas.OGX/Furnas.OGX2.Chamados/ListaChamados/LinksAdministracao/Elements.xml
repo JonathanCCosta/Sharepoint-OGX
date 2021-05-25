@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Links Administração" OnQuickLaunch="FALSE" TemplateType="170" FeatureId="192efa95-e50c-475e-87ab-361cede5dd7f" Url="Lists/LinksAdministracao" Description="">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Id">1</Field>
+          <Field Name="Title">Manual Técnico de Campo</Field>
+          <Field Name="Description"></Field>
+          <Field Name="LaunchBehavior">Navegação na página</Field>
+          <Field Name="TileOrder">0</Field>
+          <Field Name="Grupo">Geral</Field>
+          <Field Name="BackgroundImageLocation">~site/SiteAssets/CSS/Image/img_manual_campo.png</Field>
+          <Field Name="LinkLocation">~site/Lists/ManualTecnico/Forms/AllItems.aspx</Field>
+        </Row>
+        <Row>
+          <Field Name="Id">2</Field>
+          <Field Name="Title">Manuais Técnicos</Field>
+          <Field Name="Description"></Field>
+          <Field Name="LaunchBehavior">Navegação na página</Field>
+          <Field Name="Grupo">Geral</Field>
+          <Field Name="TileOrder">0</Field>
+          <Field Name="BackgroundImageLocation">~site/SiteAssets/CSS/Image/img_manual_mtc.png</Field>
+          <Field Name="LinkLocation">~site/SitePages/ManuaisMTC.aspx</Field>
+        </Row>
+        <Row>
+          <Field Name="Id">3</Field>
+          <Field Name="Title">Chamados</Field>
+          <Field Name="Description"></Field>
+          <Field Name="LaunchBehavior">Navegação na página</Field>
+          <Field Name="Grupo">Geral</Field>
+          <Field Name="TileOrder">0</Field>
+          <Field Name="BackgroundImageLocation">~site/SiteAssets/CSS/Image/icon_chamados.png</Field>
+          <Field Name="LinkLocation">~site/SitePages/LinksChamados.aspx</Field>
+        </Row>
+        <Row>
+          <Field Name="Id">4</Field>
+          <Field Name="Title">Ciclos</Field>
+          <Field Name="Description"></Field>
+          <Field Name="LaunchBehavior">Navegação na página</Field>
+          <Field Name="Grupo">Geral</Field>
+          <Field Name="TileOrder">1</Field>
+          <Field Name="BackgroundImageLocation">~site/SiteAssets/CSS/Image/ciclo.png</Field>
+          <Field Name="LinkLocation">~site/Lists/Ciclos/AllItems.aspx</Field>
+        </Row>
+        <Row>
+          <Field Name="Id">5</Field>
+          <Field Name="Title">Documentos de Planos de Gerenciamento</Field>
+          <Field Name="Description"></Field>
+          <Field Name="LaunchBehavior">Navegação na página</Field>
+          <Field Name="Grupo">Geral</Field>
+          <Field Name="TileOrder">2</Field>
+          <Field Name="BackgroundImageLocation">~site/SiteAssets/CSS/Image/documentos.png</Field>
+          <Field Name="LinkLocation">~site/Lists/DocumentosCiclo/Forms/AllItems.aspx</Field>
+        </Row>
+        <Row>
+          <Field Name="Id">6</Field>
+          <Field Name="Title">Consultar Planos</Field>
+          <Field Name="Description"></Field>
+          <Field Name="LaunchBehavior">Navegação na página</Field>
+          <Field Name="Grupo">Geral</Field>
+          <Field Name="TileOrder">3</Field>
+          <Field Name="BackgroundImageLocation">~site/SiteAssets/CSS/Image/planos.png</Field>
+          <Field Name="LinkLocation">~site/Lists/Gerenciamento%20de%20Planos/AllItems.aspx</Field>
+        </Row>
+        <Row>
+          <Field Name="Id">7</Field>
+          <Field Name="Title">Grupo de Adminstradores</Field>
+          <Field Name="Description"></Field>
+          <Field Name="LaunchBehavior">Navegação na página</Field>
+          <Field Name="Grupo">Permissão</Field>
+          <Field Name="TileOrder">4</Field>
+          <Field Name="BackgroundImageLocation">~site/SiteAssets/CSS/Image/membros.png</Field>
+          <Field Name="LinkLocation">~site/_layouts/15/people.aspx?MembershipGroupId=18</Field>
+        </Row>
+        <Row>
+          <Field Name="Id">8</Field>
+          <Field Name="Title">Grupo de Colaboradores</Field>
+          <Field Name="Description"></Field>
+          <Field Name="LaunchBehavior">Navegação na página</Field>
+          <Field Name="Grupo">Permissão</Field>
+          <Field Name="TileOrder">5</Field>
+          <Field Name="BackgroundImageLocation">~site/SiteAssets/CSS/Image/colaboracao.png</Field>
+          <Field Name="LinkLocation">~site/_layouts/15/people.aspx?MembershipGroupId=20</Field>
+        </Row>
+      </Rows>
+    </Data>
+    
+    
+  </ListInstance>
+</Elements>

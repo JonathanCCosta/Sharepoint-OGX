@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{0549db58-8032-489a-ba1e-caea4fa1210e}"
+       Name="CorrenteCCNominal"
+       DisplayName="Corrente de curto-circuito nominal (kA)"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

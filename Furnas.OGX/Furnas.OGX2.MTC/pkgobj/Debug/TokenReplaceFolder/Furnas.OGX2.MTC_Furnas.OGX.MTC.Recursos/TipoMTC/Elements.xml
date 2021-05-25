@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{50b5a99a-bd35-42cb-b608-51602f22ab12}"
+       Name="TipoMTC"
+       DisplayName="Tipo MTC"
+       Type="Lookup"
+       Required="TRUE"
+       List="Lists/TipoMTC" 
+       ShowField="DescricaoTipo"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="2e5bc23f-0f98-4cd2-81a0-489a64ffdd71" Scope="Web" Title="Furnas.OGX2.Cargas_ER">
+  <ElementManifests>
+    <ElementManifest Location="ER_DocsCarga\Elements.xml" />
+  </ElementManifests>
+</Feature>

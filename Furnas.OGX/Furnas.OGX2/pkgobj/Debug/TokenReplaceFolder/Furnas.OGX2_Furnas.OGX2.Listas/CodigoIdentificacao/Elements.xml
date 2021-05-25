@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{644c051e-d1bc-47f1-b540-8f7e7dbb274d}"
+       Name="CodigoIdentificacao"
+       DisplayName="Código de Identificação"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

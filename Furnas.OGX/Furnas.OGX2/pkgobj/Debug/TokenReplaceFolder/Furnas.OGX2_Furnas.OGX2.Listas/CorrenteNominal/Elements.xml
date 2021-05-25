@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{dc14f930-3e3e-46b1-a113-a38d8f4dd8cb}"
+       Name="CorrenteNominal"
+       DisplayName="Corrente Nominal (A)"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

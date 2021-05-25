@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{22e17341-d701-45c2-8892-3b2c16058c84}"
+       Name="CapacidadeInterrupcaoSimetricoNominal"
+       DisplayName="Capacidade interrupção simétrica nominal (kA)"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

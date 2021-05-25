@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{b72324ad-3b52-44fb-b4d7-36d46c331ba1}"
+       Name="ImediatoResponsavel"
+       DisplayName="Imediato do Responsável"
+       Type="Text"
+       ShowInDisplayForm="FALSE"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

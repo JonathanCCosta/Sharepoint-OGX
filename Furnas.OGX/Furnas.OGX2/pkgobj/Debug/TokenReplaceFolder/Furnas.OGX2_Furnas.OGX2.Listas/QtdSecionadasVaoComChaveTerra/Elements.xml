@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{4378c27a-1cd9-45c3-ae2a-e55d99cf2c55}"
+       Name="QtdSecionadasVaoComChaveTerra"
+       DisplayName="Quantidade de secionadoras superadas no mesmo vão (bay) com chave de terra"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

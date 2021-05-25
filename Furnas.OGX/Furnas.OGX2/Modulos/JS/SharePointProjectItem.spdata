@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="JS\" Type="ElementManifest" />
+    <ProjectItemFile Source="ValidaCiclo.js" Target="JS\" Type="ElementFile" />
+    <ProjectItemFile Source="importexcel.js" Target="JS\" Type="ElementFile" />
+    <ProjectItemFile Source="NewPlanos.js" Target="JS\" Type="ElementFile" />
+    <ProjectItemFile Source="EditPanos.js" Target="JS\" Type="ElementFile" />
+    <ProjectItemFile Source="Administracao.js" Target="JS\" Type="ElementFile" />
+    <ProjectItemFile Source="ValidaGestaoInterna.js" Target="JS\" Type="ElementFile" />
+    <ProjectItemFile Source="IncluirMudanca.js" Target="JS\" Type="ElementFile" />
+    <ProjectItemFile Source="PermissaoGroup.js" Target="JS\" Type="ElementFile" />
+    <ProjectItemFile Source="ValidaPlanoMudanca.js" Target="JS\" Type="ElementFile" />
+    <ProjectItemFile Source="EncaminhaMudanca.js" Target="JS\" Type="ElementFile" />
+    <ProjectItemFile Source="DateFormat.js" Target="JS\" Type="ElementFile" />
+    <ProjectItemFile Source="CarregaPlano.js" Target="JS\" Type="ElementFile" />
+    <ProjectItemFile Source="ExclusaoPlano.js" Target="JS\" Type="ElementFile" />
+    <ProjectItemFile Source="DestacaMudancas.js" Target="JS\" Type="ElementFile" />
+    <ProjectItemFile Source="justificativaExclusaoMudanca.js" Target="JS\" Type="ElementFile" />
+    <ProjectItemFile Source="manipulaGestao.js" Target="JS\" Type="ElementFile" />
+    <ProjectItemFile Source="importGestao.js" Target="JS\" Type="ElementFile" />
+    <ProjectItemFile Source="ExportaSolicitacao.js" Target="JS\" Type="ElementFile" />
+    <ProjectItemFile Source="NovoChamado.js" Target="JS\" Type="ElementFile" />
+    <ProjectItemFile Source="EditChamado.js" Target="JS\" Type="ElementFile" />
+    <ProjectItemFile Source="EncaminhaChamado.js" Target="JS\" Type="ElementFile" />
+    <ProjectItemFile Source="VerificaBanner.js" Target="JS\" Type="ElementFile" />
+    <ProjectItemFile Source="OGX.Home.MenuLinks.js" Target="JS\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

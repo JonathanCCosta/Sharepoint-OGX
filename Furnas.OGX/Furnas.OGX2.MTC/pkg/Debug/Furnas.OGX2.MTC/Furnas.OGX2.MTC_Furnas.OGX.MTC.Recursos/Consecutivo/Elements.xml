@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{6f26f335-f02c-4f49-855a-1138dcaa5a88}"
+       Name="Consecutivo"
+       DisplayName="Consecutivo"
+       Type="Text" 
+       MaxLength="2" 
+       Required="TRUE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

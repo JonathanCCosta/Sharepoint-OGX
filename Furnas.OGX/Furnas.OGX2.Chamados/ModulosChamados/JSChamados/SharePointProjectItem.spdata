@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="JSChamados\" Type="ElementManifest" />
+    <ProjectItemFile Source="ModeloChamado.js" Target="JSChamados\" Type="ElementFile" />
+    <ProjectItemFile Source="IncluirChamado.js" Target="JSChamados\" Type="ElementFile" />
+    <ProjectItemFile Source="carregaModelo.css" Target="JSChamados\" Type="ElementFile" />
+    <ProjectItemFile Source="DispChamado.js" Target="JSChamados\" Type="ElementFile" />
+    <ProjectItemFile Source="EditChamado.js" Target="JSChamados\" Type="ElementFile" />
+    <ProjectItemFile Source="Pesquisa.js" Target="JSChamados\" Type="ElementFile" />
+    <ProjectItemFile Source="Avaliacao.js" Target="JSChamados\" Type="ElementFile" />
+    <ProjectItemFile Source="CarregaGerencia.js" Target="JSChamados\" Type="ElementFile" />
+    <ProjectItemFile Source="CarregaGerenciaEdit.js" Target="JSChamados\" Type="ElementFile" />
+    <ProjectItemFile Source="CarregaGrupoMTC.js" Target="JSChamados\" Type="ElementFile" />
+    <ProjectItemFile Source="AdministracaoChamados.js" Target="JSChamados\" Type="ElementFile" />
+    <ProjectItemFile Source="AdministracaoManualMTC.js" Target="JSChamados\" Type="ElementFile" />
+    <ProjectItemFile Source="FabricanteMTC.js" Target="JSChamados\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

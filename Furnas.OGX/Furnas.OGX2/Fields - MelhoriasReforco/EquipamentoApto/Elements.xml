@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{c9033d97-c6dc-46b0-b103-f324939d1be6}"
+       Name="EquipamentoApto"
+       DisplayName="Equipamento apto a permanecer por tempo adicional à Vida Útil"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

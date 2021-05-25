@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Chamados" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Chamados" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <Fields>
+      <Field ID="{16d383d3-cdc3-4ac7-83c4-638a7b452fb1}" Name="TipoDeChamado" DisplayName="Tipo de Chamado" Type="Lookup" List="Lists/TipoDeChamado" ShowField="Title" Required="TRUE" Group="Custom Site Columns"></Field>
+      <Field ID="{c694cd11-9075-44a5-a27a-755e6e722f5e}" Name="ModeloChamado" DisplayName="Modelo de Chamado" Type="Lookup" List="Lists/ModeloDeChamado" ShowField="ModelodeChamado" Required="TRUE" Group="Custom Site Columns"></Field>
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
+      <Field ID="{b6961afd-070c-434f-a45e-ed6816d6f549}" Name="ControleDeStatus" DisplayName="Controle de status" Type="Choice" Required="TRUE" Group="Custom Site Columns">
+        <CHOICES>
+          <CHOICE>Aberto</CHOICE>
+          <CHOICE>Em andamento</CHOICE>
+          <CHOICE>Aguardando informações</CHOICE>
+          <CHOICE>Encaminhado à outra gerência</CHOICE>
+          <CHOICE>Encerrado</CHOICE>
+        </CHOICES>
+        <Default>Aberto</Default>
+      </Field>
+      <Field ID="{75988151-f6f8-4292-b0bd-c1df51256b72}" Name="GerenciaResponsavel" DisplayName="Gerência Responsável" Type="Lookup" List="Lists/GerenciaResponsavel" ShowField="Title" ShowInNewForm="FALSE" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{2a5d3d9b-7442-48b3-b550-e52c763379a3}" Name="PrazoAtendimento" DisplayName="Prazo de Atendimento" Type="Number" Decimals="0" Required="TRUE" Description="Em dias" ShowInNewForm="FALSE" Group="Custom Site Columns">
+        <Default>3</Default>
+      </Field>
+      <Field ID="{d73a05fe-df83-4f8e-bb9c-9b46c6d6d74b}" Name="Orgao" DisplayName="Órgão" Type="Note" NumLines="2" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{3465707e-5beb-495c-ae68-294b863e3ca3}" Name="Assunto" DisplayName="Assunto" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{2ba9958b-5ce3-42b9-9ead-bc2ece62fc1a}" Name="Responsavel" DisplayName="Responsável" Type="User" UserSelectionMode="PeopleOnly" Required="FALSE" ShowInNewForm="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{1bd831d5-6d66-418a-ab8f-1ce2041352b5}" Name="Importancia" DisplayName="Importância" Type="Choice" Required="FALSE" ShowInNewForm="FALSE" Group="Custom Site Columns">
+        <CHOICES>
+          <CHOICE>Baixa</CHOICE>
+          <CHOICE>Média</CHOICE>
+          <CHOICE>Alta</CHOICE>
+        </CHOICES>
+        <Default>Baixa</Default>
+      </Field>
+      <Field ID="{4f83dea1-0561-4a47-ac01-b8bbb90148d8}" Name="Complexidade" DisplayName="Complexidade" Type="Choice" Required="FALSE" ShowInNewForm="FALSE" Group="Custom Site Columns">
+        <CHOICES>
+
+
+
+          <CHOICE>Baixa</CHOICE>
+          <CHOICE>Média</CHOICE>
+          <CHOICE>Alta</CHOICE>
+        </CHOICES>
+        <Default>Baixa</Default>
+      </Field>
+      <Field ID="{bc719ad7-7b0d-4023-8797-92c4c6e6aff5}" Name="DataEncerramento" DisplayName="Data de encerramento" Type="DateTime" Format="DateOnly" ShowInNewForm="FALSE" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{8b3a1ed9-7906-463b-8a5c-de57eee1f38c}" Name="DescricaoChamado" DisplayName="Descrição do chamado" Type="Note" NumLines="40" Required="TRUE" RichText="TRUE" RichTextMode="FullHtml" Group="Custom Site Columns"></Field>
+      <Field ID="{4729800f-eeb4-49e1-9ef2-aa869f7e3473}" Name="Esclarecimentos" DisplayName="Esclarecimentos" Type="Note" NumLines="6" AppendOnly="TRUE" Required="FALSE" ShowInNewForm="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{b72324ad-3b52-44fb-b4d7-36d46c331ba1}" Name="ImediatoResponsavel" DisplayName="Imediato do Responsável" Type="Text" ShowInDisplayForm="FALSE" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{d7606eb1-5310-4290-a06f-10189fd2a6e4}" Name="EsclarecimentosGerencia" DisplayName="Esclarecimentos Gerência" Type="Note" NumLines="6" AppendOnly="TRUE" Required="FALSE" ShowInNewForm="FALSE" Group="Custom Site Columns"></Field>
+    </Fields>
+    <Views>
+
+
+
+
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+
+
+
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+
+
+
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">1000</RowLimit>
+        <ViewFields>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <FieldRef Name="LinkTitle"></FieldRef>
+          <FieldRef Name="ControleDeStatus" />
+          <FieldRef Name="TipoDeChamado" />
+          <FieldRef Name="Author" />
+          <FieldRef Name="Assunto" />
+          <FieldRef Name="Created" />
+          <FieldRef Name="DataEncerramento" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+
+
+            <FieldRef Name="ID"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+    <ContentTypes>
+
+
+      <ContentType ID="0x0100b6f1571b23fd474b9b2562871a38b86b" Name="ListFieldsContentType">
+        <FieldRefs>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <FieldRef ID="{16d383d3-cdc3-4ac7-83c4-638a7b452fb1}" Name="TipoDeChamado" />
+          <FieldRef ID="{c694cd11-9075-44a5-a27a-755e6e722f5e}" Name="ModeloChamado" />
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+          <FieldRef ID="{b6961afd-070c-434f-a45e-ed6816d6f549}" Name="ControleDeStatus" />
+          <FieldRef ID="{75988151-f6f8-4292-b0bd-c1df51256b72}" Name="GerenciaResponsavel" />
+          <FieldRef ID="{2a5d3d9b-7442-48b3-b550-e52c763379a3}" Name="PrazoAtendimento" />
+          <FieldRef ID="{d73a05fe-df83-4f8e-bb9c-9b46c6d6d74b}" Name="Orgao" />
+          <FieldRef ID="{3465707e-5beb-495c-ae68-294b863e3ca3}" Name="Assunto" />
+          <FieldRef ID="{2ba9958b-5ce3-42b9-9ead-bc2ece62fc1a}" Name="Responsavel" />
+          <FieldRef ID="{1bd831d5-6d66-418a-ab8f-1ce2041352b5}" Name="Importancia" />
+          <FieldRef ID="{4f83dea1-0561-4a47-ac01-b8bbb90148d8}" Name="Complexidade" />
+          <FieldRef ID="{bc719ad7-7b0d-4023-8797-92c4c6e6aff5}" Name="DataEncerramento" />
+          <FieldRef ID="{8b3a1ed9-7906-463b-8a5c-de57eee1f38c}" Name="DescricaoChamado" />
+          <FieldRef ID="{4729800f-eeb4-49e1-9ef2-aa869f7e3473}" Name="Esclarecimentos" />
+          <FieldRef ID="{b72324ad-3b52-44fb-b4d7-36d46c331ba1}" Name="ImediatoResponsavel" />
+          <FieldRef ID="{d7606eb1-5310-4290-a06f-10189fd2a6e4}" Name="EsclarecimentosGerencia" />
+        </FieldRefs>
+      </ContentType>
+    </ContentTypes>
+  </MetaData>
+</List>

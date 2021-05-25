@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{6ea3eec6-0cbe-464c-9088-f7dc57850086}"
+       Name="CorrenteCCTrifasicaBobinaBloqueio"
+       DisplayName="Corrente de curto-circuito trifásica através da Bobina de bloqueio (calculada) (kA)"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

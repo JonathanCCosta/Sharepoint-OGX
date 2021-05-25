@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{4b4cc06f-cefa-47ae-9ddf-9d1ed8793afa}"
+       Name="AnoIncioOperacao"
+       DisplayName="Ano Início em Operação"
+       Type="Number"
+       Decimals="0"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

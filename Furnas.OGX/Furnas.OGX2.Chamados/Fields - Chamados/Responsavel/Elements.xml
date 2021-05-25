@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{2ba9958b-5ce3-42b9-9ead-bc2ece62fc1a}"
+       Name="Responsavel"
+       DisplayName="Responsável"
+       Type="User"
+       UserSelectionMode="PeopleOnly"
+       Required="FALSE"
+       ShowInNewForm="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

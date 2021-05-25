@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{2371c3b3-a9ae-40bc-b8f0-ff22e14e386f}"
+       Name="NumSGPMR"
+       DisplayName="No. SGPMR Lookup"
+       Type="Lookup"
+       List="Lists/Planos"
+       ShowField="Title"
+       Required="TRUE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

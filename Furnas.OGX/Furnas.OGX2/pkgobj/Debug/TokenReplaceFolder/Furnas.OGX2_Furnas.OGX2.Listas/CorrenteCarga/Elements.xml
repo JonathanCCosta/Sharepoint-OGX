@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{ca488a1b-dc43-4399-9f12-4bb58c2f8d53}"
+       Name="CorrenteCarga"
+       DisplayName="Corrente de carga calculada (A)"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

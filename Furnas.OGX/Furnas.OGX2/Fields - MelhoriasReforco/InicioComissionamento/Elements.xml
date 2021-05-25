@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{c820fbfa-da6f-45b0-a2c4-89138efd8a03}"
+       Name="InicioComissionamento"
+       DisplayName="Comissionamento - Início"
+       Type="DateTime"
+       Format="DateOnly"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

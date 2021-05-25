@@ -1,0 +1,1 @@
+bin\Debug\Furnas.OGX2.MTC.wsp

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{f370c0f8-8955-4694-baa5-b2554975e790}"
+       Name="AquisicaoMateriaisInicio"
+       DisplayName="Aquisição de Materiais - Início"
+       Type="DateTime"
+       Format="DateOnly"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

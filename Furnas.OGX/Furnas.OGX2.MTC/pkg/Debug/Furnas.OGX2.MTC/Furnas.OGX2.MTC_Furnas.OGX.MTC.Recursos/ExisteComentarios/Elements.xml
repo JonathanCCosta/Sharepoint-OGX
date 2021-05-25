@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{fc93ddac-9294-4197-a601-13eecde26028}"
+       Name="ExisteComentarios"
+       DisplayName="Existe Comentários"
+       Type="Text"
+       Required="FALSE"
+       ShowInNewForm="FALSE" ShowInDisplayForm="FALSE"
+       Group="Custom Site Columns">
+    <Default>N</Default>
+  </Field>
+</Elements>

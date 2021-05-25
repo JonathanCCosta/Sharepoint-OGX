@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{2a5d3d9b-7442-48b3-b550-e52c763379a3}"
+       Name="PrazoAtendimento"
+       DisplayName="Prazo de Atendimento"
+       Type="Number"
+       Decimals="0"
+       Required="TRUE"
+       Description="Em dias"
+       ShowInNewForm="FALSE"
+       Group="Custom Site Columns">
+    <Default>3</Default>
+  </Field>
+</Elements>

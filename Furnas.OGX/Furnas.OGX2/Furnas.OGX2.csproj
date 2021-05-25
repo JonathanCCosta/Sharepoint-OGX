@@ -1,0 +1,1076 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B4BB6B93-FC72-487C-9C31-305A61DF544D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Furnas.OGX2</RootNamespace>
+    <AssemblyName>Furnas.OGX2</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <SccProjectName>&lt;Project Location In Database&gt;</SccProjectName>
+    <SccLocalPath>&lt;Local Binding Root of Project&gt;</SccLocalPath>
+    <SccAuxPath>&lt;Source Control Database&gt;</SccAuxPath>
+    <SccProvider>Jazz Source Control Provider:{AC8810C5-F6E7-4145-83AA-FDFFF6F5506D}</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClosedXML, Version=0.80.0.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="Excel, Version=2.1.2.3, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.3.6.0\lib\net45\ExcelDataReader.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ExcelDataReader.DataSet, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.DataSet.3.6.0\lib\net35\ExcelDataReader.DataSet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ER_Listas\ER_Ciclo\ER_Ciclo.cs" />
+    <Compile Include="ER_Listas\ER_GestaoInterna\ER_GestaoInterna.cs" />
+    <Compile Include="ER_Listas\ER_Mudancas\ER_Mudancas.cs" />
+    <Compile Include="Features\Furnas.OGX2.Listas\Furnas.OGX2.EventReceiver.cs">
+      <DependentUpon>Furnas.OGX2.Listas.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\Ciclo.cs" />
+    <Compile Include="Service\DeletePlanos.cs" />
+    <Compile Include="Service\DuplicaItens.cs" />
+    <Compile Include="Service\EmailSGPMR.cs" />
+    <Compile Include="Service\EventFiring.cs" />
+    <Compile Include="Service\ExportacaoSolicitacao.cs" />
+    <Compile Include="Service\FiltrosSGPMR.cs" />
+    <Compile Include="Service\GestaoInterna.cs" />
+    <Compile Include="Service\Importacao.cs" />
+    <Compile Include="Service\ImportacaoGestao.cs" />
+    <Compile Include="Service\ImportacaoSolicitacao.cs" />
+    <Compile Include="Service\Permissao.cs" />
+    <Compile Include="Service\RelacaoWebPart.cs" />
+    <Compile Include="Webparts\WP_ExclusaoMudancaJustificativa\WP_ExclusaoMudancaJustificativa.ascx.cs">
+      <DependentUpon>WP_ExclusaoMudancaJustificativa.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\WP_ExclusaoMudancaJustificativa\WP_ExclusaoMudancaJustificativa.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WP_ExclusaoMudancaJustificativa.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\WP_ExclusaoMudanca\WP_ExclusaoMudanca.ascx.cs">
+      <DependentUpon>WP_ExclusaoMudanca.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\WP_ExclusaoMudanca\WP_ExclusaoMudanca.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WP_ExclusaoMudanca.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\WP_ExportaPlanos\WP_ExportaPlanos.ascx.cs">
+      <DependentUpon>WP_ExportaPlanos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\WP_ExportaPlanos\WP_ExportaPlanos.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WP_ExportaPlanos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\WP_Importacao_Planos\WP_Importacao_Planos.ascx.cs">
+      <DependentUpon>WP_Importacao_Planos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\WP_Importacao_Planos\WP_Importacao_Planos.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WP_Importacao_Planos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\WP_ImportaGestaoInterna\WP_ImportaGestaoInterna.ascx.cs">
+      <DependentUpon>WP_ImportaGestaoInterna.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\WP_ImportaGestaoInterna\WP_ImportaGestaoInterna.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WP_ImportaGestaoInterna.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\WP_ImportaSolicitacoes\WP_ImportaSolicitacoes.ascx.cs">
+      <DependentUpon>WP_ImportaSolicitacoes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\WP_ImportaSolicitacoes\WP_ImportaSolicitacoes.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WP_ImportaSolicitacoes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\WP_PesquisaSGPMR\WP_PesquisaSGPMR.ascx.cs">
+      <DependentUpon>WP_PesquisaSGPMR.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\WP_PesquisaSGPMR\WP_PesquisaSGPMR.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WP_PesquisaSGPMR.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\WP_RemoverPlanos\WP_RemoverPlanos.ascx.cs">
+      <DependentUpon>WP_RemoverPlanos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\WP_RemoverPlanos\WP_RemoverPlanos.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WP_RemoverPlanos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\WP_RequisitaMudanca\WP_RequisitaMudanca.ascx.cs">
+      <DependentUpon>WP_RequisitaMudanca.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\WP_RequisitaMudanca\WP_RequisitaMudanca.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WP_RequisitaMudanca.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ContentTypes\Plano de Melhoria\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cc50aa4d-367e-4503-a525-b8a475161f57}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\Plano de Reforco\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9d7c749e-a004-421f-9af2-42be8c807592}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\PlanoDeReforcoMudanca\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4bf9c38d-ac7a-4c60-9576-bf8b23608581}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\PlanoDeMelhoriaMudanca\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ed1d7b0c-1528-41e5-b1c2-44e5f70011b1}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\PlanoPorSuperacaoMudanca\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{942a8a30-df99-4d62-b983-8e45fe8c408a}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\PlanoPorSuperacao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{abbc13a2-e3dc-411c-99f2-4f402b8755c0}</SharePointProjectItemId>
+    </None>
+    <None Include="ER_Listas\ER_Ciclo\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cb189b62-5987-40b4-af43-fd231209beab}</SharePointProjectItemId>
+    </None>
+    <None Include="ER_Listas\ER_GestaoInterna\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{43eaf6b4-1e97-424f-aa9c-4a042b80674e}</SharePointProjectItemId>
+    </None>
+    <None Include="ER_Listas\ER_Mudancas\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d934d136-e7ca-4fa3-becb-e196bf9f2a80}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Furnas.OGX2.Webparts\Furnas.OGX2.Webparts.feature">
+      <FeatureId>{bb4edbb9-506b-4b01-ad6a-3ffb587946d4}</FeatureId>
+    </None>
+    <None Include="Features\Furnas.OGX2.Listas\Furnas.OGX2.Listas.feature">
+      <FeatureId>{77d0d593-b8c3-44c1-9ed5-aa9b941f15d9}</FeatureId>
+    </None>
+    <None Include="Fields - GestaoInterna\AprovacaoSolicitacao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{71f4efef-02e7-472b-8340-c142083c7c69}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - GestaoInterna\AtoAutorizativoAtual\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2365f4ef-6f15-4da5-97e3-a5ba246deafe}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - GestaoInterna\ConsideracoesGestaoAtivos\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{dd578cf4-b674-4210-9450-14d2af4b2685}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - GestaoInterna\ConsideracoesResponsavelGerenciamento\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8c03a7b1-b257-4182-99f5-cadbbdba8430}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - GestaoInterna\ControleAtosAutorizados\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{db774d03-6a7b-456c-9c9d-8f23b05b59e5}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - GestaoInterna\DataUltimaAtualizacao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2689bfff-7282-4c0c-9f6a-56f24a42525d}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - GestaoInterna\DocumentoInterno\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7bbc3ef5-4202-443c-9549-82478337859b}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - GestaoInterna\DocumentoPleito\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9518a203-353d-4d4e-909d-032b4f9f44d8}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - GestaoInterna\FormaSolicitacao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c44aafeb-8797-45b8-ac87-f6899fd7fde1}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - GestaoInterna\LocalInstalacaoSAP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9cf63531-c158-4304-a7ee-9671a4e454ac}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - GestaoInterna\NumEquipamentoSAP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d1d53773-c560-44d6-9916-14c284a9706a}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - GestaoInterna\NumeroPEP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{20dd98e8-6e7e-460c-be0c-78dce7e8f202}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - GestaoInterna\NumeroSGPRM\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{53ec0ebf-1342-4ea5-ab08-a81d00d8b3f8}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - GestaoInterna\NumSPGMR\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f6a1ace6-2896-405f-8499-2ac4f1be5ccf}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - GestaoInterna\OrgaoGestorObra\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{100bc677-b210-4446-83b1-f41f5a4e37a5}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - GestaoInterna\OrgaoSolicitante\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{87b2e595-a45b-4b73-a1e4-349def344bd2}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - GestaoInterna\PrevisaoImplantacao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c8481d69-9c0a-416e-aa2e-bb8681278973}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - GestaoInterna\Historico\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ab662c98-9acf-43f8-882c-9c0ce61b3ac4}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - GestaoInterna\ResponsavelOrgaoGestorObra\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{127f5aa9-1a79-4350-99fa-ae000221bd02}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - GestaoInterna\ResponsavelSolicitante\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{23594670-d647-49ba-a50b-053bd7b33f57}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - GestaoInterna\StatusPleito\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{040d659c-c60f-412a-aeb1-a372359593d3}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - GestaoInterna\StatusRevitalizacao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{335258bb-d0fe-4451-9831-92c71c5c6fa9}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriaReforcoIrma\AgenteIrma\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{22a75f27-614c-4d85-ac5e-e1541c9b956e}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriaReforcoIrma\CicloIrma\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4b422afc-277b-4291-a6bf-f963c79087c8}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriaReforcoIrma\ClassificacaoIrma\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{83cf6d01-d4b1-4af1-b5c9-e40ba3cc4fc9}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriaReforcoIrma\CustoEstimadoIrma\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{525eb7e1-5ab9-401b-b1bf-0f9a1512ce2b}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriaReforcoIrma\DescricaoEquipamentoSubstituidoIrma\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{62d7d173-cc8e-4be6-b01a-75400b3b083a}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriaReforcoIrma\FuncaoTransmissaoIrma\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e517df85-f3e9-4a2d-98a0-1ee35639e468}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriaReforcoIrma\IdentificacaoEquipamentoSubstituidoIrma\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{991c6385-326c-46d0-bbe9-539964fc235a}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriaReforcoIrma\InstalacaoIrma\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{eb764a6a-7205-484d-b6eb-a167d3167d51}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriaReforcoIrma\JustificativaExclusaoIrma\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{867a6d73-5a36-4067-952a-64e032b8e546}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriaReforcoIrma\JustificativaIrma\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{afa1f41f-caf1-464f-bee9-1d5f6069d56a}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriaReforcoIrma\NumeracaoIrma\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{beb84f61-1215-4429-8fec-58814de5a5eb}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriaReforcoIrma\NumeracaoEmMeses\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d43e3a56-ebe0-49d8-9e20-44a0203e9622}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriaReforcoIrma\NumRecomendacaoSGRIrma\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2f2ce7b7-65dd-4455-a2c0-882ea15855e4}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriaReforcoIrma\ObservacaoIrma\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{711cb6bd-7a77-4f04-96e1-142e4c85bcd3}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriaReforcoIrma\OrigemIndicacaoIrma\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d30a2514-143c-48df-b76e-4f3a777a8f8b}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriaReforcoIrma\PrazoEmissaoPMIIrma\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fa171a1f-0e3f-43a4-897c-23ba2991ddca}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriaReforcoIrma\ProjetoOriginouIndicacaoIrma\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a6b5eb4c-a394-47c3-9bf0-3ddedd7fef64}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriaReforcoIrma\RegiaoIrma\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{32dd9985-3746-4c9a-95e8-8e13158a4368}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriaReforcoIrma\RevitalizacaoNecessariaIrma\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f2b004e1-d583-45c7-9188-d921a9740b05}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriaReforcoIrma\SituacaoAnaliseIrma\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{70bea2d5-b582-4d09-a366-ece21e769265}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriaReforcoIrma\StatusRevitalizacaoIrma\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c97af425-57ad-4d0a-9b5a-9afb518edf01}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriaReforcoIrma\StatusSolicitacao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4b38f8cf-c9a2-4e00-a85f-ff8f93307bd9}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriaReforcoIrma\TensaoNominalIrma\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{def35aeb-1813-47a1-b0c2-1aa4ff4c2dc1}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriaReforcoIrma\TipoAgenteIrma\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ec5f63ff-2c05-4fec-9d88-00d13683d8e6}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriaReforcoIrma\TipoRevitalizacaoIrma\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5556b6eb-7505-4e59-bfd3-2d46ca50597a}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\AcoesPropostas\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b548df08-ed83-4a8d-8571-f37a2bc963fe}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\AnoFinalDaVida\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{af42f87d-e06d-4b17-a30f-9c4836a2a6fb}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\AnoIncioOperacao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5106f8d8-e205-4964-b255-7a2b039bfb34}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\AquisicaoMateriaisFim\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d413cfaf-2fab-4f42-b507-0d096f5c10b5}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\AquisicaoMateriaisInicio\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{36a9fb8e-bfd6-44f1-9108-670e8bbb87ca}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\AumentoVidaUtil\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a6cdce42-5bc9-4666-b477-bf81e4f7d54e}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\CicloAtualizacao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c2e34c17-75e0-4517-b9fc-6e4f471bdd0c}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\ClassificacaoM\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{30480e3e-00b4-42ea-b61d-eb9c46b6d8e6}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\Classificacao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{eed21e48-b998-4190-88dd-e2024336d3c0}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\CustoEstimado\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b594d0cf-b074-4093-bf70-db263e02b693}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\DataAutorizacao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{43f25c0b-cb91-49e7-bdce-2e9190d12ec7}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\DataNecessidadeSistemica\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{32bf5d26-3080-4f1d-89ec-9bcd17fd9f4d}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\DescricaoEquipamento\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{dffe7725-dcea-4473-adaf-8700ee4e573a}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\EquipamentoApto\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{19dfca87-d614-4d7e-8c08-cca39edf02b0}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\EvidenciaJustificada\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fc74329f-909f-4b10-81fd-c10bdc71e87e}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\Fabricante\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{25679a79-65fe-42a6-98f5-aa9758f9ea7b}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\FimComissionamento\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fb0285bd-5ba8-4bac-9e16-7a53ad33f99f}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\FimMontahemEletromecanica\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c0adb5e5-9d7a-4286-a028-0d3a783f0263}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\FimObrasCivis\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{dc3fd905-0917-4ad0-a96a-6887a012b81a}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\FuncaoTransmissao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8d8eb07d-9e50-4d73-97e3-5439fa4e2c35}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\IdentificacaoEquipamento\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ea40029b-5be8-4478-bc22-9a3d1ba87954}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\Indicacao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e06a3dd2-3633-487a-bf45-54ff37d32cd3}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\InicioComissionamento\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{682f8d93-0b1d-4861-b8ce-c898fdd5538a}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\InicioMontagemEletromecanica\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{546158df-d2b3-48b7-a047-1564c4e319a9}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\InicioObrasCivis\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{773afdf1-ac54-4372-8246-1f83951b0fd3}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\JustificativaExclusao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5712a15c-da3c-4b21-bb52-f17393b688b2}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\Justificativa\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e8334db1-d643-432e-bd25-200edefe7195}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\KV\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{73615cd6-e2f6-4026-a51c-1d4a900d1d6f}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\Modelo\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{27888634-3ae5-4ef4-9e92-48a7f156e175}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\NumeracaoPMI\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{df90c8d7-0be8-4cfe-8ca3-d3773865a154}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\Numeracao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6aca9a95-e283-4134-90be-e0e2f4b907c0}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\Instalacao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ca716207-8240-4d98-b437-fa6ac07be3f1}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\NumeroRecomendacao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9677aaea-1045-418e-b9a9-92577df0db18}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\NumeroSerie\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3d9a2444-7694-43a7-a5a9-c9540090433d}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\ObservacaoGeral\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4efb120e-b097-4a0c-acc2-468c16875771}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\ObservacaoONS\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{140e3e90-b5e5-4644-a32b-e9a3e204fcc2}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\Observacao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e2237cc4-e2cb-4e4a-8c14-370c2cca8cb0}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\Oficio\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b8359e85-e13e-4ded-a549-ba48102c91c1}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\OperacaoComercial\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1cdd5604-34e5-4b4c-b391-df4502893d07}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\OrigemIndicacao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a7f991b8-d61b-4167-9ca2-a770a01e9753}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\PrazoEmissao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b946b2bf-1caf-41c9-8649-4eb0eb54dbe1}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\PrevisaoImplantacao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0395a053-24ec-460c-bf63-6bff86c083ae}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\ProjetoOriginouIndicacao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a8cc56b6-b25e-4c77-af45-cf452ef0a1d2}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\ResponsavelAnalise\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cb73163c-a728-46e8-b6ce-18a053f2039b}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\RevitalizacaoNecessaria\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1f7d6029-40dc-42ec-a76b-d6d0e03fa8a6}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\SituacaoAnalise\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{eb4c49d9-7ad3-4f83-bed6-b293e9d5d11c}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\StatusRevitalizacao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{55ad28b0-a1b1-4c44-8252-5417c69b7b69}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\Substituir4Anos\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a72f37eb-758c-4940-a168-ca28de6fed74}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\TaxaDepreciacao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{262f68bd-47aa-4289-8eaa-b650a016b7bc}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\TipoAgente\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{40396ba9-4444-4a74-a0a8-40146154a0c5}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\TipoRevitalizacao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5fc0dd52-c6f6-46c0-84a0-caab51c36928}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\ValorInvestido\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0282f1a3-c93d-4fb9-abbc-a8835f058c50}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - SelecaoMudanca\ClassificacaoLookup\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a9dbd0ad-284b-42c3-bb4d-8b432589f167}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - SelecaoMudanca\FuncaoTransmissaoOutro\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1ec9a5a6-c8b5-4874-bece-4f7dcd5f26ba}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - SelecaoMudanca\InstalacaoOutro\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5ccd5772-68d9-49cf-b2e0-3553d37df5c0}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - SelecaoMudanca\NumGestao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e1cf277e-1a39-46bb-81b5-384196582af9}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - SelecaoMudanca\NumSolicitacao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b6447a4a-51c2-4ec7-a329-d11f61e0d963}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Sistema\AlteracaoSolicitada\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4f5ecd78-5cb0-4b99-837e-5f1e1224d1bc}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Sistema\AlteracoesProcessadas\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{05a31fd0-fa4e-443f-8802-298a30d70e5c}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Sistema\IDDocumento\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fe934e74-b135-4b55-85b9-70ad59980528}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\CapacidadeInterrupcaoSimetricoNominal\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8d6d2d47-4d0e-4b4a-bd53-c491ffe5e237}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\CapacidadeNominalCC\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2e057d3a-a4d8-438e-a11c-131455c43d50}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\CapacidadeNominalCorrente\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3a594765-29c9-40bb-922a-d85fc126fb58}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\ClassificacaoSuperacao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{22c4731f-18cd-4c78-bd49-ce6f95de27b1}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\CodigoIdentificacao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6e2ee9b1-8c67-406c-9a92-27b33292a9a7}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\CorrenteCarga\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cf4e6c71-e9a0-458d-8d03-c643d860333c}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\CorrenteCCMonofasicaBobinaBloqueio\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3ea7c65c-223d-4c3c-85f9-7ce7f54c06b5}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\CorrenteCCMonofasicaTC\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a41455e1-e43f-43fc-b8df-64c7b06ca17e}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\CorrenteCCMonofasicoDisjuntor\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{53806902-0920-446c-a72f-a0b0668fcebf}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\CorrenteCCMonofasicoSecionara\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{329ae59e-20b5-4a7c-a21a-c99c63d9a815}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\CorrenteCCNominal\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{355e49cb-de05-424e-9468-5388905f04a4}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\CorrenteCCTrifasicaBobinaBloqueio\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9470ea03-607b-4cff-b080-0751c0097aae}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\CorrenteCCTrifasicaSecionara\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5c47e87d-b5ad-42f6-b80f-1d4b93d77460}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\CorrenteCCTrifasicaTC\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f20586c8-fa9d-4a3f-a0ef-d362ee02ee5c}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\CorrenteCCTrifasicoDisjuntor\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fe30c660-eb58-4724-9fdd-85e49e3fad4e}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\CorrenteNominal\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6755f039-48e5-472f-8030-5f7402796199}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\DataAutorizacaoSuperacao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{05422999-a405-4c0c-b8fe-21cac314ec10}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\DataEntradaOperacao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4efbccfd-51e5-4993-91b6-f7000469d28e}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\DataNecessidade\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e06257be-9edf-4cd7-886b-0e3313d3f5c2}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\DeRating1F\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3c07b2e9-a4e9-4caa-bec4-a360ea0c88ba}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\DeRating3F\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8868bf9a-0687-49fe-a217-5ff4e46788ae}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\FatorPrimeiroPolo\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8e01e197-5517-4a5c-ab79-a903e8c77806}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\FatorTermico\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{54709d63-2517-41be-bc4d-d89f428c9403}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\FuncaoTransmissaoSuperacao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{70886733-bb70-4771-9afd-e899a85b96c2}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\NivelCC_BarraMonofasico\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5fe98f78-542b-4bdb-bc43-ed269d1d1973}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\NivelCC_BarraTrifasico\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bb581ded-3e70-4cca-9a70-56668d5d80ad}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\NomeVao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1af82422-be1e-4656-abeb-590db5aa99b8}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\NumerosBarrasAnafas\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ddc19133-42b1-47eb-8f1b-731d89bf1173}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\ObservacaoFurnas\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{63478640-b5ac-4c2d-98b3-65abcac7415f}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\OficioSubstituicaoDoEquipamento\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2548fc1c-ddee-4ac5-89a6-50d442ba7172}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\OrigemIndicacaoSuperacao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{eff1cc61-8ae1-492b-924f-cd2146a1ca77}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\Outras\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3dcbbe70-eae3-47af-ae47-139ff740108a}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\ParecerFinal\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c2d5004d-ef83-4dac-9b30-1d7bc2404bfc}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\QtdSecionadasVaoComChaveTerra\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5181239f-33bd-49f7-82e6-0e137dd89172}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\QtdSecionadasVaoSemChaveTerra\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{37aa6dcd-8214-49f0-9e9b-66bcebb29993}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\QuantidadeEquipamentosSuperados\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b9e777f0-5f83-48a8-8c84-eefad5cf9c7f}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\RazaoPrincipal\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{29625fcd-77b0-4038-adc7-15ce134eb104}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\Saturacao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4e37a70e-3a7c-464d-bd48-9fee98b93842}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\SuperacaoCCSimetrica\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6fa65345-1a2c-4c24-a65f-7d0d109067fa}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\SuperacaoCorrenteNominal\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0f45ca87-98b8-4be7-a7b0-61c0ed79ef0d}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\SuperacaoCristaCC\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4a40f3ec-6b6c-48bc-8a68-61e52a40160a}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\SuperacaoXR\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4acb79c7-2fb0-4258-843c-41f5b68a30c5}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\TensaoNominal\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3ca084bc-ac5d-40ac-a11a-16d719fc4500}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\TipoEquipamento\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{efb424c4-8253-42bf-877a-740775ff8112}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\ValorNominalCrita\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{93f174f7-1ce4-4904-8a22-ffab37937a45}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\XRDisjuntor\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{71875867-f12d-47d2-86ce-2e52d1896d0e}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\XR_Substacao_CC_monofasico\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{52cd4f90-b237-4867-b300-62d2c632e2cd}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Superacao\XR_Substacao_CC_trifasico\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2d3c22c7-dc06-4928-9aa6-65c192aeccf4}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Fields - MelhoriasReforco\Agente\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f7b1f014-b6ba-4573-9569-ba2331d88c88}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\Ciclo\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{97b7d2dc-982d-4b0a-99a7-c4d60369be50}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - MelhoriasReforco\Regiao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bd7eae26-6a30-47a3-b3fc-89faef7ad57e}</SharePointProjectItemId>
+    </None>
+    <None Include="Listas\Ciclos\CiclosInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{95b17c8e-4b14-4793-a312-4345f14e5943}</SharePointProjectItemId>
+    </None>
+    <None Include="Listas\Ciclos\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5959c055-6412-43bd-a84c-96670ba9d050}</SharePointProjectItemId>
+    </None>
+    <None Include="Listas\GestaoInterna\GestaoInternaInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f7928e94-41ca-4c34-a149-e813f6270714}</SharePointProjectItemId>
+    </None>
+    <None Include="Listas\GestaoInterna\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{81950c6f-3e50-4c5b-99ea-f063a9641f0d}</SharePointProjectItemId>
+    </None>
+    <None Include="Listas\PlanosMudanca\PlanosMudancaInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{692a543b-c50b-4cd9-9fab-ccb5e12d7135}</SharePointProjectItemId>
+    </None>
+    <None Include="Listas\PlanosMudanca\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{16460049-136e-4f03-a773-60feb20bf393}</SharePointProjectItemId>
+    </None>
+    <None Include="Listas\Planos\PlanosInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{977497a7-a03d-4b27-8eb0-92e46f95df88}</SharePointProjectItemId>
+    </None>
+    <None Include="Listas\Planos\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ac9698a0-7997-451c-aabb-47f2286d287e}</SharePointProjectItemId>
+    </None>
+    <None Include="Listas\RepositorioGestaoInterna\RepositorioGestaoInternaInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2f091ee9-3c8d-449a-9340-ceee81ddbb45}</SharePointProjectItemId>
+    </None>
+    <None Include="Listas\RepositorioGestaoInterna\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{54a0b86e-1e3d-448a-8237-5a473d448bc7}</SharePointProjectItemId>
+    </None>
+    <None Include="Listas\Repositorio\RepositorioInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9d229a21-8c8f-4d42-a31a-f8f0396a497d}</SharePointProjectItemId>
+    </None>
+    <None Include="Listas\Repositorio\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{40775446-f25d-4226-86e3-f7795b6c4fd5}</SharePointProjectItemId>
+    </None>
+    <None Include="Modulos\CSS\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{40e78b19-5919-411d-9664-d70e25d9d0b8}</SharePointProjectItemId>
+    </None>
+    <None Include="Modulos\JS\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e0491f2d-821b-45d5-beb1-a8299a90d4bc}</SharePointProjectItemId>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Package\Package.package">
+      <PackageId>{dc1021e7-1964-4e6e-9780-5815badf38e1}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Webparts\WP_ExclusaoMudancaJustificativa\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{eca31754-777e-443a-91ae-33f9ef644dd1}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\WP_ExclusaoMudancaJustificativa\WP_ExclusaoMudancaJustificativa.webpart" />
+    <None Include="Webparts\WP_ExclusaoMudanca\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6dcf4845-ef5f-4925-ace8-9f6b042e3f45}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\WP_ExclusaoMudanca\WP_ExclusaoMudanca.webpart" />
+    <None Include="Webparts\WP_ExportaPlanos\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f6e7dba3-b90e-473e-ae16-9159f6e88a80}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\WP_ExportaPlanos\WP_ExportaPlanos.webpart" />
+    <None Include="Webparts\WP_Importacao_Planos\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5c92e45b-b55d-4fe0-83e3-691b859f32ad}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\WP_Importacao_Planos\WP_Importacao_Planos.webpart" />
+    <None Include="Webparts\WP_ImportaGestaoInterna\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d84f6d14-bf22-4434-9fa4-97aefbe539ff}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\WP_ImportaGestaoInterna\WP_ImportaGestaoInterna.webpart" />
+    <None Include="Webparts\WP_ImportaSolicitacoes\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7728c5a0-d358-4ee5-bbb4-80f7c10bee24}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\WP_ImportaSolicitacoes\WP_ImportaSolicitacoes.webpart" />
+    <None Include="Webparts\WP_PesquisaSGPMR\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d55432ef-1eba-4974-921e-be06d17ca1f1}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\WP_PesquisaSGPMR\WP_PesquisaSGPMR.webpart" />
+    <None Include="Webparts\WP_RemoverPlanos\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f511a1e6-0e8b-4649-85cc-ac63f59799b8}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\WP_RemoverPlanos\WP_RemoverPlanos.webpart" />
+    <None Include="Webparts\WP_RequisitaMudanca\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c2793a5c-4d42-4619-a737-4eb79d643327}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\WP_RequisitaMudanca\WP_RequisitaMudanca.webpart" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="ContentTypes\Plano de Melhoria\Elements.xml" />
+    <Content Include="ContentTypes\Plano de Reforco\Elements.xml" />
+    <Content Include="ContentTypes\PlanoDeReforcoMudanca\Elements.xml" />
+    <Content Include="ContentTypes\PlanoDeMelhoriaMudanca\Elements.xml" />
+    <Content Include="ContentTypes\PlanoPorSuperacaoMudanca\Elements.xml" />
+    <Content Include="ContentTypes\PlanoPorSuperacao\Elements.xml" />
+    <Content Include="ER_Listas\ER_Ciclo\Elements.xml" />
+    <Content Include="ER_Listas\ER_GestaoInterna\Elements.xml" />
+    <Content Include="ER_Listas\ER_Mudancas\Elements.xml" />
+    <Content Include="Features\Furnas.OGX2.Webparts\Furnas.OGX2.Webparts.Template.xml">
+      <DependentUpon>Furnas.OGX2.Webparts.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Furnas.OGX2.Listas\Furnas.OGX2.Listas.Template.xml">
+      <DependentUpon>Furnas.OGX2.Listas.feature</DependentUpon>
+    </Content>
+    <Content Include="Fields - GestaoInterna\AprovacaoSolicitacao\Elements.xml" />
+    <Content Include="Fields - GestaoInterna\AtoAutorizativoAtual\Elements.xml" />
+    <Content Include="Fields - GestaoInterna\ConsideracoesGestaoAtivos\Elements.xml" />
+    <Content Include="Fields - GestaoInterna\ConsideracoesResponsavelGerenciamento\Elements.xml" />
+    <Content Include="Fields - GestaoInterna\ControleAtosAutorizados\Elements.xml" />
+    <Content Include="Fields - GestaoInterna\DataUltimaAtualizacao\Elements.xml" />
+    <Content Include="Fields - GestaoInterna\DocumentoInterno\Elements.xml" />
+    <Content Include="Fields - GestaoInterna\DocumentoPleito\Elements.xml" />
+    <Content Include="Fields - GestaoInterna\FormaSolicitacao\Elements.xml" />
+    <Content Include="Fields - GestaoInterna\LocalInstalacaoSAP\Elements.xml" />
+    <Content Include="Fields - GestaoInterna\NumEquipamentoSAP\Elements.xml" />
+    <Content Include="Fields - GestaoInterna\NumeroPEP\Elements.xml" />
+    <Content Include="Fields - GestaoInterna\NumeroSGPRM\Elements.xml" />
+    <Content Include="Fields - GestaoInterna\NumSPGMR\Elements.xml" />
+    <Content Include="Fields - GestaoInterna\OrgaoGestorObra\Elements.xml" />
+    <Content Include="Fields - GestaoInterna\OrgaoSolicitante\Elements.xml" />
+    <Content Include="Fields - GestaoInterna\PrevisaoImplantacao\Elements.xml" />
+    <Content Include="Fields - GestaoInterna\Historico\Elements.xml" />
+    <Content Include="Fields - GestaoInterna\ResponsavelOrgaoGestorObra\Elements.xml" />
+    <Content Include="Fields - GestaoInterna\ResponsavelSolicitante\Elements.xml" />
+    <Content Include="Fields - GestaoInterna\StatusPleito\Elements.xml" />
+    <Content Include="Fields - GestaoInterna\StatusRevitalizacao\Elements.xml" />
+    <Content Include="Fields - MelhoriaReforcoIrma\AgenteIrma\Elements.xml" />
+    <Content Include="Fields - MelhoriaReforcoIrma\CicloIrma\Elements.xml" />
+    <Content Include="Fields - MelhoriaReforcoIrma\ClassificacaoIrma\Elements.xml" />
+    <Content Include="Fields - MelhoriaReforcoIrma\CustoEstimadoIrma\Elements.xml" />
+    <Content Include="Fields - MelhoriaReforcoIrma\DescricaoEquipamentoSubstituidoIrma\Elements.xml" />
+    <Content Include="Fields - MelhoriaReforcoIrma\FuncaoTransmissaoIrma\Elements.xml" />
+    <Content Include="Fields - MelhoriaReforcoIrma\IdentificacaoEquipamentoSubstituidoIrma\Elements.xml" />
+    <Content Include="Fields - MelhoriaReforcoIrma\InstalacaoIrma\Elements.xml" />
+    <Content Include="Fields - MelhoriaReforcoIrma\JustificativaExclusaoIrma\Elements.xml" />
+    <Content Include="Fields - MelhoriaReforcoIrma\JustificativaIrma\Elements.xml" />
+    <Content Include="Fields - MelhoriaReforcoIrma\NumeracaoIrma\Elements.xml" />
+    <Content Include="Fields - MelhoriaReforcoIrma\NumeracaoEmMeses\Elements.xml" />
+    <Content Include="Fields - MelhoriaReforcoIrma\NumRecomendacaoSGRIrma\Elements.xml" />
+    <Content Include="Fields - MelhoriaReforcoIrma\ObservacaoIrma\Elements.xml" />
+    <Content Include="Fields - MelhoriaReforcoIrma\OrigemIndicacaoIrma\Elements.xml" />
+    <Content Include="Fields - MelhoriaReforcoIrma\PrazoEmissaoPMIIrma\Elements.xml" />
+    <Content Include="Fields - MelhoriaReforcoIrma\ProjetoOriginouIndicacaoIrma\Elements.xml" />
+    <Content Include="Fields - MelhoriaReforcoIrma\RegiaoIrma\Elements.xml" />
+    <Content Include="Fields - MelhoriaReforcoIrma\RevitalizacaoNecessariaIrma\Elements.xml" />
+    <Content Include="Fields - MelhoriaReforcoIrma\SituacaoAnaliseIrma\Elements.xml" />
+    <Content Include="Fields - MelhoriaReforcoIrma\StatusRevitalizacaoIrma\Elements.xml" />
+    <Content Include="Fields - MelhoriaReforcoIrma\StatusSolicitacao\Elements.xml" />
+    <Content Include="Fields - MelhoriaReforcoIrma\TensaoNominalIrma\Elements.xml" />
+    <Content Include="Fields - MelhoriaReforcoIrma\TipoAgenteIrma\Elements.xml" />
+    <Content Include="Fields - MelhoriaReforcoIrma\TipoRevitalizacaoIrma\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\AcoesPropostas\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\AnoFinalDaVida\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\AnoIncioOperacao\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\AquisicaoMateriaisFim\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\AquisicaoMateriaisInicio\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\AumentoVidaUtil\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\CicloAtualizacao\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\ClassificacaoM\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\Classificacao\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\CustoEstimado\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\DataAutorizacao\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\DataNecessidadeSistemica\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\DescricaoEquipamento\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\EquipamentoApto\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\EvidenciaJustificada\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\Fabricante\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\FimComissionamento\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\FimMontahemEletromecanica\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\FimObrasCivis\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\FuncaoTransmissao\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\IdentificacaoEquipamento\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\Indicacao\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\InicioComissionamento\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\InicioMontagemEletromecanica\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\InicioObrasCivis\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\JustificativaExclusao\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\Justificativa\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\KV\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\Modelo\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\NumeracaoPMI\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\Numeracao\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\Instalacao\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\NumeroRecomendacao\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\NumeroSerie\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\ObservacaoGeral\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\ObservacaoONS\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\Observacao\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\Oficio\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\OperacaoComercial\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\OrigemIndicacao\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\PrazoEmissao\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\PrevisaoImplantacao\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\ProjetoOriginouIndicacao\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\ResponsavelAnalise\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\RevitalizacaoNecessaria\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\SituacaoAnalise\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\StatusRevitalizacao\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\Substituir4Anos\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\TaxaDepreciacao\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\TipoAgente\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\TipoRevitalizacao\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\ValorInvestido\Elements.xml" />
+    <Content Include="Fields - SelecaoMudanca\ClassificacaoLookup\Elements.xml" />
+    <Content Include="Fields - SelecaoMudanca\FuncaoTransmissaoOutro\Elements.xml" />
+    <Content Include="Fields - SelecaoMudanca\InstalacaoOutro\Elements.xml" />
+    <Content Include="Fields - SelecaoMudanca\NumGestao\Elements.xml" />
+    <Content Include="Fields - SelecaoMudanca\NumSolicitacao\Elements.xml" />
+    <Content Include="Fields - Sistema\AlteracaoSolicitada\Elements.xml" />
+    <Content Include="Fields - Sistema\AlteracoesProcessadas\Elements.xml" />
+    <Content Include="Fields - Sistema\IDDocumento\Elements.xml" />
+    <Content Include="Fields - Superacao\CapacidadeInterrupcaoSimetricoNominal\Elements.xml" />
+    <Content Include="Fields - Superacao\CapacidadeNominalCC\Elements.xml" />
+    <Content Include="Fields - Superacao\CapacidadeNominalCorrente\Elements.xml" />
+    <Content Include="Fields - Superacao\ClassificacaoSuperacao\Elements.xml" />
+    <Content Include="Fields - Superacao\CodigoIdentificacao\Elements.xml" />
+    <Content Include="Fields - Superacao\CorrenteCarga\Elements.xml" />
+    <Content Include="Fields - Superacao\CorrenteCCMonofasicaBobinaBloqueio\Elements.xml" />
+    <Content Include="Fields - Superacao\CorrenteCCMonofasicaTC\Elements.xml" />
+    <Content Include="Fields - Superacao\CorrenteCCMonofasicoDisjuntor\Elements.xml" />
+    <Content Include="Fields - Superacao\CorrenteCCMonofasicoSecionara\Elements.xml" />
+    <Content Include="Fields - Superacao\CorrenteCCNominal\Elements.xml" />
+    <Content Include="Fields - Superacao\CorrenteCCTrifasicaBobinaBloqueio\Elements.xml" />
+    <Content Include="Fields - Superacao\CorrenteCCTrifasicaSecionara\Elements.xml" />
+    <Content Include="Fields - Superacao\CorrenteCCTrifasicaTC\Elements.xml" />
+    <Content Include="Fields - Superacao\CorrenteCCTrifasicoDisjuntor\Elements.xml" />
+    <Content Include="Fields - Superacao\CorrenteNominal\Elements.xml" />
+    <Content Include="Fields - Superacao\DataAutorizacaoSuperacao\Elements.xml" />
+    <Content Include="Fields - Superacao\DataEntradaOperacao\Elements.xml" />
+    <Content Include="Fields - Superacao\DataNecessidade\Elements.xml" />
+    <Content Include="Fields - Superacao\DeRating1F\Elements.xml" />
+    <Content Include="Fields - Superacao\DeRating3F\Elements.xml" />
+    <Content Include="Fields - Superacao\FatorPrimeiroPolo\Elements.xml" />
+    <Content Include="Fields - Superacao\FatorTermico\Elements.xml" />
+    <Content Include="Fields - Superacao\FuncaoTransmissaoSuperacao\Elements.xml" />
+    <Content Include="Fields - Superacao\NivelCC_BarraMonofasico\Elements.xml" />
+    <Content Include="Fields - Superacao\NivelCC_BarraTrifasico\Elements.xml" />
+    <Content Include="Fields - Superacao\NomeVao\Elements.xml" />
+    <Content Include="Fields - Superacao\NumerosBarrasAnafas\Elements.xml" />
+    <Content Include="Fields - Superacao\ObservacaoFurnas\Elements.xml" />
+    <Content Include="Fields - Superacao\OficioSubstituicaoDoEquipamento\Elements.xml" />
+    <Content Include="Fields - Superacao\OrigemIndicacaoSuperacao\Elements.xml" />
+    <Content Include="Fields - Superacao\Outras\Elements.xml" />
+    <Content Include="Fields - Superacao\ParecerFinal\Elements.xml" />
+    <Content Include="Fields - Superacao\QtdSecionadasVaoComChaveTerra\Elements.xml" />
+    <Content Include="Fields - Superacao\QtdSecionadasVaoSemChaveTerra\Elements.xml" />
+    <Content Include="Fields - Superacao\QuantidadeEquipamentosSuperados\Elements.xml" />
+    <Content Include="Fields - Superacao\RazaoPrincipal\Elements.xml" />
+    <Content Include="Fields - Superacao\Saturacao\Elements.xml" />
+    <Content Include="Fields - Superacao\SuperacaoCCSimetrica\Elements.xml" />
+    <Content Include="Fields - Superacao\SuperacaoCorrenteNominal\Elements.xml" />
+    <Content Include="Fields - Superacao\SuperacaoCristaCC\Elements.xml" />
+    <Content Include="Fields - Superacao\SuperacaoXR\Elements.xml" />
+    <Content Include="Fields - Superacao\TensaoNominal\Elements.xml" />
+    <Content Include="Fields - Superacao\TipoEquipamento\Elements.xml" />
+    <Content Include="Fields - Superacao\ValorNominalCrita\Elements.xml" />
+    <Content Include="Fields - Superacao\XRDisjuntor\Elements.xml" />
+    <Content Include="Fields - Superacao\XR_Substacao_CC_monofasico\Elements.xml" />
+    <Content Include="Fields - Superacao\XR_Substacao_CC_trifasico\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\Agente\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\Ciclo\Elements.xml" />
+    <Content Include="Fields - MelhoriasReforco\Regiao\Elements.xml" />
+    <Content Include="Listas\Ciclos\CiclosInstance\Elements.xml" />
+    <Content Include="Listas\Ciclos\Elements.xml" />
+    <Content Include="Listas\Ciclos\Schema.xml" />
+    <Content Include="Listas\GestaoInterna\Elements.xml" />
+    <Content Include="Listas\GestaoInterna\GestaoInternaInstance\Elements.xml" />
+    <Content Include="Listas\GestaoInterna\Schema.xml" />
+    <Content Include="Listas\PlanosMudanca\Elements.xml" />
+    <Content Include="Listas\PlanosMudanca\PlanosMudancaInstance\Elements.xml" />
+    <Content Include="Listas\PlanosMudanca\Schema.xml" />
+    <Content Include="Listas\Planos\Elements.xml" />
+    <Content Include="Listas\Planos\PlanosInstance\Elements.xml" />
+    <Content Include="Listas\Planos\Schema.xml" />
+    <Content Include="Listas\RepositorioGestaoInterna\EditDlg.htm" />
+    <Content Include="Listas\RepositorioGestaoInterna\Elements.xml" />
+    <Content Include="Listas\RepositorioGestaoInterna\FileDlg.htm" />
+    <Content Include="Listas\RepositorioGestaoInterna\Repair.aspx" />
+    <Content Include="Listas\RepositorioGestaoInterna\RepositorioGestaoInternaInstance\Elements.xml" />
+    <Content Include="Listas\RepositorioGestaoInterna\Schema.xml" />
+    <Content Include="Listas\RepositorioGestaoInterna\Upload.aspx" />
+    <Content Include="Listas\Repositorio\EditDlg.htm" />
+    <Content Include="Listas\Repositorio\Elements.xml" />
+    <Content Include="Listas\Repositorio\FileDlg.htm" />
+    <Content Include="Listas\Repositorio\Repair.aspx" />
+    <Content Include="Listas\Repositorio\RepositorioInstance\Elements.xml" />
+    <Content Include="Listas\Repositorio\Schema.xml" />
+    <Content Include="Listas\Repositorio\Upload.aspx" />
+    <Content Include="Modulos\CSS\Administracao.css" />
+    <Content Include="Modulos\CSS\ajax-loader.gif" />
+    <Content Include="Modulos\CSS\Elements.xml" />
+    <Content Include="Modulos\CSS\favicon.ico" />
+    <Content Include="Modulos\CSS\Image\admin.png" />
+    <Content Include="Modulos\CSS\Image\arquivos.png" />
+    <Content Include="Modulos\CSS\Image\ciclo.png" />
+    <Content Include="Modulos\CSS\Image\ciclos.png" />
+    <Content Include="Modulos\CSS\Image\Colaboracao.png" />
+    <Content Include="Modulos\CSS\Image\colb.png" />
+    <Content Include="Modulos\CSS\Image\documentos.png" />
+    <Content Include="Modulos\CSS\Image\icone_pesquisa_satisfacao.png" />
+    <Content Include="Modulos\CSS\Image\icone_sgmpr.png" />
+    <Content Include="Modulos\CSS\Image\icon_chamados.png" />
+    <Content Include="Modulos\CSS\Image\icon_chamados_menu.png" />
+    <Content Include="Modulos\CSS\Image\icon_gerencia_responsavel.png" />
+    <Content Include="Modulos\CSS\Image\icon_operar_manter.png" />
+    <Content Include="Modulos\CSS\Image\img_fabricante.png" />
+    <Content Include="Modulos\CSS\Image\img_gestao_vida.png" />
+    <Content Include="Modulos\CSS\Image\img_manual_campo.png" />
+    <Content Include="Modulos\CSS\Image\img_manual_mtc.png" />
+    <Content Include="Modulos\CSS\Image\img_manual_tecnico.png" />
+    <Content Include="Modulos\CSS\Image\membros.png" />
+    <Content Include="Modulos\CSS\Image\planos.png" />
+    <Content Include="Modulos\CSS\Image\planosG.png" />
+    <Content Include="Modulos\CSS\importexcel.css" />
+    <Content Include="Modulos\JS\Administracao.js" />
+    <Content Include="Modulos\JS\DateFormat.js" />
+    <Content Include="Modulos\JS\DestacaMudancas.js" />
+    <Content Include="Modulos\JS\EditChamado.js" />
+    <Content Include="Modulos\JS\EditPanos.js" />
+    <Content Include="Modulos\JS\Elements.xml" />
+    <Content Include="Modulos\JS\EncaminhaChamado.js" />
+    <Content Include="Modulos\JS\EncaminhaMudanca.js" />
+    <Content Include="Modulos\JS\ExclusaoPlano.js" />
+    <Content Include="Modulos\JS\ExportaSolicitacao.js" />
+    <Content Include="Modulos\JS\importexcel.js" />
+    <Content Include="Modulos\JS\importGestao.js" />
+    <Content Include="Modulos\JS\IncluirMudanca.js" />
+    <Content Include="Modulos\JS\CarregaPlano.js" />
+    <Content Include="Modulos\JS\justificativaExclusaoMudanca.js" />
+    <Content Include="Modulos\JS\manipulaGestao.js" />
+    <Content Include="Modulos\JS\NewPlanos.js" />
+    <Content Include="Modulos\JS\NovoChamado.js" />
+    <Content Include="Modulos\JS\OGX.Home.MenuLinks.js" />
+    <Content Include="Modulos\JS\PermissaoGroup.js" />
+    <Content Include="Modulos\JS\ValidaCiclo.js" />
+    <Content Include="Modulos\JS\ValidaGestaoInterna.js" />
+    <Content Include="Modulos\JS\ValidaPlanoMudanca.js" />
+    <Content Include="Modulos\JS\VerificaBanner.js" />
+    <Content Include="Webparts\WP_ExclusaoMudancaJustificativa\Elements.xml" />
+    <Content Include="Webparts\WP_ExclusaoMudancaJustificativa\WP_ExclusaoMudancaJustificativa.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>WP_ExclusaoMudancaJustificativa.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\WP_ExclusaoMudanca\Elements.xml" />
+    <Content Include="Webparts\WP_ExclusaoMudanca\WP_ExclusaoMudanca.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>WP_ExclusaoMudanca.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\WP_ExportaPlanos\Elements.xml" />
+    <Content Include="Webparts\WP_ExportaPlanos\WP_ExportaPlanos.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>WP_ExportaPlanos.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\WP_Importacao_Planos\Elements.xml" />
+    <Content Include="Webparts\WP_Importacao_Planos\WP_Importacao_Planos.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>WP_Importacao_Planos.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\WP_ImportaGestaoInterna\Elements.xml" />
+    <Content Include="Webparts\WP_ImportaGestaoInterna\WP_ImportaGestaoInterna.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>WP_ImportaGestaoInterna.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\WP_ImportaSolicitacoes\Elements.xml" />
+    <Content Include="Webparts\WP_ImportaSolicitacoes\WP_ImportaSolicitacoes.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>WP_ImportaSolicitacoes.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\WP_PesquisaSGPMR\Elements.xml" />
+    <Content Include="Webparts\WP_PesquisaSGPMR\WP_PesquisaSGPMR.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>WP_PesquisaSGPMR.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\WP_RemoverPlanos\Elements.xml" />
+    <Content Include="Webparts\WP_RemoverPlanos\WP_RemoverPlanos.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>WP_RemoverPlanos.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\WP_RequisitaMudanca\Elements.xml" />
+    <Content Include="Webparts\WP_RequisitaMudanca\WP_RequisitaMudanca.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>WP_RequisitaMudanca.ascx.g.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

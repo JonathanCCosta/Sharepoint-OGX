@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{1ca9e21a-aa51-437a-a5a1-31af246230fb}"
+       Name="DataAutorizacaoSuperacao"
+       DisplayName="Data da Autorização"
+       Type="DateTime"
+       Format="DateOnly"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{aef5946f-cc50-42e1-986d-53ad62c38810}"
+       Name="FabricanteMTC"
+       DisplayName="Fabricante"
+       Type="Lookup" 
+       ShowField="Codigo" 
+       List="Lists/FabricanteMTC" 
+       Required="TRUE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

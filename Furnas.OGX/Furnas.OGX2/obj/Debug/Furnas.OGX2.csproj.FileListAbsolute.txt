@@ -1,0 +1,11 @@
+C:\Furnas.OGX2\Furnas.OGX2\bin\Debug\Furnas.OGX2.dll
+C:\Furnas.OGX2\Furnas.OGX2\bin\Debug\Furnas.OGX2.pdb
+C:\Furnas.OGX2\Furnas.OGX2\bin\Debug\ExcelDataReader.DataSet.dll
+C:\Furnas.OGX2\Furnas.OGX2\bin\Debug\ExcelDataReader.dll
+C:\Furnas.OGX2\Furnas.OGX2\bin\Debug\ExcelDataReader.pdb
+C:\Furnas.OGX2\Furnas.OGX2\bin\Debug\ExcelDataReader.xml
+C:\Furnas.OGX2\Furnas.OGX2\bin\Debug\ExcelDataReader.DataSet.pdb
+C:\Furnas.OGX2\Furnas.OGX2\bin\Debug\ExcelDataReader.DataSet.xml
+C:\Furnas.OGX2\Furnas.OGX2\obj\Debug\Furnas.OGX2.dll
+C:\Furnas.OGX2\Furnas.OGX2\obj\Debug\Furnas.OGX2.pdb
+C:\Furnas.OGX2\Furnas.OGX2\obj\Debug\Furnas.OGX2.csprojResolveAssemblyReference.cache

@@ -1,0 +1,7 @@
+C:\Furnas.OGX2\Furnas.OGX2.MTC.Documentos\bin\Debug\Furnas.OGX2.MTC.Documentos.dll
+C:\Furnas.OGX2\Furnas.OGX2.MTC.Documentos\bin\Debug\Furnas.OGX2.MTC.Documentos.pdb
+C:\Furnas.OGX2\Furnas.OGX2.MTC.Documentos\bin\Debug\PdfSharp.pdb
+C:\Furnas.OGX2\Furnas.OGX2.MTC.Documentos\bin\Debug\PdfSharp.xml
+C:\Furnas.OGX2\Furnas.OGX2.MTC.Documentos\obj\Debug\Furnas.OGX2.MTC.Documentos.csprojResolveAssemblyReference.cache
+C:\Furnas.OGX2\Furnas.OGX2.MTC.Documentos\obj\Debug\Furnas.OGX2.MTC.Documentos.dll
+C:\Furnas.OGX2\Furnas.OGX2.MTC.Documentos\obj\Debug\Furnas.OGX2.MTC.Documentos.pdb

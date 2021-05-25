@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{20080975-371e-4120-928b-1107b980589f}"
+       Name="FimComissionamento"
+       DisplayName="Comissionamento - Fim"
+       Type="DateTime"
+       Format="DateOnly"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

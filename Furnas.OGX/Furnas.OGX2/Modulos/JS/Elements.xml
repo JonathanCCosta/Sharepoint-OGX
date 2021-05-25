@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="JS" Url="SiteAssets">
+    <File Path="JS\ValidaCiclo.js" Url="JS/ValidaCiclo.js" Type="GhostableInLibrary" />
+    <File Path="JS\importexcel.js" Url="JS/importexcel.js" Type="GhostableInLibrary"/>
+    <File Path="JS\NewPlanos.js" Url="JS/NewPlanos.js" Type="GhostableInLibrary"/>
+    <File Path="JS\EditPanos.js" Url="JS/EditPanos.js" Type="GhostableInLibrary"/>
+    <File Path="JS\Administracao.js" Url="JS/Administracao.js" Type="GhostableInLibrary"/>
+    <File Path="JS\ValidaGestaoInterna.js" Url="JS/ValidaGestaoInterna.js" Type="GhostableInLibrary"/>
+    <File Path="JS\IncluirMudanca.js" Url="JS/IncluirMudanca.js" Type="GhostableInLibrary"/>
+    <File Path="JS\PermissaoGroup.js" Url="JS/PermissaoGroup.js" Type="GhostableInLibrary"/>
+    <File Path="JS\ValidaPlanoMudanca.js" Url="JS/ValidaPlanoMudanca.js" Type="GhostableInLibrary"/>
+    <File Path="JS\EncaminhaMudanca.js" Url="JS/EncaminhaMudanca.js" Type="GhostableInLibrary"/>
+    <File Path="JS\DateFormat.js" Url="JS/DateFormat.js" Type="GhostableInLibrary"/>
+    <File Path="JS\CarregaPlano.js" Url="JS/CarregaPlano.js" Type="GhostableInLibrary"/>
+    <File Path="JS\ExclusaoPlano.js" Url="JS/ExclusaoPlano.js" Type="GhostableInLibrary"/>
+    <File Path="JS\DestacaMudancas.js" Url="JS/DestacaMudancas.js" Type="GhostableInLibrary"/>
+    <File Path="JS\justificativaExclusaoMudanca.js" Url="JS/justificativaExclusaoMudanca.js" Type="GhostableInLibrary"/>
+    <File Path="JS\manipulaGestao.js" Url="JS/manipulaGestao.js" Type="GhostableInLibrary"/>
+    <File Path="JS\importGestao.js" Url="JS/importGestao.js" Type="GhostableInLibrary"/>
+    <File Path="JS\ExportaSolicitacao.js" Url="JS/ExportaSolicitacao.js" Type="GhostableInLibrary"/>
+    <File Path="JS\NovoChamado.js" Url="JS/NovoChamado.js" Type="GhostableInLibrary"/>
+    <File Path="JS\EditChamado.js" Url="JS/EditChamado.js" Type="GhostableInLibrary"/>
+    <File Path="JS\EncaminhaChamado.js" Url="JS/EncaminhaChamado.js" Type="GhostableInLibrary"/>
+    <File Path="JS\VerificaBanner.js" Url="JS/VerificaBanner.js" Type="GhostableInLibrary"/>
+    <File Path="JS\OGX.Home.MenuLinks.js" Url="JS/OGX.Home.MenuLinks.js" Type="GhostableInLibrary"/>
+  </Module>
+</Elements>

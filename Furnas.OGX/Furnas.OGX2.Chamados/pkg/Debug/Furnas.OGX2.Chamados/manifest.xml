@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="dd68e9ab-e47d-4bbd-92fd-7aaddea42cf7" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="Furnas.OGX2.Chamados.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="Furnas.OGX2.Chamados, Version=1.0.0.0, Culture=neutral, PublicKeyToken=879c24bfa4b38c37" Namespace="Furnas.OGX2.Chamados.WebPartPaginas.WP_PesquisaSatisfacao" TypeName="*" />
+        <SafeControl Assembly="Furnas.OGX2.Chamados, Version=1.0.0.0, Culture=neutral, PublicKeyToken=879c24bfa4b38c37" Namespace="Furnas.OGX2.Chamados.WebPartPaginas.WP_PesquisaChamado" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="Furnas.OGX2.Chamados_Furnas.OGX2.ListaDeChamados\Feature.xml" />
+    <FeatureManifest Location="Furnas.OGX2.Chamados_Jobs\Feature.xml" />
+    <FeatureManifest Location="Furnas.OGX2.Chamados_Furnas.OGX2.WPPaginas\Feature.xml" />
+  </FeatureManifests>
+</Solution>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{cb5d196e-856a-4811-9ffb-586d91bbeec6}"
+       Name="XR_Substacao_CC_trifasico"
+       DisplayName="X/R na barra da subestação para curto-circuito trifásico"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

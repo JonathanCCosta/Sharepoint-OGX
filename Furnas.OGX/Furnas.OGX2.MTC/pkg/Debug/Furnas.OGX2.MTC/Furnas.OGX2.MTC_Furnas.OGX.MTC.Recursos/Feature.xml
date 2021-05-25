@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="75ae60e7-0bec-45ac-8ec7-e0a667bd4167" ReceiverAssembly="Furnas.OGX2.MTC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b09f500d0789b42e" ReceiverClass="Furnas.OGX2.MTC.Features.Furnas.OGX.MTC.Recursos.FurnasOGXMTCEventReceiver" Scope="Web" Title="Furnas.OGX2.MTC.Listas">
+  <ElementManifests>
+    <ElementManifest Location="CodigoMTC\Elements.xml" />
+    <ElementManifest Location="TipoMTC\Elements.xml" />
+    <ElementManifest Location="Grupo\Elements.xml" />
+    <ElementManifest Location="Subgrupo\Elements.xml" />
+    <ElementManifest Location="Fabricante\Elements.xml" />
+    <ElementManifest Location="Consecutivo\Elements.xml" />
+    <ElementManifest Location="Revisao\Elements.xml" />
+    <ElementManifest Location="DescricaoMTC\Elements.xml" />
+    <ElementManifest Location="AprovadoPor\Elements.xml" />
+    <ElementManifest Location="OrgaoResponsavelMTC\Elements.xml" />
+    <ElementManifest Location="DataAprovacao\Elements.xml" />
+    <ElementManifest Location="Autores\Elements.xml" />
+    <ElementManifest Location="Colaboradores\Elements.xml" />
+    <ElementManifest Location="Revisores\Elements.xml" />
+    <ElementManifest Location="DataInicioVigencia\Elements.xml" />
+    <ElementManifest Location="PrazoVigencia\Elements.xml" />
+    <ElementManifest Location="ControleStatus\Elements.xml" />
+    <ElementManifest Location="JustificativaCriacao\Elements.xml" />
+    <ElementManifest Location="JustificativaCancelamento\Elements.xml" />
+    <ElementManifest Location="DataLimiteComentario\Elements.xml" />
+    <ElementManifest Location="Comentarios\Elements.xml" />
+    <ElementManifest Location="Legado\Elements.xml" />
+    <ElementManifest Location="FluxoSolicitacaoMTC\Elements.xml" />
+    <ElementManifest Location="ER_ListaControle\Elements.xml" />
+    <ElementManifest Location="EmRevisao\Elements.xml" />
+    <ElementManifest Location="ManualTecnicoInstance\Elements.xml" />
+    <ElementManifest Location="ManualTecnico\Elements.xml" />
+    <ElementFile Location="ManualTecnico\Schema.xml" />
+    <ElementManifest Location="TipoConteudo\Elements.xml" />
+    <ElementManifest Location="DocumentosManualTecnicoInstance\Elements.xml" />
+    <ElementManifest Location="DocumentosManualTecnico\Elements.xml" />
+    <ElementFile Location="DocumentosManualTecnico\Schema.xml" />
+    <ElementFile Location="DocumentosManualTecnico\EditDlg.htm" />
+    <ElementFile Location="DocumentosManualTecnico\FileDlg.htm" />
+    <ElementFile Location="DocumentosManualTecnico\Repair.aspx" />
+    <ElementFile Location="DocumentosManualTecnico\Upload.aspx" />
+    <ElementManifest Location="ExisteComentarios\Elements.xml" />
+    <ElementManifest Location="Objetivo\Elements.xml" />
+    <ElementManifest Location="ElaboradoEm\Elements.xml" />
+    <ElementManifest Location="CriadoPor\Elements.xml" />
+    <ElementManifest Location="CriadoEm\Elements.xml" />
+    <ElementManifest Location="PadronizadoPor\Elements.xml" />
+    <ElementManifest Location="PadronizadoEm\Elements.xml" />
+    <ElementManifest Location="EnviadoPublicadoPor\Elements.xml" />
+    <ElementManifest Location="EnviadoPublicadoEm\Elements.xml" />
+    <ElementManifest Location="LiberadoPor\Elements.xml" />
+    <ElementManifest Location="LiberadoEm\Elements.xml" />
+    <ElementManifest Location="CanceladoPor\Elements.xml" />
+    <ElementManifest Location="CanceladoEm\Elements.xml" />
+  </ElementManifests>
+</Feature>

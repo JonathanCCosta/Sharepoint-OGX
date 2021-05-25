@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{9142a47e-e528-4377-8ee1-29f020483473}"
+       Name="EvidenciaJustificada"
+       DisplayName="Evidência que justifique a Melhoria ou Reforço"
+       Type="Note"
+       NumLines="6"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

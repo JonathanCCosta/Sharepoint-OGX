@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01004478EDAF9004403B95BBF7CE128001F8" Name="Fluxo de solicitação do MTC" Group="Custom Content Types" Description="" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{073309d7-ccb4-4bb7-bc2f-b65188c33d13}" DisplayName="Código MTC" Required="FALSE" Name="CodigoMTC" ShowInEditForm="FALSE" ShowInNewForm="FALSE" />
+      <FieldRef ID="{50b5a99a-bd35-42cb-b608-51602f22ab12}" DisplayName="Tipo MTC" Required="FALSE" Name="TipoMTC" />
+      <FieldRef ID="{633b218e-4b5d-4f18-b1f4-2ff465548fe7}" DisplayName="Grupo" Required="FALSE" Name="Grupo" />
+      <FieldRef ID="{234930a6-495c-4d47-b640-4f9f5974c40b}" DisplayName="Subgrupo" Required="FALSE" Name="Subgrupo" />
+      <FieldRef ID="{aef5946f-cc50-42e1-986d-53ad62c38810}" DisplayName="Fabricante" Required="FALSE" Name="FabricanteMTC" />
+      <FieldRef ID="{6f26f335-f02c-4f49-855a-1138dcaa5a88}" DisplayName="Consecutivo" Required="FALSE" Name="Consecutivo" ShowInNewForm="FALSE" />
+      <FieldRef ID="{711ccae8-ad7d-4444-9b8b-236db0e323c8}" DisplayName="Revisão" Required="TRUE" Name="Revisao" ShowInNewForm="FALSE" />
+      <FieldRef ID="{cc970b74-2d5e-4e4d-add6-29c5d0322be5}" DisplayName="Descrição do MTC" Required="TRUE" Name="DescricaoMTC" />
+      <FieldRef ID="{9b288770-4504-47f3-bab3-67eb7c5f25ef}" DisplayName="Órgão Responsável" Required="TRUE" Name="OrgaoResponsavelMTC" />
+      <FieldRef ID="{308739e6-4862-447d-8cdb-07af8a8f802c}" DisplayName="Aprovado por" Name="AprovadoPor" ShowInNewForm="FALSE" />
+      <FieldRef ID="{cd7db7e8-c037-4141-8345-cd07baaf69e0}" DisplayName="Data Aprovação" Name="DataAprovacao" Format="DateOnly" ShowInNewForm="FALSE" />
+      <FieldRef ID="{f89d582d-4e51-4124-af1a-f2ef4e589be7}" DisplayName="Autores" Required="TRUE" Name="Autores" />
+      <FieldRef ID="{dd540169-d18d-49c3-b70d-f079b080a9ef}" DisplayName="Colaboradores" Required="FALSE" Name="Colaboradores" />
+      <FieldRef ID="{7e31e550-e19a-469a-b123-af8c2e0e68ee}" DisplayName="Revisores" Required="FALSE" Name="Revisores" ShowInNewForm="FALSE" />
+      <FieldRef ID="{2081439a-4444-40dc-b70d-b5b2b21095db}" DisplayName="Data de Início de Vigência" Required="FALSE" Name="DataInicioVigencia" Format="DateOnly"  />
+      <FieldRef ID="{a1581a09-7bd2-44c2-9d17-26775cc0ae5b}" DisplayName="Prazo de Vigência (anos)" Required="FALSE" Name="PrazoVigencia" />
+      <FieldRef ID="{0297aa84-8abe-40d6-9b79-8adc47141553}" DisplayName="Controle de Status" Required="TRUE" Name="ControleDeStatusMTC" />
+      <FieldRef ID="{43b7450d-0168-4dcd-88bc-b41a068afeb7}" DisplayName="Justificativa Solicitação" Required="TRUE" Name="JustificativaCriacao" />
+      <FieldRef ID="{5182beea-c48c-42e5-baff-05a71922f7a8}" DisplayName="Justificativa Cancelamento" Required="FALSE" Name="JustificativaCancelamento" ShowInNewForm="FALSE" />
+      <FieldRef ID="{a0c6c9e0-1ce4-4cfd-a5e5-2b3427a577f1}" DisplayName="Data Limite Comentário" Required="FALSE" Name="DataLimiteComentario" Format="DateOnly" ShowInNewForm="FALSE" />
+      <FieldRef ID="{d9f083b3-aae2-4d40-8efe-b7570aeaa383}" DisplayName="Comentários" Required="FALSE" Name="Comentarios" ShowInNewForm="FALSE" NumLines="6" />
+      <FieldRef ID="{594c47ac-eeda-48bc-aa0f-767f5cf9fc84}" DisplayName="Em Revisão" Required="FALSE" Name="EmRevisao" ShowInEditForm="TRUE" ShowInNewForm="FALSE" ShowInDisplayForm="FALSE" />
+      <FieldRef ID="{fc93ddac-9294-4197-a601-13eecde26028}" DisplayName="Existe Comentários" Required="FALSE" Name="ExisteComentarios" ShowInNewForm="FALSE" ShowInDisplayForm="FALSE" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

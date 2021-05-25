@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{c2c7dfe9-72c6-40cf-abf1-c8f84e850e26}"
+       Name="CorrenteCCTrifasicaSecionara"
+       DisplayName="Corrente de curto-circuito trifásica através da secionadora (calculada) (kA)"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="353afba1-4f4f-446b-9ab9-7f5061465011" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="Furnas.OGX2.MTC.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="Furnas.OGX2.MTC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b09f500d0789b42e" Namespace="Furnas.OGX2.MTC.WebPartsPaginas.WP_Pesquisa" TypeName="*" />
+        <SafeControl Assembly="Furnas.OGX2.MTC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b09f500d0789b42e" Namespace="Furnas.OGX2.MTC.WebPartsPaginas.WP_ValidaUsuariosMTC" TypeName="*" />
+        <SafeControl Assembly="Furnas.OGX2.MTC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b09f500d0789b42e" Namespace="Furnas.OGX2.MTC.WebPartsPaginas.WP_AcoesRevisao" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="Furnas.OGX2.MTC_Furnas.OGX2.MTC.Paginas\Feature.xml" />
+    <FeatureManifest Location="Furnas.OGX2.MTC_Furnas.OGX.MTC.Recursos\Feature.xml" />
+    <FeatureManifest Location="Furnas.OGX2.MTC_Furnas.OGX.MTC.Job\Feature.xml" />
+  </FeatureManifests>
+</Solution>

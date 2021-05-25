@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feature xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="0166b857-3ccb-40be-bae8-ae25ccc505fe" alwaysForceInstall="true" featureId="0166b857-3ccb-40be-bae8-ae25ccc505fe" imageUrl="" receiverAssembly="$SharePoint.Project.AssemblyFullName$" receiverClass="$SharePoint.Type.72a9edb7-a367-4630-9bc5-96110a4006a3.FullName$" solutionId="00000000-0000-0000-0000-000000000000" title="Furnas.OGX2.Chamados_Feature" version="" deploymentPath="$SharePoint.Project.FileNameWithoutExtension$_$SharePoint.Feature.FileNameWithoutExtension$" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/FeatureModel">
+  <projectItems>
+    <projectItemReference itemId="5f9c7477-66a0-4688-9def-b25caf63f18e" />
+    <projectItemReference itemId="599920b2-9613-4ebd-b9e2-d6933e303955" />
+    <projectItemReference itemId="841d92d9-900b-4836-8790-d64bcb12a15c" />
+    <projectItemReference itemId="47a13b12-8e22-4f97-9d14-55acf7732c1f" />
+    <projectItemReference itemId="f745e95a-5a41-40b4-9cd7-c72e52934af7" />
+    <projectItemReference itemId="6b47ff6b-5d5d-4b57-b747-d8f836e57783" />
+    <projectItemReference itemId="c65f917d-057d-43d9-a038-0c7f7a6f93a3" />
+    <projectItemReference itemId="106f580e-2fe8-463d-a611-d39eb7139485" />
+    <projectItemReference itemId="16d9ef4e-0aff-4142-b61a-17bae4b2ede0" />
+    <projectItemReference itemId="e3a18cbd-a65d-4ab5-989b-d239d59d2d14" />
+    <projectItemReference itemId="3584eb12-155d-41e6-bb28-765614a35394" />
+    <projectItemReference itemId="e75c6197-d775-4745-a9c9-186f640a6f95" />
+    <projectItemReference itemId="36d3b1bf-76ac-412a-b68b-af77b9bc4923" />
+    <projectItemReference itemId="1fad7046-c197-4de3-b7ea-96d1ef27ecab" />
+    <projectItemReference itemId="a46bdbd3-615e-4e82-95fb-5846fe126bf0" />
+    <projectItemReference itemId="ae3c0082-226a-4060-ab7c-c5c95e14f731" />
+    <projectItemReference itemId="4ea0ddc3-eb6e-4d75-a42f-1ea6f7e95647" />
+    <projectItemReference itemId="6e05ee37-37bd-4352-9cd9-83eb4d57064a" />
+    <projectItemReference itemId="5bbda525-f71f-46ff-9f01-e53ccfaf3989" />
+    <projectItemReference itemId="a129c927-c58d-483d-9159-bf0f807e2ba6" />
+    <projectItemReference itemId="d872ff2b-8b44-4146-b9aa-2f247b51b9b7" />
+    <projectItemReference itemId="3e805f1e-d69e-4be4-8589-91eecd941cc4" />
+    <projectItemReference itemId="a497febd-8663-4fc6-9b54-ea5bda87ac97" />
+    <projectItemReference itemId="7ef37d35-76d7-4352-acc0-d8a1a6545531" />
+    <projectItemReference itemId="410f36cd-4bde-43bd-891b-5e0f63384f97" />
+    <projectItemReference itemId="d94dd1bd-1ac0-4a13-9ae7-a2b88423c4cc" />
+    <projectItemReference itemId="76d834ca-19f0-4274-8c35-214bd3d1782d" />
+    <projectItemReference itemId="a91bf799-42f8-4bd3-a5f8-2c6f840b98aa" />
+    <projectItemReference itemId="adc30fc0-802d-4c3d-9de0-94a312f63fab" />
+    <projectItemReference itemId="47d6b616-5b8c-45fe-a112-5fd4726b3310" />
+    <projectItemReference itemId="50b85504-009f-44d1-9a0b-fcddc85ee5d7" />
+    <projectItemReference itemId="30efcfae-fba1-4e9e-b1c2-2c0070c7516d" />
+    <projectItemReference itemId="162d1708-6993-4f27-b36d-ac24f5f910a1" />
+    <projectItemReference itemId="05ceaac0-c29f-4a72-8ac2-53b61749695c" />
+    <projectItemReference itemId="491bf9ab-6de0-46d9-ad49-361d8c73b946" />
+    <projectItemReference itemId="1a398032-b4d7-4fdd-a26d-1d95f7d2947d" />
+    <projectItemReference itemId="2b865735-7307-4883-981d-d10792d8557f" />
+    <projectItemReference itemId="16ce88e2-07fc-404e-8f5e-b57b70743e68" />
+    <projectItemReference itemId="118fd777-c2bf-483c-aec2-9e051d9522a5" />
+    <projectItemReference itemId="67e55232-e96a-41d9-9224-b25121f65fd8" />
+    <projectItemReference itemId="08279485-f6b3-4ded-bbe5-85c72617d08b" />
+    <projectItemReference itemId="5c1f49cc-0f7e-41f7-99ef-b2b973ec9292" />
+    <projectItemReference itemId="61d324ae-c861-4eeb-913b-641cd0404f1b" />
+    <projectItemReference itemId="871d31f8-c621-4daf-b299-fdffcd5f249b" />
+  </projectItems>
+</feature>

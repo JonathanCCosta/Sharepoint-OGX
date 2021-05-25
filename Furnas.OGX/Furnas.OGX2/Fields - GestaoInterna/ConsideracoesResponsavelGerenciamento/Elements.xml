@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{41f8dc51-6f48-4c23-9b0b-515517306145}"
+       Name="ConsideracoesResponsavelGerenciamento"
+       DisplayName="Considerações do Responsável pelo gerenciamento"
+       Type="Note"
+       NumLines="6"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

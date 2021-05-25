@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{75fda20e-f477-475e-b100-a2b0bc102e2b}"
+       Name="SuperacaoCristaCC"
+       DisplayName="Superação pela crista da corrente de curto-circuito"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

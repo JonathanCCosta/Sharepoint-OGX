@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{edb428b8-d15e-45a2-95e5-469fe578e816}"
+       Name="TensaoNominalIrma"
+       DisplayName="Tensão Nominal (KV)"
+       Type="Choice"
+       Required="TRUE"
+       FillInChoice="TRUE"
+       Group="Custom Site Columns">
+    <CHOICES>
+      <CHOICE>Selecione uma opção</CHOICE>
+      <CHOICE>765</CHOICE>
+      <CHOICE>525</CHOICE>
+      <CHOICE>500</CHOICE>
+      <CHOICE>440</CHOICE>
+      <CHOICE>345</CHOICE>
+      <CHOICE>230</CHOICE>
+      <CHOICE>138</CHOICE>
+      <CHOICE>88</CHOICE>
+      <CHOICE>69</CHOICE>
+      <CHOICE>46,9</CHOICE>
+      <CHOICE>44</CHOICE>
+      <CHOICE>40</CHOICE>
+      <CHOICE>38</CHOICE>
+      <CHOICE>35</CHOICE>
+      <CHOICE>34,5</CHOICE>
+      <CHOICE>34</CHOICE>
+      <CHOICE>33,4</CHOICE>
+      <CHOICE>33</CHOICE>
+      <CHOICE>31,5</CHOICE>
+      <CHOICE>30</CHOICE>
+      <CHOICE>26</CHOICE>
+      <CHOICE>25</CHOICE>
+      <CHOICE>24</CHOICE>
+      <CHOICE>23,1</CHOICE>
+      <CHOICE>23</CHOICE>
+      <CHOICE>22</CHOICE>
+      <CHOICE>21,7</CHOICE>
+      <CHOICE>21</CHOICE>
+      <CHOICE>20</CHOICE>
+      <CHOICE>19</CHOICE>
+      <CHOICE>18,3</CHOICE>
+      <CHOICE>18</CHOICE>
+      <CHOICE>16,5</CHOICE>
+      <CHOICE>16</CHOICE>
+      <CHOICE>15</CHOICE>
+      <CHOICE>14,4</CHOICE>
+      <CHOICE>14,2</CHOICE>
+      <CHOICE>13,9</CHOICE>
+      <CHOICE>13,8</CHOICE>
+      <CHOICE>13,5</CHOICE>
+      <CHOICE>13,2</CHOICE>
+      <CHOICE>13</CHOICE>
+      <CHOICE>12,3V </CHOICE>
+      <CHOICE>11,9</CHOICE>
+      <CHOICE>11,5</CHOICE>
+      <CHOICE>11,4</CHOICE>
+      <CHOICE>11</CHOICE>
+      <CHOICE>10,5</CHOICE>
+      <CHOICE>10</CHOICE>
+      <CHOICE>Outra</CHOICE>
+    </CHOICES>
+    <!--<CHOICES>
+      <CHOICE>Selecione uma opção</CHOICE>
+      <CHOICE>765 kV</CHOICE>
+      <CHOICE>525 kV</CHOICE>
+      <CHOICE>500kV</CHOICE>
+      <CHOICE>440kV</CHOICE>
+      <CHOICE>345kV</CHOICE>
+      <CHOICE>230kV</CHOICE>
+      <CHOICE>138kV</CHOICE>
+      <CHOICE>88kV</CHOICE>
+      <CHOICE>69kV</CHOICE>
+      <CHOICE>46,9kV</CHOICE>
+      <CHOICE>44kV</CHOICE>
+      <CHOICE>40kV</CHOICE>
+      <CHOICE>38kV</CHOICE>
+      <CHOICE>35kV</CHOICE>
+      <CHOICE>34,5kV</CHOICE>
+      <CHOICE>34kV</CHOICE>
+      <CHOICE>33,4kV</CHOICE>
+      <CHOICE>33kV</CHOICE>
+      <CHOICE>31,5kV</CHOICE>
+      <CHOICE>30kV</CHOICE>
+      <CHOICE>26kV</CHOICE>
+      <CHOICE>25kV</CHOICE>
+      <CHOICE>24kV</CHOICE>
+      <CHOICE>23,1kV</CHOICE>
+      <CHOICE>23kV</CHOICE>
+      <CHOICE>22kV</CHOICE>
+      <CHOICE>21,7kV</CHOICE>
+      <CHOICE>21kV</CHOICE>
+      <CHOICE>20kV</CHOICE>
+      <CHOICE>19kV</CHOICE>
+      <CHOICE>18,3kV</CHOICE>
+      <CHOICE>18kV</CHOICE>
+      <CHOICE>16,5kV</CHOICE>
+      <CHOICE>16kV</CHOICE>
+      <CHOICE>15kV</CHOICE>
+      <CHOICE>14,4kV</CHOICE>
+      <CHOICE>14,2kV</CHOICE>
+      <CHOICE>13,9kV</CHOICE>
+      <CHOICE>13,8kV</CHOICE>
+      <CHOICE>13,5kV</CHOICE>
+      <CHOICE>13,2kV</CHOICE>
+      <CHOICE>13kV</CHOICE>
+      <CHOICE>12,3V </CHOICE>
+      <CHOICE>11,9kV</CHOICE>
+      <CHOICE>11,5kV</CHOICE>
+      <CHOICE>11,4kV</CHOICE>
+      <CHOICE>11kV</CHOICE>
+      <CHOICE>10,5kV</CHOICE>
+      <CHOICE>10kV</CHOICE>
+      <CHOICE>Outra</CHOICE>
+    </CHOICES>-->
+    <Default>Selecione uma opção</Default>
+  </Field>
+</Elements>

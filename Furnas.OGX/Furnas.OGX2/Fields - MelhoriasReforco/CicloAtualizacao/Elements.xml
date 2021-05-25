@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{7c73a62e-4c2e-469d-8897-31ad0b09a0ef}"
+       Name="CicloAtualizacao"
+       DisplayName="Nome do Ciclo"
+       Type="Text"
+       Required="FALSE"
+       ShowInDisplayForm="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

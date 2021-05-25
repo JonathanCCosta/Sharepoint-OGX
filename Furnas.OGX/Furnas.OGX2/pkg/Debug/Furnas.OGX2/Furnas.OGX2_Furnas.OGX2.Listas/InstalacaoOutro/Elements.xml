@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{da4be051-a329-432b-8b69-5c725ffbc7c4}"
+       Name="InstalacaoOutro"
+       DisplayName="Instalação - Outros"
+       Type="Text"
+       Description="Especifique a Instalação."
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{314ff78a-b5b4-4415-8d87-87fcf00b2c69}"
+       Name="ManualTecnico"
+       DisplayName="Manual Técnico de Campo"
+       Type="Lookup"
+       List="Lists/ManualTecnico"
+       ShowField="Title"
+       Required="TRUE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

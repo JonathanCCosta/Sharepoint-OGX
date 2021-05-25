@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="JSManual" Url="SiteAssets">
+    <File Path="JSManual\ManualTecnico.js" Url="JSManual/ManualTecnico.js" Type="GhostableInLibrary"/>
+    <File Path="JSManual\HillbillyCascade.js" Url="JSManual/HillbillyCascade.js" Type="GhostableInLibrary" />
+    <File Path="JSManual\EditManualTecnico.js" Url="JSManual/EditManualTecnico.js" />
+    <File Path="JSManual\DispManualTecnico.js" Url="JSManual/DispManualTecnico.js" />
+  </Module>
+</Elements>

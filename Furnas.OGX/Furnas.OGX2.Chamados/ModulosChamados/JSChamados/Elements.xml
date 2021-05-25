@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="JSChamados" Url="SiteAssets">
+    <File Path="JSChamados\ModeloChamado.js" Url="JSChamados/ModeloChamado.js" Type="GhostableInLibrary"/>
+    <File Path="JSChamados\IncluirChamado.js" Url="JSChamados/IncluirChamado.js" Type="GhostableInLibrary"/>
+    <File Path="JSChamados\carregaModelo.css" Url="JSChamados/carregaModelo.css" Type="GhostableInLibrary"/>
+    <File Path="JSChamados\DispChamado.js" Url="JSChamados/DispChamado.js" Type="GhostableInLibrary"/>
+    <File Path="JSChamados\EditChamado.js" Url="JSChamados/EditChamado.js" Type="GhostableInLibrary"/>
+    <File Path="JSChamados\Pesquisa.js" Url="JSChamados/Pesquisa.js" Type="GhostableInLibrary"/>
+    <File Path="JSChamados\Avaliacao.js" Url="JSChamados/Avaliacao.js" Type="GhostableInLibrary"/>
+    <File Path="JSChamados\CarregaGerencia.js" Url="JSChamados/CarregaGerencia.js" Type="GhostableInLibrary"/>
+    <File Path="JSChamados\CarregaGerenciaEdit.js" Url="JSChamados/CarregaGerenciaEdit.js" />
+    <File Path="JSChamados\CarregaGrupoMTC.js" Url="JSChamados/CarregaGrupoMTC.js" Type="GhostableInLibrary" />
+    <File Path="JSChamados\AdministracaoChamados.js" Url="JSChamados/AdministracaoChamados.js" Type="GhostableInLibrary"  />
+    <File Path="JSChamados\AdministracaoManualMTC.js" Url="JSChamados/AdministracaoManualMTC.js" Type="GhostableInLibrary" />
+    <File Path="JSChamados\FabricanteMTC.js" Url="JSChamados/FabricanteMTC.js" />
+  </Module>
+</Elements>

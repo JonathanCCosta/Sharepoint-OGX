@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Furnas.OGX2.Webparts.WP_ImportaSolicitacoes.WP_ImportaSolicitacoes, Furnas.OGX2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=fad643471c496b2a" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Furnas.OGX2 - WP_ImportaSolicitacoes</property>
+        <property name="Description" type="string">My Visual Web Part</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

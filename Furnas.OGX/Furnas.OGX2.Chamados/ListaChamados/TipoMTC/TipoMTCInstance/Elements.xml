@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Tipo MTC" OnQuickLaunch="FALSE" TemplateType="10011" Url="Lists/TipoMTC" Description="My List Instance"></ListInstance>
+</Elements>

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Gerência Responsável MTC" OnQuickLaunch="FALSE" TemplateType="10015" Url="Lists/GerenciaResponsavelMTC" Description="Cadastrar Gerência Responsável MTC para acompanhamento e aprovação"></ListInstance>
+</Elements>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Receivers ListUrl="DocumentosCarga/Forms">
+      <Receiver>
+        <Name>ER_DocsCargaItemAdded</Name>
+        <Type>ItemAdded</Type>
+        <Assembly>Furnas.OGX2.Cargas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1b32697f108cc55d</Assembly>
+        <Class>Furnas.OGX2.Cargas.ER_MTC_Carga.ER_DocsCarga.ER_DocsCarga</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+  </Receivers>
+</Elements>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Links Administrativos Manuais MTC"
+                OnQuickLaunch="FALSE"
+                TemplateType="170"
+                FeatureId="192efa95-e50c-475e-87ab-361cede5dd7f"
+                Url="Lists/LinksAdministracaoManuaisMTC"
+                Description="">
+
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Id">1</Field>
+          <Field Name="Title">Fabricante MTC</Field>
+          <Field Name="Description"></Field>
+          <Field Name="LaunchBehavior">Navegação na página</Field>
+          <Field Name="TileOrder">0</Field>
+          <Field Name="BackgroundImageLocation">~site/SiteAssets/CSS/Image/img_fabricante.png</Field>
+          <Field Name="LinkLocation">~site/Lists/FabricanteMTC/AllItems.aspx</Field>
+        </Row>
+      </Rows>
+    </Data>
+
+  </ListInstance>
+</Elements>

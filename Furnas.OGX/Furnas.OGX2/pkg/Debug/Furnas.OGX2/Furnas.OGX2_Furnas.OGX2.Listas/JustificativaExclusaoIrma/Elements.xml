@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{24ac917d-ff66-4dc3-b76a-e86e2d91a90a}"
+       Name="JustificativaExclusaoIrma"
+       DisplayName="Justificativa da Exclusão"
+       Type="Note"
+       NumLines="6"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

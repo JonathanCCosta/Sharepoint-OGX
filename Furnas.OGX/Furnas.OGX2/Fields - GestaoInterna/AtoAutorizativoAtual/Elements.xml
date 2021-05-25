@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{2f2ebfb2-2060-46f7-9cd4-93a86c4943ac}"
+       Name="AtoAutorizativoAtual"
+       DisplayName="Ato Autorizativo Atual, PAR, POT ou PET"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

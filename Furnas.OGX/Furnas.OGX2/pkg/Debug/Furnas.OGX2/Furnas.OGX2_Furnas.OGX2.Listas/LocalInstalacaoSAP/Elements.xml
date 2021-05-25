@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{6edb1243-46be-4398-a55d-17efd1e11347}"
+       Name="LocalInstalacaoSAP"
+       DisplayName="Local de instalação SAP-PM"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

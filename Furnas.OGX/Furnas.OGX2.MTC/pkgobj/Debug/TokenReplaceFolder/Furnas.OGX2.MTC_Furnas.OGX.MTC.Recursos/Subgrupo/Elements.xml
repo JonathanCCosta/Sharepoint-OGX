@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{234930a6-495c-4d47-b640-4f9f5974c40b}"
+       Name="Subgrupo"
+       DisplayName="Subgrupo"
+       Type="Lookup" 
+       List="Lists/SubgrupoMTC" 
+       ShowField="DescricaoSubgrupo"
+       Required="TRUE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

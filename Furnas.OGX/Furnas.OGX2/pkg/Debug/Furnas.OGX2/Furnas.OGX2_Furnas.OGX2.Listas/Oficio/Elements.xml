@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{06822011-ff6f-42df-9e63-da0536baae53}"
+       Name="Oficio"
+       DisplayName="Oficio/Resolução/Autorização ANEEL relativa a substituição Do equipamento/PMI"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{0c4d1850-3e8f-4f89-a312-3d2735434cbf}"
+       Name="ResponsavelEmail"
+       DisplayName="Enviar email ao responsável"
+       Type="Choice"
+       Required="FALSE"
+       ShowInNewForm="FALSE"
+       Group="Custom Site Columns">
+    <CHOICES>
+      <CHOICE>Sim</CHOICE>
+      <CHOICE>Não</CHOICE>
+    </CHOICES>
+    <Default>Sim</Default>
+  </Field>
+</Elements>

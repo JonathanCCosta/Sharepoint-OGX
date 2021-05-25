@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{9609a081-b500-474f-adf9-2076381dfa63}"
+       Name="AumentoVidaUtil"
+       DisplayName="Aumento de vida útil esperado, a partir da implantação Do reforço(anos)"
+       Type="Number"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

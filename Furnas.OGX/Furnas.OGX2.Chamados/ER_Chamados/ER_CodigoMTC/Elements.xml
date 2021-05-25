@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Receivers ListTemplateId="10013">
+      <Receiver>
+        <Name>ER_CodigoMTCItemAdding</Name>
+        <Type>ItemAdding</Type>
+        <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+        <Class>Furnas.OGX2.Chamados.ER_Chamados.ER_CodigoMTC.ER_CodigoMTC</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>ER_CodigoMTCItemUpdated</Name>
+        <Type>ItemUpdated</Type>
+        <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+        <Class>Furnas.OGX2.Chamados.ER_Chamados.ER_CodigoMTC.ER_CodigoMTC</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+    <Receiver>
+      <Name>ER_CodigoMTCItemCheckedIn</Name>
+      <Type>ItemCheckedIn</Type>
+      <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+      <Class>Furnas.OGX2.Chamados.ER_Chamados.ER_CodigoMTC.ER_CodigoMTC</Class>
+      <SequenceNumber>10000</SequenceNumber>
+    </Receiver>
+  </Receivers>
+</Elements>

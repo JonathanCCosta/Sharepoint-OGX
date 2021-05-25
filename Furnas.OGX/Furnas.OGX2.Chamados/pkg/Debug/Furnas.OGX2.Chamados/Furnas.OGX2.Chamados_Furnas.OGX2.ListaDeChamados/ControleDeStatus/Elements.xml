@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{b6961afd-070c-434f-a45e-ed6816d6f549}"
+       Name="ControleDeStatus"
+       DisplayName="Controle de status"
+       Type="Choice"
+       Required="TRUE"
+       Group="Custom Site Columns">
+    <CHOICES>
+      <CHOICE>Aberto</CHOICE>
+      <CHOICE>Em andamento</CHOICE>
+      <CHOICE>Aguardando informações</CHOICE>
+      <CHOICE>Encaminhado à outra gerência da DO</CHOICE>
+      <CHOICE>Encerrado</CHOICE>
+    </CHOICES>
+    <Default>Aberto</Default>
+  </Field>
+</Elements>

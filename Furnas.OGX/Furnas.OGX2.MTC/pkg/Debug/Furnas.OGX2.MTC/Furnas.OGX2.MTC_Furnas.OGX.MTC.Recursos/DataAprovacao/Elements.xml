@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{cd7db7e8-c037-4141-8345-cd07baaf69e0}"
+       Name="DataAprovacao"
+       DisplayName="Data Aprovação" 
+       Type="DateTime" 
+       Format="DateOnly"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

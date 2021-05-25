@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{bc913613-30a8-4ca4-b3e8-c6b16db1f733}"
+       Name="JustificativaIrma"
+       DisplayName="Justificativa"
+       Type="Note"
+       NumLines="6"
+       MaxLength="300"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Manual Técnico" OnQuickLaunch="FALSE" TemplateType="10013" Url="Lists/ManualTecnico" Description="Criação de Manual Técnico"></ListInstance>
+</Elements>

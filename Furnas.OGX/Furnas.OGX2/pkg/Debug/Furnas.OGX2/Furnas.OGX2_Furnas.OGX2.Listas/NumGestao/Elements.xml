@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{4c23fb87-f35f-4b74-b017-0679de014ea2}"
+       Name="NumGestao"
+       DisplayName="Número de Gestão"
+       Type="Text"
+       ShowInDisplayForm="FALSE"
+       ShowInEditForm="FALSE"
+       ShowInNewForm="FALSE"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

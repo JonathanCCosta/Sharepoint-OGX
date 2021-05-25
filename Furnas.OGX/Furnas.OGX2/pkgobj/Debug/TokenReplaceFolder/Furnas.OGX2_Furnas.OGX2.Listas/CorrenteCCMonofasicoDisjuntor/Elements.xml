@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{7aa74a75-5665-4624-811a-61230d9c3869}"
+       Name="CorrenteCCMonofasicoDisjuntor"
+       DisplayName="Corrente de curto-circuito monofásica através Do disjuntor (calculada) (kA)"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

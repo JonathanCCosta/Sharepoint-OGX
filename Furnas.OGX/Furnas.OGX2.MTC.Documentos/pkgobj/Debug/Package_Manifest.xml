@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="6da57895-4ef0-4a5f-9c0f-4dab876d8c3b" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="PdfSharp.dll" DeploymentTarget="WebApplication" />
+    <Assembly Location="Furnas.OGX2.MTC.Documentos.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="Furnas.OGX2.MTC.Documentos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a785710f29e3b8b3" Namespace="Furnas.OGX2.MTC.Documentos.WP_MarcaDagua" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="Furnas.OGX2.MTC.Documentos_Furnas.OGX2.ManipulaDocs\Feature.xml" />
+  </FeatureManifests>
+</Solution>

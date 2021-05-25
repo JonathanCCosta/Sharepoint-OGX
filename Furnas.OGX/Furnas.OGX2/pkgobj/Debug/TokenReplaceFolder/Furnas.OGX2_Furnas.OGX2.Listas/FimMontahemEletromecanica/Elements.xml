@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{daa2230e-880f-4dff-9544-1737eb4cc133}"
+       Name="FimMontagemEletromecanica"
+       DisplayName="Montagem Eletromecânica - Fim"
+       Type="DateTime"
+       Format="DateOnly"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

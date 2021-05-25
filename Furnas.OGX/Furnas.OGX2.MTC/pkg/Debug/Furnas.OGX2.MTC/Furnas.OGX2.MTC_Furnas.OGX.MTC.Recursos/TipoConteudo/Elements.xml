@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{59ab630f-27f7-49d3-a8cb-e8d593b7f471}"
+       Name="TipoConteudo"
+       DisplayName="Tipo de Conteúdo"
+       Type="Choice"
+       Required="FALSE"
+       Group="Custom Site Columns">
+    <CHOICES>
+      <CHOICE>Fluxo de solicitação do MTC</CHOICE>
+      <CHOICE>Legado</CHOICE>
+    </CHOICES>
+    <Default>Fluxo de solicitação do MTC</Default>
+  </Field>
+</Elements>

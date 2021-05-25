@@ -1,0 +1,856 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" BrowserFileHandling="permissive" Title="Manual Técnico" Direction="$Resources:Direction;" Url="ManualTecnico" BaseType="1" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <Fields>
+      <Field ID="{4b1bf6c6-4f39-45ac-acd5-16fe7a214e5e}" Type="Text" Name="TemplateUrl" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Template_Link;" XName="TemplateUrl" Filterable="TRUE" Sortable="TRUE" Hidden="TRUE" FromBaseType="TRUE" PITarget="mso-infoPathSolution" PIAttribute="href" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="TemplateUrl"></Field>
+      <Field ID="{cd1ecb9f-dd4e-4f29-ab9e-e9ff40048d64}" Type="Text" Name="xd_ProgID" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Html_File_Link;" XName="ProgID" Filterable="TRUE" Sortable="TRUE" Hidden="TRUE" FromBaseType="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="xd_ProgID"></Field>
+      <Field ID="{fbf29b2d-cae5-49aa-8e0a-29955b540122}" Type="Boolean" Group="_Hidden" Name="xd_Signature" DisplaceOnUpgrade="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="xd_Signature" DisplayName="$Resources:core,Xml_signed;" XName="{FBF29B2D-CAE5-49aa-8E0A-29955B540122}" Filterable="TRUE" Sortable="TRUE" Sealed="TRUE" Hidden="TRUE" FromBaseType="TRUE" ReadOnly="TRUE"></Field>
+      <Field ID="{e52012a0-51eb-4c0c-8dfb-9b8a0ebedcb6}" ReadOnly="TRUE" Type="Computed" Name="Combine" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Merge;" Filterable="FALSE" Sortable="FALSE" Hidden="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Combine">
+        <FieldRefs>
+          <FieldRef Name="FSObjType" Key="Primary" />
+          <FieldRef Name="EncodedAbsUrl" />
+          <FieldRef Name="TemplateUrl" />
+        </FieldRefs>
+      </Field>
+      <Field ID="{5d36727b-bcb2-47d2-a231-1f0bc63b7439}" ReadOnly="TRUE" Type="Computed" Name="RepairDocument" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Relink;" Filterable="FALSE" Sortable="FALSE" Hidden="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="RepairDocument">
+        <FieldRefs>
+          <FieldRef Name="FSObjType" Key="Primary" />
+          <FieldRef Name="ID" />
+        </FieldRefs>
+      </Field>
+      <Field Name="CodigoMTC" ID="{e3cd9999-63a3-447d-a741-eb9757548c91}" DisplayName="Código MTC" Type="Text" Required="FALSE" ShowInEditForm="TRUE" ShowInNewForm="TRUE" ShowInDisplayForm="TRUE" />
+      <Field Name="TipoMTC" ID="{1b099cf4-93be-41dd-8d58-89be8107dae8}" DisplayName="Tipo MTC" Type="Lookup" Required="TRUE" List="Lists/TipoMTC" ShowField="Codigo">
+
+      </Field>
+      <Field Name="Grupo" ID="{0cfcb291-7f1c-4f3b-9496-e2568e9f4f96}" DisplayName="Grupo" Type="Lookup" List="Lists/GrupoMTC" ShowField="Código do Grupo" Required="TRUE" />
+      <Field Name="Subgrupo" ID="{356a7532-4c93-40fd-96cf-661726957cd2}" DisplayName="Subgrupo" Type="Lookup" List="Lists/SubgrupoMTC" ShowField="Codigo" Required="TRUE" />
+      <Field Name="Fabricante1" ID="{6847c636-eb57-4c35-9893-8d0e159e4f31}" DisplayName="Fabricante" Type="Lookup" ShowField="Codigo" List="Lists/FabricanteMTC" Required="TRUE" />
+      <Field Name="Consecutivo" ID="{02ace079-96ee-4a99-81be-c8ea4f1d1188}" DisplayName="Consecutivo" Type="Text" MaxLength="2" Required="TRUE" />
+      <Field Name="Revisao" ID="{a396fda3-181a-4a6d-a042-ed3d75644cdd}" DisplayName="Revisão" Type="Number" MaxLength="1" Required="TRUE" />
+      <Field Name="DescricaoMTC" ID="{7e270222-268a-4b63-8228-3442fc9770bc}" DisplayName="Descrição do MTC" Type="Note" Required="TRUE" />
+      <Field Name="AprovadoPor" ID="{a44e8c16-f5e9-4132-ac0a-4829ca77748a}" DisplayName="Aprovado Por" Type="User" Mult="FALSE" />
+      <Field Name="DataAprovacao" ID="{8755a748-bb11-4085-8320-c8e2ce8fd2b0}" DisplayName="Data Aprovação" Type="DateTime" Format="DateOnly" />
+      <Field Name="Autores" ID="{cc155a17-7c54-46e0-bc60-9154bd08a850}" DisplayName="Autores" Type="UserMulti" Mult="TRUE" />
+      <Field Name="Colaboradores" ID="{292f4103-3e6a-4354-8c7f-27ecb8162a47}" DisplayName="Colaboradores" Type="UserMulti" Mult="TRUE" />
+      <Field Name="Revisores" ID="{4d67abfa-04ea-4c62-a45a-9f6302b2e05d}" DisplayName="Revisores" Type="UserMulti" Mult="TRUE" />
+      <Field Name="DataInicioVigencia" ID="{19957188-5f90-4daa-a724-61291f7f7d2a}" DisplayName="Data Início Vigência" Type="DateTime" Format="DateOnly" Required="TRUE" />
+      <Field Name="PrazoVigencia" ID="{6f2c28c8-a0a8-43f3-b284-19be493e266f}" DisplayName="Prazo de Vigência (anos)" Type="Number" Required="TRUE" Min="1" Max="5">
+        <Default>5</Default>
+      </Field>
+      <Field Name="ControleStatus" ID="{83922df1-b5f5-4b6e-8697-1f1200372f09}" DisplayName="Controle de Status" Type="Choice" Required="TRUE">
+        <CHOICES>
+          <CHOICE>Vigente</CHOICE>
+          <CHOICE>Aguardando Aprovação</CHOICE>
+          <CHOICE>Para comentários</CHOICE>
+          <CHOICE>Em consolidação</CHOICE>
+          <CHOICE>Em revisão</CHOICE>
+          <CHOICE>Histórico</CHOICE>
+          <CHOICE>Cancelado</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="JustificativaCriacao" ID="{df645ab3-2809-421b-9d06-b1135682d660}" DisplayName="Justificativa Criação" Type="Note" />
+      <Field Name="JustificativaCancelamento" ID="{29c2cdc2-ab70-4c46-86db-57afa164fc5d}" DisplayName="Justificativa Cancelamento" Type="Note" />
+      <Field Name="DataLimiteComentario" ID="{bd8f7475-1dba-4342-b1cd-cc6e865c383c}" DisplayName="Data Limite Comentário" Type="DateTime" Format="DateOnly" />
+      <Field Name="Comentarios" ID="{4f4e42f7-f5bc-4261-892d-f71aedc11d72}" DisplayName="Comentários" Type="Note" />
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE" FreeForm="TRUE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <Toolbar Position="After" Type="Freeform">
+          <IfHasRights>
+            <RightsChoices>
+              <RightsGroup PermAddListItems="required" />
+            </RightsChoices>
+            <Then>
+              <HTML><![CDATA[<div class="tb"><img src="/_layouts/15/images/caladd.gif?rev=23" alt="" />&#160;<a class="ms-addnew" id="idAddNewDoc" href="]]></HTML>
+              <HttpVDir />
+              <HTML><![CDATA[/_layouts/15/Upload.aspx?List=]]></HTML>
+              <ListProperty Select="Name" />
+              <HTML><![CDATA[&RootFolder=]]></HTML>
+              <GetVar Name="RootFolder" URLEncode="TRUE" />
+              <HTML><![CDATA[" onclick="javascript:NewItem(']]></HTML>
+              <ScriptQuote NotAddingQuote="TRUE">
+                <HttpVDir />
+              </ScriptQuote>
+              <HTML><![CDATA[/_layouts/15/Upload.aspx?List=]]></HTML>
+              <ListProperty Select="Name" />
+              <HTML><![CDATA[&RootFolder=]]></HTML>
+              <GetVar Name="RootFolder" URLEncode="TRUE" />
+              <HTML><![CDATA[', true);javascript:return false;" target="_self">]]></HTML>
+              <HTML>$Resources:core,Add_New_Document;</HTML>
+              <HTML><![CDATA[</a></div>]]></HTML>
+            </Then>
+          </IfHasRights>
+        </Toolbar>
+        <ViewFields>
+          <FieldRef Name="DocIcon"></FieldRef>
+          <FieldRef Name="LinkFilenameNoMenu"></FieldRef>
+          <FieldRef Name="Editor"></FieldRef>
+        </ViewFields>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noitemsinview_doclibrary)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noitemsinview_doclibrary_howto)" />
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,Add_New_Document)" />
+          <ParameterBinding Name="MoreAnnouncements" Location="Resource(wss,MoreDocuments)" />
+        </ParameterBindings>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,All_Documents;" DefaultView="TRUE" MobileView="True" MobileDefaultView="True" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/dlicon.png?rev=23" Url="Forms/AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">100</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkFilename" />
+          <FieldRef Name="CodigoMTC" />
+          <FieldRef Name="TipoMTC" />
+          <FieldRef Name="Grupo" />
+          <FieldRef Name="Subgrupo" />
+          <FieldRef Name="Fabricante1" />
+          <FieldRef Name="Consecutivo" />
+          <FieldRef Name="Revisao" />
+          <FieldRef Name="DataInicioVigencia" />
+          <FieldRef Name="PrazoVigencia" />
+          <FieldRef Name="ControleStatus" />
+        </ViewFields>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noitemsinview_doclibrary)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noitemsinview_doclibrary_howto2)" />
+        </ParameterBindings>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="FileLeafRef" />
+          </OrderBy>
+        </Query>
+      </View>
+      <View BaseViewID="2" Type="HTML" FileDialog="TRUE" TabularView="FALSE" DisplayName="$Resources:core,File_Dialog_View;" Hidden="TRUE" Path="filedlg.htm" ModerationType="Moderator">
+        <Toolbar Type="Standard" />
+        <ViewFields>
+         <FieldRef Name="DocIcon"></FieldRef>
+          <FieldRef Name="BaseName"></FieldRef>
+          <FieldRef Name="Editor" TextOnly="TRUE"></FieldRef>
+          <FieldRef Name="Modified" TextOnly="TRUE"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="FSObjType" Key="Primary" />
+            <FieldRef Name="FileLeafRef" />
+          </OrderBy>
+        </Query>
+      </View>
+      <View BaseViewID="3" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,Explorer_View;" TabularView="FALSE" Url="Forms/WebFldr.aspx" SetupPath="pages\webfldr.aspx" RequiresClientIntegration="TRUE" ReadOnly="TRUE">
+        <Toolbar Type="Standard" />
+        <XslLink>main.xsl</XslLink>
+        <ViewFields />
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" />
+        </ParameterBindings>
+        <Query />
+      </View>
+      <View BaseViewID="50" Type="HTML" MobileView="TRUE" TabularView="TRUE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">15</RowLimit>
+        <ViewFields>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <FieldRef Name="DocIcon"></FieldRef>
+          <FieldRef Name="LinkFilename"></FieldRef>
+        </ViewFields>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noitemsinview_doclibrary)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noitemsinview_doclibrary_howto2)" />
+        </ParameterBindings>
+        <Query>
+          <OrderBy>
+
+
+
+
+
+
+
+
+
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+      </View>
+      <View BaseViewID="6" Type="HTML" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <FieldRef Name="DocIcon"></FieldRef>
+          <FieldRef Name="LinkFilename"></FieldRef>
+          <FieldRef Name="Editor"></FieldRef>
+        </ViewFields>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noitemsinview_doclibrary)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noitemsinview_doclibrary_howto2)" />
+        </ParameterBindings>
+        <Query>
+          <OrderBy>
+
+
+
+
+
+
+
+
+
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+      </View>
+      <View BaseViewID="7" AggregateView="TRUE" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,Merge_Documents;" TabularView="FALSE" ToolbarTemplate="MergeToolBar" DefaultView="FALSE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/dlicon.png?rev=23" Url="Forms/Combine.aspx" Hidden="TRUE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <FieldRef Name="DocIcon"></FieldRef>
+          <FieldRef Name="LinkFilename"></FieldRef>
+          <FieldRef Name="Combine"></FieldRef>
+          <FieldRef Name="Modified"></FieldRef>
+          <FieldRef Name="Editor"></FieldRef>
+        </ViewFields>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noitemsinview_doclibrary)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noitemsinview_doclibrary_howto2)" />
+        </ParameterBindings>
+        <Query>
+          <OrderBy>
+
+
+
+
+
+
+
+
+
+            <FieldRef Name="FileLeafRef" />
+          </OrderBy>
+        </Query>
+      </View>
+      <View BaseViewID="9" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,Relink_Documents;" ToolbarTemplate="RelinkToolBar" TabularView="FALSE" DefaultView="FALSE" Url="Forms/repair.aspx" ImageUrl="/_layouts/15/images/dlicon.png?rev=23" Hidden="TRUE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <FieldRef Name="DocIcon"></FieldRef>
+          <FieldRef Name="LinkFilenameNoMenu"></FieldRef>
+          <FieldRef Name="RepairDocument"></FieldRef>
+          <FieldRef Name="Modified"></FieldRef>
+          <FieldRef Name="Editor"></FieldRef>
+          <FieldRef Name="ContentType"></FieldRef>
+          <FieldRef Name="TemplateUrl"></FieldRef>
+        </ViewFields>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noitemsinview_doclibrary)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noitemsinview_doclibrary_howto2)" />
+        </ParameterBindings>
+        <Query>
+          <OrderBy>
+
+
+
+
+
+
+
+
+
+            <FieldRef Name="FileLeafRef" />
+          </OrderBy>
+          <Where>
+            <Neq>
+              <FieldRef Name="xd_Signature" />
+              <Value Type="Boolean">1</Value>
+            </Neq>
+          </Where>
+        </Query>
+      </View>
+      <View BaseViewID="40" Type="HTML" WebPartZoneID="Main" DisplayName="assetLibTemp" DefaultView="FALSE" MobileView="FALSE" MobileDefaultView="FALSE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/dlicon.png?rev=23" Url="Forms/Thumbnails.aspx" Hidden="TRUE">
+        <Toolbar Type="Standard" />
+        <ViewFields>
+
+
+
+
+
+
+
+
+
+          <FieldRef Name="LinkFilename"></FieldRef>
+        </ViewFields>
+        <RowLimit>20</RowLimit>
+        <Query>
+          <OrderBy>
+
+
+
+
+
+
+
+
+
+            <FieldRef Name="LinkFilename" />
+          </OrderBy>
+        </Query>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" SetupPath="pages\form.aspx" Url="Forms/DispForm.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" SetupPath="pages\form.aspx" Url="Forms/EditForm.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="Forms/Upload.aspx" WebPartZoneID="Main" />
+      <Form Type="NewFormDialog" Path="EditDlg.htm">
+        <ListFormOpening>
+          <HTML>
+            <![CDATA[
+<script type="text/javascript">
+var frm = new OWSForm(]]>
+          </HTML>
+          <ScriptQuote>
+            <Switch>
+              <Expr>
+                <GetVar Name="HTMLFormName" />
+              </Expr>
+              <Case Value="">
+                <HTML><![CDATA[OWSForm]]></HTML>
+              </Case>
+              <Default>
+                <GetVar Name="HTMLFormName" />
+              </Default>
+            </Switch>
+          </ScriptQuote>
+          <HTML><![CDATA[, false, ]]></HTML>
+          <ScriptQuote>
+            <HttpVDir />
+            <HTML>/_layouts/</HTML>
+          </ScriptQuote>
+          <HTML>
+            <![CDATA[);
+</script>
+]]>
+          </HTML>
+          <HTML>
+            <![CDATA[
+<script type="text/javascript">]]>
+          </HTML>
+          <HTML><![CDATA[ frm.dopt.chDateSep = ]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="29" />
+          </ScriptQuote>
+          <HTML><![CDATA[; frm.dopt.chTimeSep = ]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="30" />
+          </ScriptQuote>
+          <HTML><![CDATA[; frm.dopt.SetTimeFormat(]]></HTML>
+          <ProjectProperty Select="Time24" />
+          <HTML><![CDATA[); frm.dopt.SetDateOrder(]]></HTML>
+          <LocaleInfo LCTYPE="33" />
+          <HTML><![CDATA[); frm.dopt.SetDOW(]]></HTML>
+          <LocaleInfo LCTYPE="4108" />
+          <HTML><![CDATA[); frm.dopt.stAM = ]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="40" />
+          </ScriptQuote>
+          <HTML><![CDATA[; frm.dopt.stPM = ]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="41" />
+          </ScriptQuote>
+          <HTML><![CDATA[; frm.dopt.TimeMarkPosn = ]]></HTML>
+          <LocaleInfo LCTYPE="4101" />
+          <HTML><![CDATA[; frm.dopt.webTZOffsetMin = ]]></HTML>
+          <ProjectProperty Select="TimeZoneBias" />
+          <HTML><![CDATA[; ]]></HTML>
+          <HTML><![CDATA[ frm.nopt.chDigSep = ]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="15" />
+          </ScriptQuote>
+          <HTML><![CDATA[; frm.nopt.chDecimal = ]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="14" />
+          </ScriptQuote>
+          <HTML><![CDATA[; frm.nopt.chMinus = ]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="81" />
+          </ScriptQuote>
+          <HTML><![CDATA[; frm.nopt.iNegNumber = ]]></HTML>
+          <LocaleInfo LCTYPE="4112" />
+          <HTML><![CDATA[; frm.nopt.SetGrouping(]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="16" />
+          </ScriptQuote>
+          <HTML><![CDATA[); ]]></HTML>
+          <HTML>
+            <![CDATA[
+frm.stFieldPrefix = ]]>
+          </HTML>
+          <ScriptQuote>
+            <FieldPrefix />
+          </ScriptQuote>
+          <HTML>
+            <![CDATA[;
+frm.stImagesPath = ]]>
+          </HTML>
+          <ScriptQuote>/_layouts/15/images/</ScriptQuote>
+          <HTML>
+            <![CDATA[;
+frm.wBaseType = ]]>
+          </HTML>
+          <ListProperty Select="BaseType" />
+          <HTML>
+            <![CDATA[;
+</script>]]>
+          </HTML>
+          <Switch>
+            <Expr>
+              <GetVar Name="HTMLFormName" />
+            </Expr>
+            <Case Value="">
+              <HTML><![CDATA[<form name="OWSForm" id="OWSForm" EncType="multipart/form-data" Action="]]></HTML>
+              <HttpPath />
+              <HTML><![CDATA[" Method=POST onSubmit="return false;">]]></HTML>
+            </Case>
+          </Switch>
+          <HTML>
+            <![CDATA[
+<input type="Hidden" name="_charset_" value="utf-8">
+<input id="onetidCmd" type="Hidden" name="Cmd" value="Save">
+<input id="onetidIsFormValid" type="hidden" name="IsFormValid">
+<input id="onetidFormWasPosted" type="hidden" name="FormWasPosted">
+<input id="MustUpdateForm" type="hidden" name="MustUpdateForm" value="true">
+<input type="hidden" name="NextID" id="NextID" value="-1">
+<input type="hidden" name="NextUsing" id="NextUsing" value="]]>
+          </HTML>
+          <GetVar Name="Source" HTMLEncode="TRUE" />
+          <HTML>
+            <![CDATA[">
+]]>
+          </HTML>
+          <HTML><![CDATA[<span id='part1'>]]></HTML>
+          <Identity />
+        </ListFormOpening>
+        <ListFormBody>
+          <HTML>
+            <![CDATA[<table border="0" cellpadding="2">
+<script type="text/javascript">var _g_tp_fNewForm = true;</script>
+]]>
+          </HTML>
+          <Fields>
+            <Switch>
+              <Expr>
+                <Property Select="Name" />
+              </Expr>
+              <Case Value="FileLeafRef">
+                <SetVar Name="ShowField" Scope="Request">0</SetVar>
+              </Case>
+              <Default>
+                <SetVar Name="ShowField" Scope="Request">1</SetVar>
+                <HTML><![CDATA[<tr style="display:none"><th nowrap="nowrap" valign="top" class="ms-formlabel"><nobr>]]></HTML>
+                <Property Select="DisplayName" HTMLEncode="TRUE" AutoNewLine="TRUE" />
+                <Switch>
+                  <Expr>
+                    <Property Select="Required" />
+                  </Expr>
+                  <Case Value="TRUE">
+                    <HTML><![CDATA[<font color=red> *</font>]]></HTML>
+                    <SetVar Scope="Request" Name="HasRequired">TRUE</SetVar>
+                  </Case>
+                  <Default>
+                    <HTML><![CDATA[<font color=red></font>]]></HTML>
+                  </Default>
+                </Switch>
+                <HTML><![CDATA[</nobr></th><td class="ms-formbody">]]></HTML>
+                <Field />
+                <Switch>
+                  <Expr>
+                    <Property Select="RichText" />
+                  </Expr>
+                  <Case Value="TRUE" />
+                  <Default>
+                    <Switch>
+                      <Expr>
+                        <Property Select="Type" />
+                      </Expr>
+                      <Case Value="Choice" />
+                      <Case Value="MultiChoice" />
+                      <Default>
+                        <HTML><![CDATA[&#160;]]></HTML>
+                        <Switch>
+                          <Expr>
+                            <Property Select="NoEditFormBreak" />
+                          </Expr>
+                          <Case Value="TRUE" />
+                          <Default>
+                            <HTML><![CDATA[<br>]]></HTML>
+                          </Default>
+                        </Switch>
+                      </Default>
+                    </Switch>
+                  </Default>
+                </Switch>
+                <HTML><![CDATA[<span class="ms-formdescription">]]></HTML>
+                <Property Select="Description" HTMLEncode="TRUE" AutoHyperLink="TRUE" AutoNewLine="TRUE" />
+                <HTML><![CDATA[</span></td></tr>]]></HTML>
+              </Default>
+            </Switch>
+          </Fields>
+          <HTML><![CDATA[</table>]]></HTML>
+          <Switch>
+            <Expr>
+              <GetVar Name="HasRequired" />
+            </Expr>
+            <Case Value="TRUE">
+              <HTML>
+                <![CDATA[
+          <table border="0" cellpadding="2">
+          <tr>
+            <td id="reqdFldTxt" class="ms-descriptiontext" colspan="2" height="150px" valign="top"><br><font color=red>*</font> 
+             &#160;]]>
+              </HTML>
+              <HTML HTMLEncode="TRUE">$Resources:core,webview_editdlg_required_field;</HTML>
+              <HTML>
+                <![CDATA[
+            </td>
+          </tr>
+          </table>
+          ]]>
+              </HTML>
+            </Case>
+          </Switch>
+          <ContentTypes>
+            <HTML>
+              <![CDATA[
+    <script type = "text/javascript">
+        frmCurrent.MapCtName(]]>
+            </HTML>
+            <ScriptQuote>
+              <Property Select="Name" />
+            </ScriptQuote>
+            <HTML><![CDATA[ ,]]></HTML>
+            <ScriptQuote>
+              <Property Select="ID" />
+            </ScriptQuote>
+            <HTML>
+              <![CDATA[);
+    </script>]]>
+            </HTML>
+            <IfSubString>
+              <Expr1>0x0120</Expr1>
+              <Expr2>
+                <Property Select="ID" />
+              </Expr2>
+              <Then>
+                <HTML>
+                  <![CDATA[
+            <script type="text/javascript">
+            _tp_rgctfld = new Array;
+            _g_tp_rgcts.push(_tp_rgctfld);
+            var fldct = frmCurrent.FindField("ContentType");
+            if (fldct != null)
+            	fldct.AddChoice(]]>
+                </HTML>
+                <ScriptQuote>
+                  <Property Select="Name" />
+                </ScriptQuote>
+                <HTML>
+                  <![CDATA[);
+            </script>
+            ]]>
+                </HTML>
+              </Then>
+              <Else>
+                <HTML>
+                  <![CDATA[
+            <script type="text/javascript">
+            var fldct = frmCurrent.FindField("ContentType");
+            if (fldct != null)
+            	fldct.AddChoice(]]>
+                </HTML>
+                <ScriptQuote>
+                  <Property Select="Name" />
+                </ScriptQuote>
+                <HTML>
+                  <![CDATA[);
+            _tp_rgctfld = new Array;            
+            ]]>
+                </HTML>
+                <ForEach Select="FieldRefs/FieldRef">
+                  <HTML>
+                    _tp_ctfld = new Object(null);
+                    _tp_ctfld.stName=
+                  </HTML>
+                  <ScriptQuote>
+                    <Property Select="Name" />
+                  </ScriptQuote>
+                  <HTML>
+                    ;
+                    _tp_ctfld.fRequired = BoolFromString(
+                  </HTML>
+                  <ScriptQuote>
+                    <Property Select="Required" />
+                  </ScriptQuote>
+                  <HTML>
+                    );
+                    _tp_ctfld.fHidden = BoolFromString(
+                  </HTML>
+                  <ScriptQuote>
+                    <Property Select="Hidden" />
+                  </ScriptQuote>
+                  <HTML>
+                    );
+                    _tp_ctfld.fShowInNewForm = BoolFromString2(
+                  </HTML>
+                  <ScriptQuote>
+                    <Property Select="ShowInNewForm" />
+                  </ScriptQuote>
+                  <HTML>
+                    , true);
+                    _tp_ctfld.fShowInEditForm = BoolFromString2(
+                  </HTML>
+                  <ScriptQuote>
+                    <Property Select="ShowInEditForm" />
+                  </ScriptQuote>
+                  <HTML>
+                    , true);
+                    _tp_ctfld.fShowInFileDlg = BoolFromString2(
+                  </HTML>
+                  <ScriptQuote>
+                    <Property Select="ShowInFileDlg" />
+                  </ScriptQuote>
+                  <HTML>
+                    , true);
+                    _tp_ctfld.fReadOnly = BoolFromString(
+                  </HTML>
+                  <ScriptQuote>
+                    <Property Select="ReadOnly" />
+                  </ScriptQuote>
+                  <HTML>
+                    );
+                    _tp_ctfld.stDisplay =
+                  </HTML>
+                  <ScriptQuote>
+                    <Property Select="DisplayName" />
+                  </ScriptQuote>
+                  <HTML>;</HTML>
+                  <ForEach Select="Default">
+                    <HTML>
+                      _tp_ctfld.stDefault=
+                    </HTML>
+                    <ScriptQuote>
+                      <Property Select="." />
+                    </ScriptQuote>
+                    <HTML>;</HTML>
+                  </ForEach>
+                  <HTML>
+                    _tp_rgctfld.push(_tp_ctfld);
+                  </HTML>
+                </ForEach>
+                <HTML>
+                  <![CDATA[
+            _g_tp_rgcts.push(_tp_rgctfld);
+            </script>
+            ]]>
+                </HTML>
+              </Else>
+            </IfSubString>
+          </ContentTypes>
+          <HTML>
+            <![CDATA[
+<script type="text/javascript">
+var fldct = frmCurrent.FindField("ContentType");
+if (fldct != null)
+	fldct.BuildUI();
+</script>
+]]>
+          </HTML>
+        </ListFormBody>
+        <ListFormClosing>
+          <HTML>
+            <![CDATA[
+</span>]]>
+          </HTML>
+          <Switch>
+            <Expr>
+              <GetVar Name="HTMLFormName" />
+            </Expr>
+            <Case Value="">
+              <HTML><![CDATA[</form>]]></HTML>
+            </Case>
+          </Switch>
+          <HTML>
+            <![CDATA[
+<script type="text/javascript">
+</script>
+]]>
+          </HTML>
+        </ListFormClosing>
+      </Form>
+    </Forms>
+  </MetaData>
+</List>

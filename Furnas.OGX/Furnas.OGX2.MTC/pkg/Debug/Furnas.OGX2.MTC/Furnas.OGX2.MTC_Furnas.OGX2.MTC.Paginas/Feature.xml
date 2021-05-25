@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="ca966d61-6f60-41fe-a281-a7e530d1cc2b" Scope="Site" Title="Furnas.OGX2.MTC.WP">
+  <ElementManifests>
+    <ElementManifest Location="WP_Pesquisa\Elements.xml" />
+    <ElementFile Location="WP_Pesquisa\WP_Pesquisa.webpart" />
+    <ElementManifest Location="WP_ValidaUsuariosMTC\Elements.xml" />
+    <ElementFile Location="WP_ValidaUsuariosMTC\WP_ValidaUsuariosMTC.webpart" />
+    <ElementManifest Location="ManualTecnico\Elements.xml" />
+    <ElementManifest Location="WP_AcoesRevisao\Elements.xml" />
+    <ElementFile Location="WP_AcoesRevisao\WP_AcoesRevisao.webpart" />
+  </ElementManifests>
+</Feature>

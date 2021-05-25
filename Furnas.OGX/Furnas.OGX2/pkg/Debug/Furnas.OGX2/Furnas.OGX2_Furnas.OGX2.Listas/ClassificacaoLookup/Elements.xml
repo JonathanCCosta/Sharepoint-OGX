@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{9ed54955-f3c6-49b2-b946-f76bd2255a7c}"
+       Name="ClassificacaoLookup"
+       DisplayName="Classificação"
+       Type="Lookup"
+       List="Lists/DominioClassificacao"
+       ShowField="Title"
+       Required="TRUE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

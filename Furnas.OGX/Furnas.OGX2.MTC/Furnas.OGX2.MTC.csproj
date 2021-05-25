@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B83321A4-7B09-40F7-BD0C-6C9043794CCE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Furnas.OGX2.MTC</RootNamespace>
+    <AssemblyName>Furnas.OGX2.MTC</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <SccProjectName>&lt;Project Location In Database&gt;</SccProjectName>
+    <SccLocalPath>&lt;Local Binding Root of Project&gt;</SccLocalPath>
+    <SccAuxPath>&lt;Source Control Database&gt;</SccAuxPath>
+    <SccProvider>Jazz Source Control Provider:{AC8810C5-F6E7-4145-83AA-FDFFF6F5506D}</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint.Taxonomy, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ER_MTC\ER_ListaControle\ER_ListaControle.cs" />
+    <Compile Include="Features\Furnas.OGX.MTC.Job\Furnas.OGX.MTC.EventReceiver.cs">
+      <DependentUpon>Furnas.OGX.MTC.Job.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Furnas.OGX.MTC.Recursos\Furnas.OGX.MTC.EventReceiver.cs">
+      <DependentUpon>Furnas.OGX.MTC.Recursos.feature</DependentUpon>
+    </Compile>
+    <Compile Include="JobsMTC\JobVerificaMTC.cs" />
+    <Compile Include="JobsMTC\TimerJobMTC.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServicesMTC\ConfiguraMTC.cs" />
+    <Compile Include="ServicesMTC\Email.cs" />
+    <Compile Include="ServicesMTC\EmailMTC.cs" />
+    <Compile Include="ServicesMTC\EventFiring.cs" />
+    <Compile Include="ServicesMTC\Filtros.cs" />
+    <Compile Include="ServicesMTC\PermissaoMTC.cs" />
+    <Compile Include="ServicesMTC\ServiceManual.cs" />
+    <Compile Include="WebPartsPaginas\WP_AcoesRevisao\WP_AcoesRevisao.ascx.cs">
+      <DependentUpon>WP_AcoesRevisao.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPartsPaginas\WP_AcoesRevisao\WP_AcoesRevisao.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WP_AcoesRevisao.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPartsPaginas\WP_Pesquisa\WP_Pesquisa.ascx.cs">
+      <DependentUpon>WP_Pesquisa.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPartsPaginas\WP_Pesquisa\WP_Pesquisa.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WP_Pesquisa.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPartsPaginas\WP_ValidaUsuariosMTC\WP_ValidaUsuariosMTC.ascx.cs">
+      <DependentUpon>WP_ValidaUsuariosMTC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPartsPaginas\WP_ValidaUsuariosMTC\WP_ValidaUsuariosMTC.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WP_ValidaUsuariosMTC.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Bibliotecas\DocumentosManualTecnico\DocumentosManualTecnicoInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b34637a5-278c-42bf-82d6-002cd67d0291}</SharePointProjectItemId>
+    </None>
+    <None Include="Bibliotecas\DocumentosManualTecnico\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3f0bd72b-6953-43b4-8d6b-51b09a7837bc}</SharePointProjectItemId>
+    </None>
+    <None Include="Bibliotecas\ManualTecnico\ManualTecnicoInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0596f512-9c16-40b9-b70d-28e229115cea}</SharePointProjectItemId>
+    </None>
+    <None Include="Bibliotecas\ManualTecnico\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{58a7ff1e-802e-4377-98d6-1c7d892b7824}</SharePointProjectItemId>
+    </None>
+    <None Include="ER_MTC\ER_ListaControle\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{86aa522c-6095-4036-b780-3d019a33a053}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Furnas.OGX.MTC.Job\Furnas.OGX.MTC.Job.feature">
+      <FeatureId>{c2cc4d49-5564-406a-8f2d-4f5e7083ee2b}</FeatureId>
+    </None>
+    <None Include="Features\Furnas.OGX.MTC.Recursos\Furnas.OGX.MTC.Recursos.feature">
+      <FeatureId>{914d9e15-5f00-4615-91c8-76500651f048}</FeatureId>
+    </None>
+    <None Include="Features\Furnas.OGX2.MTC.Paginas\Furnas.OGX2.MTC.Paginas.feature">
+      <FeatureId>{504beb4e-27c4-4703-94b9-c04ba6254b29}</FeatureId>
+    </None>
+    <None Include="Fields - Manuais\AprovadoPor\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{051f50ec-e6fb-4be1-867d-cd060af77f56}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Manuais\Autores\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3e0f9ebc-af6f-408d-9dce-14784cc39be6}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Manuais\CodigoMTC\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3e8e8c4d-86be-451c-a1bd-b009427aa25c}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Manuais\Colaboradores\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{70d9aa6e-1c70-4bb2-bac0-57d0fde7fb84}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Manuais\Consecutivo\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d6c527d6-5b3f-4145-9db1-00081e0bf319}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Manuais\ControleStatus\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2a4f3acd-35fd-4dc0-9908-97eb7f98d482}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Manuais\DataAprovacao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{07f64189-303d-4883-bcec-c6ee775e2b7e}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Manuais\DataInicioVigencia\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f21c5cd3-6ee5-4abd-a586-01baaba92e9f}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Manuais\DescricaoMTC\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{264d48f6-d1bf-4b70-872f-007575cc4656}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Manuais\EmRevisao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d4744dea-356c-43ed-806a-7a4f6de99915}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Manuais\ExisteComentarios\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{95bf51c8-85b7-45b7-9266-a67852b72d0b}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Manuais\Fabricante\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{990896e8-cac0-46fd-8151-416887289dea}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Manuais\Grupo\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{46484b62-6257-48f5-95b5-98deffbc3feb}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Manuais\Comentarios\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9617e238-d60c-46af-8d62-c7cecb205203}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Manuais\DataLimiteComentario\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2a4882a4-cf9b-476c-b0a1-46e1f1b15855}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Manuais\JustificativaCancelamento\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a0f301e9-4fbe-430d-b44a-28f98c2aff43}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Manuais\JustificativaCriacao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{43f7eef4-e405-4793-ae5f-e34d9dff2f6d}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Manuais\ManualTecnico\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2f011861-c1ab-4ea4-842e-c8830e56c58d}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Manuais\OrgaoResponsavelMTC\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ee360299-a82e-4da6-8bf2-4623f9db4fd7}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Manuais\PrazoVigencia\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7fabcc0e-8f5f-43eb-a2fc-1470287a3ee2}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Manuais\Revisao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e7908615-0a23-47a7-8bd3-5dc332d11d9e}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Manuais\Revisores\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c502d130-6d69-438f-a043-af64bd2fc89f}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Manuais\Subgrupo\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e9ca72ad-044b-4155-8f3b-3233bdb357c1}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Manuais\TipoConteudo\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5d493992-aef0-4134-9f74-03a95a94a6f4}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Manuais\TipoMTC\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a5fd6033-280f-4ef5-9e1d-68f260d6baed}</SharePointProjectItemId>
+    </None>
+    <None Include="FieldsLegado\CanceladoEm\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9d4c21ac-d816-4bde-9afd-ea7d038db9e1}</SharePointProjectItemId>
+    </None>
+    <None Include="FieldsLegado\CanceladoPor\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4c3821b9-532d-48cf-8f25-7bdfc4c7a83f}</SharePointProjectItemId>
+    </None>
+    <None Include="FieldsLegado\CriadoEm\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{68de93db-309b-4503-a07f-3c66941fab34}</SharePointProjectItemId>
+    </None>
+    <None Include="FieldsLegado\CriadoPor\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e3df1371-85ee-4090-b657-a3c2f02af8b9}</SharePointProjectItemId>
+    </None>
+    <None Include="FieldsLegado\ElaboradoEm\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6ecc1dfa-35b0-43f8-a7dc-a5b3ef572f06}</SharePointProjectItemId>
+    </None>
+    <None Include="FieldsLegado\EnviadoPublicadoEm\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{aff524a1-074e-4293-ae61-cafe52cc5f3f}</SharePointProjectItemId>
+    </None>
+    <None Include="FieldsLegado\EnviadoPublicadoPor\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e75511ee-08ce-49f8-9d40-96db8fba2fda}</SharePointProjectItemId>
+    </None>
+    <None Include="FieldsLegado\LiberadoEm\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6aa03715-41a5-4b44-bc32-00a788ade6d7}</SharePointProjectItemId>
+    </None>
+    <None Include="FieldsLegado\LiberadoPor\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{05dcaefd-49cf-4630-b3c8-8b05a2862c4d}</SharePointProjectItemId>
+    </None>
+    <None Include="FieldsLegado\Objetivo\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{12b9a371-e10f-42c6-a100-da1860d0457e}</SharePointProjectItemId>
+    </None>
+    <None Include="FieldsLegado\PadronizadoEm\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4198588c-6514-46b2-b06b-94a2cfaf4448}</SharePointProjectItemId>
+    </None>
+    <None Include="FieldsLegado\PadronizadoPor\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ac7e8327-7281-4d79-a7eb-84889004148d}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{353afba1-4f4f-446b-9ab9-7f5061465011}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="TiposDeConteudo\FluxoSolicitacaoMTC\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{56db0450-0517-4da9-a1e5-480ac3f298f1}</SharePointProjectItemId>
+    </None>
+    <None Include="TiposDeConteudo\Legado\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8ce2bbd3-732a-402c-baf1-e0e5d88b0733}</SharePointProjectItemId>
+    </None>
+    <None Include="WebPartsPaginas\WP_AcoesRevisao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d2456101-dea4-4859-ae57-6739894020a5}</SharePointProjectItemId>
+    </None>
+    <None Include="WebPartsPaginas\WP_AcoesRevisao\WP_AcoesRevisao.webpart" />
+    <None Include="WebPartsPaginas\WP_Pesquisa\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a1c7404e-bc7f-431b-90e1-deb2b76eac8e}</SharePointProjectItemId>
+    </None>
+    <None Include="WebPartsPaginas\WP_Pesquisa\WP_Pesquisa.webpart" />
+    <None Include="WebPartsPaginas\WP_ValidaUsuariosMTC\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0aeba96c-f2aa-4e8c-b4e6-80a5a14700cd}</SharePointProjectItemId>
+    </None>
+    <None Include="WebPartsPaginas\WP_ValidaUsuariosMTC\WP_ValidaUsuariosMTC.webpart" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Bibliotecas\DocumentosManualTecnico\DocumentosManualTecnicoInstance\Elements.xml" />
+    <Content Include="Bibliotecas\DocumentosManualTecnico\EditDlg.htm" />
+    <Content Include="Bibliotecas\DocumentosManualTecnico\Elements.xml" />
+    <Content Include="Bibliotecas\DocumentosManualTecnico\FileDlg.htm" />
+    <Content Include="Bibliotecas\DocumentosManualTecnico\Repair.aspx" />
+    <Content Include="Bibliotecas\DocumentosManualTecnico\Schema.xml" />
+    <Content Include="Bibliotecas\DocumentosManualTecnico\Upload.aspx" />
+    <Content Include="Bibliotecas\ManualTecnico\Elements.xml" />
+    <Content Include="Bibliotecas\ManualTecnico\ManualTecnicoInstance\Elements.xml" />
+    <Content Include="Bibliotecas\ManualTecnico\Schema.xml" />
+    <Content Include="ER_MTC\ER_ListaControle\Elements.xml" />
+    <Content Include="Features\Furnas.OGX.MTC.Job\Furnas.OGX.MTC.Job.Template.xml">
+      <DependentUpon>Furnas.OGX.MTC.Job.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Furnas.OGX.MTC.Recursos\Furnas.OGX.MTC.Recursos.Template.xml">
+      <DependentUpon>Furnas.OGX.MTC.Recursos.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Furnas.OGX2.MTC.Paginas\Furnas.OGX2.MTC.Paginas.Template.xml">
+      <DependentUpon>Furnas.OGX2.MTC.Paginas.feature</DependentUpon>
+    </Content>
+    <Content Include="Fields - Manuais\AprovadoPor\Elements.xml" />
+    <Content Include="Fields - Manuais\Autores\Elements.xml" />
+    <Content Include="Fields - Manuais\CodigoMTC\Elements.xml" />
+    <Content Include="Fields - Manuais\Colaboradores\Elements.xml" />
+    <Content Include="Fields - Manuais\Consecutivo\Elements.xml" />
+    <Content Include="Fields - Manuais\ControleStatus\Elements.xml" />
+    <Content Include="Fields - Manuais\DataAprovacao\Elements.xml" />
+    <Content Include="Fields - Manuais\DataInicioVigencia\Elements.xml" />
+    <Content Include="Fields - Manuais\DescricaoMTC\Elements.xml" />
+    <Content Include="Fields - Manuais\EmRevisao\Elements.xml" />
+    <Content Include="Fields - Manuais\ExisteComentarios\Elements.xml" />
+    <Content Include="Fields - Manuais\Fabricante\Elements.xml" />
+    <Content Include="Fields - Manuais\Grupo\Elements.xml" />
+    <Content Include="Fields - Manuais\Comentarios\Elements.xml" />
+    <Content Include="Fields - Manuais\DataLimiteComentario\Elements.xml" />
+    <Content Include="Fields - Manuais\JustificativaCancelamento\Elements.xml" />
+    <Content Include="Fields - Manuais\JustificativaCriacao\Elements.xml" />
+    <Content Include="Fields - Manuais\ManualTecnico\Elements.xml" />
+    <Content Include="Fields - Manuais\OrgaoResponsavelMTC\Elements.xml" />
+    <Content Include="Fields - Manuais\PrazoVigencia\Elements.xml" />
+    <Content Include="Fields - Manuais\Revisao\Elements.xml" />
+    <Content Include="Fields - Manuais\Revisores\Elements.xml" />
+    <Content Include="Fields - Manuais\Subgrupo\Elements.xml" />
+    <Content Include="Fields - Manuais\TipoConteudo\Elements.xml" />
+    <Content Include="Fields - Manuais\TipoMTC\Elements.xml" />
+    <Content Include="FieldsLegado\CanceladoEm\Elements.xml" />
+    <Content Include="FieldsLegado\CanceladoPor\Elements.xml" />
+    <Content Include="FieldsLegado\CriadoEm\Elements.xml" />
+    <Content Include="FieldsLegado\CriadoPor\Elements.xml" />
+    <Content Include="FieldsLegado\ElaboradoEm\Elements.xml" />
+    <Content Include="FieldsLegado\EnviadoPublicadoEm\Elements.xml" />
+    <Content Include="FieldsLegado\EnviadoPublicadoPor\Elements.xml" />
+    <Content Include="FieldsLegado\LiberadoEm\Elements.xml" />
+    <Content Include="FieldsLegado\LiberadoPor\Elements.xml" />
+    <Content Include="FieldsLegado\Objetivo\Elements.xml" />
+    <Content Include="FieldsLegado\PadronizadoEm\Elements.xml" />
+    <Content Include="FieldsLegado\PadronizadoPor\Elements.xml" />
+    <Content Include="TiposDeConteudo\FluxoSolicitacaoMTC\Elements.xml" />
+    <Content Include="TiposDeConteudo\Legado\Elements.xml" />
+    <Content Include="WebPartsPaginas\WP_AcoesRevisao\Elements.xml" />
+    <Content Include="WebPartsPaginas\WP_AcoesRevisao\WP_AcoesRevisao.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>WP_AcoesRevisao.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="WebPartsPaginas\WP_Pesquisa\Elements.xml" />
+    <Content Include="WebPartsPaginas\WP_Pesquisa\WP_Pesquisa.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>WP_Pesquisa.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="WebPartsPaginas\WP_ValidaUsuariosMTC\Elements.xml" />
+    <Content Include="WebPartsPaginas\WP_ValidaUsuariosMTC\WP_ValidaUsuariosMTC.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>WP_ValidaUsuariosMTC.ascx.g.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

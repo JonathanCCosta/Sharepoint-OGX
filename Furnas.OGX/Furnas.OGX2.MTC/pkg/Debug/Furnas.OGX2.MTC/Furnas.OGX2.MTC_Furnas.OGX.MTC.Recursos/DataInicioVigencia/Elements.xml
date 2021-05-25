@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{2081439a-4444-40dc-b70d-b5b2b21095db}"
+       Name="DataInicioVigencia"
+       DisplayName="Data de Início de Vigência" 
+       Type="DateTime" 
+       Format="DateOnly" 
+       Required="TRUE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

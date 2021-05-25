@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{6861b146-730f-4820-abc3-fbeaeb484e24}"
+       Name="NumeracaoPMI"
+       DisplayName="Numeração PMI / PMIS"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

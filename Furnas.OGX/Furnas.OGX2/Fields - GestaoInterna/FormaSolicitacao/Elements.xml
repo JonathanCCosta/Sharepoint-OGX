@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{15869d30-b05b-4c38-8a0d-3f97441747b1}"
+       Name="FormaSolicitacao"
+       DisplayName="Forma de Solicitação"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

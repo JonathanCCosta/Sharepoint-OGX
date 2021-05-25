@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{16d383d3-cdc3-4ac7-83c4-638a7b452fb1}"
+       Name="TipoDeChamado"
+       DisplayName="Tipo de Chamado"
+       Type="Lookup"
+       List="Lists/TipoDeChamado"
+       ShowField="Title"
+       Required="TRUE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

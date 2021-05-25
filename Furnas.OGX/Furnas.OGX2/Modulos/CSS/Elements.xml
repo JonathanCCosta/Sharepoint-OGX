@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="CSS" Url="SiteAssets">
+    <File Path="CSS\importexcel.css" Url="CSS/importexcel.css" />
+    <File Path="CSS\ajax-loader.gif" Url="CSS/ajax-loader.gif" />
+    <File Path="CSS\Administracao.css" Url="CSS/Administracao.css" Type="GhostableInLibrary" />
+    <File Path="CSS\Image\Colaboracao.png" Url="CSS/Image/Colaboracao.png" />
+    <File Path="CSS\Image\membros.png" Url="CSS/Image/membros.png" />
+    <File Path="CSS\Image\documentos.png" Url="CSS/Image/documentos.png" />
+    <File Path="CSS\Image\planos.png" Url="CSS/Image/planos.png" />
+    <File Path="CSS\Image\ciclo.png" Url="CSS/Image/ciclo.png" Type="GhostableInLibrary" />
+    <File Path="CSS\Image\admin.png" Url="CSS/Image/admin.png" />
+    <File Path="CSS\Image\ciclos.png" Url="CSS/Image/ciclos.png" />
+    <File Path="CSS\Image\arquivos.png" Url="CSS/Image/arquivos.png" />
+    <File Path="CSS\Image\colb.png" Url="CSS/Image/colb.png" />
+    <File Path="CSS\Image\planosG.png" Url="CSS/Image/planosG.png" />
+    <File Path="CSS\favicon.ico" Url="CSS/favicon.ico" />
+    <File Path="CSS\Image\icon_chamados_menu.png" Url="CSS/Image/icon_chamados_menu.png"  Type="GhostableInLibrary"  />
+    <File Path="CSS\Image\icon_gerencia_responsavel.png" Url="CSS/Image/icon_gerencia_responsavel.png" Type="GhostableInLibrary" />
+    <File Path="CSS\Image\icon_operar_manter.png" Url="CSS/Image/icon_operar_manter.png" Type="GhostableInLibrary" />
+    <File Path="CSS\Image\icone_sgmpr.png" Url="CSS/Image/icone_sgmpr.png"  Type="GhostableInLibrary" />
+    <File Path="CSS\Image\img_fabricante.png" Url="CSS/Image/img_fabricante.png" Type="GhostableInLibrary" />
+    <File Path="CSS\Image\img_gestao_vida.png" Url="CSS/Image/img_gestao_vida.png"  Type="GhostableInLibrary" />
+    <File Path="CSS\Image\img_manual_campo.png" Url="CSS/Image/img_manual_campo.png"  Type="GhostableInLibrary" />
+    <File Path="CSS\Image\img_manual_mtc.png" Url="CSS/Image/img_manual_mtc.png"  Type="GhostableInLibrary" />
+    <File Path="CSS\Image\img_manual_tecnico.png" Url="CSS/Image/img_manual_tecnico.png"  Type="GhostableInLibrary" />
+    <File Path="CSS\Image\icon_chamados.png" Url="CSS/Image/icon_chamados.png" Type="GhostableInLibrary" />
+    <File Path="CSS\Image\icone_pesquisa_satisfacao.png" Url="CSS/Image/icone_pesquisa_satisfacao.png"  Type="GhostableInLibrary" />
+  </Module>
+</Elements>

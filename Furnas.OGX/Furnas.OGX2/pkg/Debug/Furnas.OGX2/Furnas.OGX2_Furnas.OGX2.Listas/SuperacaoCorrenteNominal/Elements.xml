@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{90216204-b821-4dd6-b9f2-1aea3d52b3c4}"
+       Name="SuperacaoCorrenteNominal"
+       DisplayName="Superação por corrente nominal"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

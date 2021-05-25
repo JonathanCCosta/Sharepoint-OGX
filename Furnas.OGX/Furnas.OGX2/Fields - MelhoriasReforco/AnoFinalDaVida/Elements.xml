@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{c16f3bd9-61ed-4c8c-ad22-2c67ffdf643f}"
+       Name="AnoFinalDaVida"
+       DisplayName="Ano Final de Vida Útil"
+       Type="Number"
+       Decimals="0"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

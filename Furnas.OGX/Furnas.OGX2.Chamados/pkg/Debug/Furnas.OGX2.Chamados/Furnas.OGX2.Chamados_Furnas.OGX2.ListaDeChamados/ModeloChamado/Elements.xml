@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{c694cd11-9075-44a5-a27a-755e6e722f5e}"
+       Name="ModeloChamado"
+       DisplayName="Modelo de Chamado"
+       Type="Lookup"
+       List="Lists/ModeloDeChamado"
+       ShowField="ModelodeChamado"
+       Required="TRUE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

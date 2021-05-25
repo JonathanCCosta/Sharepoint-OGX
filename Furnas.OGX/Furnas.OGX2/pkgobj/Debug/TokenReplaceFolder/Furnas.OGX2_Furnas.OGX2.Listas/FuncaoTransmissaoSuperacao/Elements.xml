@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{96cb4ede-5198-415e-8653-8c069a3a4cb3}"
+       Name="FuncaoTransmissaoSuperacao"
+       DisplayName="Função Transmissão"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

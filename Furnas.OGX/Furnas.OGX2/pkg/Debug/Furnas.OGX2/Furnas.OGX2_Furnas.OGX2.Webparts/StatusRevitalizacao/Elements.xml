@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{70d4628d-0ed8-4dc4-bf2d-458d01f6bbbd}"
+       Name="StatusRevitalizacaoGI"
+       DisplayName="Status de revitalização FURNAS"
+       Type="Text"
+       Required="TRUE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

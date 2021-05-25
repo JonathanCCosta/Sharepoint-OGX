@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="353afba1-4f4f-446b-9ab9-7f5061465011" solutionId="353afba1-4f4f-446b-9ab9-7f5061465011" resetWebServer="false" sharePointProductVersion="15.0" name="Furnas.OGX2.MTC" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="504beb4e-27c4-4703-94b9-c04ba6254b29" />
+    <featureReference itemId="914d9e15-5f00-4615-91c8-76500651f048" />
+    <featureReference itemId="c2cc4d49-5564-406a-8f2d-4f5e7083ee2b" />
+  </features>
+</package>

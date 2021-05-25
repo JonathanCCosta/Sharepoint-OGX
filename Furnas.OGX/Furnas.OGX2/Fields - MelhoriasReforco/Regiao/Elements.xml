@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{55cd969e-207c-4623-839a-53310b3a4af0}"
+       Name="Regiao"
+       DisplayName="Região"
+       Type="Choice"
+       Required="FALSE"
+       Group="Custom Site Columns">
+    <CHOICES>
+      <CHOICE>Centro-oeste</CHOICE>
+      <CHOICE>Nordeste</CHOICE>
+      <CHOICE>Norte</CHOICE>
+      <CHOICE>Sudeste</CHOICE>
+      <CHOICE>Sul</CHOICE>
+    </CHOICES>
+  </Field>
+</Elements>

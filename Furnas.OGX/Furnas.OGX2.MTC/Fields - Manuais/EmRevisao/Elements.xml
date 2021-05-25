@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{594c47ac-eeda-48bc-aa0f-767f5cf9fc84}"
+       Name="EmRevisao"
+       DisplayName="Em Revisão"
+       Type="Choice"
+       Required="FALSE"
+       ShowInEditForm="TRUE"
+       ShowInNewForm="FALSE"
+       Group="Custom Site Columns">
+    <CHOICES>
+      <CHOICE>Não</CHOICE>
+      <CHOICE>Sim</CHOICE>
+    </CHOICES>
+    <Default>Não</Default>
+  </Field>
+</Elements>

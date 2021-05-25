@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{6d0b373e-d600-4080-a70c-ea4e5a2538df}"
+       Name="ControleAtosAutorizados"
+       DisplayName="Controle de atos autorizativos"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

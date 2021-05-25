@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{2ce2cf06-efc9-4cf7-aac3-eeb805a29b29}"
+       Name="DataAutorizacao"
+       DisplayName="Data da Autorização/Emissão PMI"
+       Type="DateTime"
+       Format="DateOnly"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

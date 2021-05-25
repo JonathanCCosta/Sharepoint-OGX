@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{4f83dea1-0561-4a47-ac01-b8bbb90148d8}"
+       Name="Complexidade"
+       DisplayName="Complexidade"
+       Type="Choice"
+       Required="TRUE"
+       ShowInNewForm="FALSE"
+       Group="Custom Site Columns">
+    <CHOICES>
+      <CHOICE>Baixa</CHOICE>
+      <CHOICE>Média</CHOICE>
+      <CHOICE>Alta</CHOICE>
+    </CHOICES>
+    <Default>Baixa</Default>
+  </Field>
+</Elements>

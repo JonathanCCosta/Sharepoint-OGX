@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{aa1a5219-0ace-4d21-a7c9-c550a4e81836}"
+       Name="QuantidadeEquipamentosSuperados"
+       DisplayName="Quantidade de equipamentos superados"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

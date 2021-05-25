@@ -1,0 +1,5 @@
+C:\Furnas.OGX2\Furnas.OGX2.Chamados\bin\Debug\Furnas.OGX2.Chamados.dll
+C:\Furnas.OGX2\Furnas.OGX2.Chamados\bin\Debug\Furnas.OGX2.Chamados.pdb
+C:\Furnas.OGX2\Furnas.OGX2.Chamados\obj\Debug\Furnas.OGX2.Chamados.dll
+C:\Furnas.OGX2\Furnas.OGX2.Chamados\obj\Debug\Furnas.OGX2.Chamados.pdb
+C:\Furnas.OGX2\Furnas.OGX2.Chamados\obj\Debug\Furnas.OGX2.Chamados.csprojResolveAssemblyReference.cache

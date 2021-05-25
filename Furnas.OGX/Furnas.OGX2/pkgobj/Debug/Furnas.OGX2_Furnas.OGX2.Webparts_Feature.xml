@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" AlwaysForceInstall="TRUE" Id="c2245fb8-57ef-4c01-be6b-b3a66376233f" Scope="Site" Title="Furnas.OGX2 - Webparts">
+  <ElementManifests>
+    <ElementManifest Location="WP_Importacao_Planos\Elements.xml" />
+    <ElementFile Location="WP_Importacao_Planos\WP_Importacao_Planos.webpart" />
+    <ElementManifest Location="WP_RemoverPlanos\Elements.xml" />
+    <ElementFile Location="WP_RemoverPlanos\WP_RemoverPlanos.webpart" />
+    <ElementManifest Location="WP_RequisitaMudanca\Elements.xml" />
+    <ElementFile Location="WP_RequisitaMudanca\WP_RequisitaMudanca.webpart" />
+    <ElementManifest Location="PrevisaoImplantacao\Elements.xml" />
+    <ElementManifest Location="StatusRevitalizacao\Elements.xml" />
+    <ElementManifest Location="WP_ExclusaoMudanca\Elements.xml" />
+    <ElementFile Location="WP_ExclusaoMudanca\WP_ExclusaoMudanca.webpart" />
+    <ElementManifest Location="WP_ExclusaoMudancaJustificativa\Elements.xml" />
+    <ElementFile Location="WP_ExclusaoMudancaJustificativa\WP_ExclusaoMudancaJustificativa.webpart" />
+    <ElementManifest Location="WP_ImportaGestaoInterna\Elements.xml" />
+    <ElementFile Location="WP_ImportaGestaoInterna\WP_ImportaGestaoInterna.webpart" />
+    <ElementManifest Location="WP_ExportaPlanos\Elements.xml" />
+    <ElementFile Location="WP_ExportaPlanos\WP_ExportaPlanos.webpart" />
+    <ElementManifest Location="WP_PesquisaSGPMR\Elements.xml" />
+    <ElementFile Location="WP_PesquisaSGPMR\WP_PesquisaSGPMR.webpart" />
+    <ElementManifest Location="WP_ImportaSolicitacoes\Elements.xml" />
+    <ElementFile Location="WP_ImportaSolicitacoes\WP_ImportaSolicitacoes.webpart" />
+  </ElementManifests>
+</Feature>

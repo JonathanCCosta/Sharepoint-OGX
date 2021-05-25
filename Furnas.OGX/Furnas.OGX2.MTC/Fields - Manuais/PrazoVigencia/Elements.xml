@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{a1581a09-7bd2-44c2-9d17-26775cc0ae5b}"
+       Name="PrazoVigencia"
+       DisplayName="Prazo de Vigência (anos)" 
+       Type="Number" 
+       Required="TRUE" 
+       Min="1" 
+       Max="5"
+       Group="Custom Site Columns">
+    <Default>5</Default>
+  </Field>
+</Elements>

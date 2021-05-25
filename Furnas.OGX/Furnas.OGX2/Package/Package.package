@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="dc1021e7-1964-4e6e-9780-5815badf38e1" solutionId="dc1021e7-1964-4e6e-9780-5815badf38e1" resetWebServer="false" sharePointProductVersion="15.0" name="Furnas.OGX2" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <customAssembly location="ClosedXML.dll" deploymentTarget="WebApplication" sourcePath="bin\Debug\ClosedXML.dll" />
+    <customAssembly location="Excel.dll" deploymentTarget="WebApplication" sourcePath="bin\Debug\Excel.dll" />
+    <customAssembly location="ExcelDataReader.dll" deploymentTarget="WebApplication" sourcePath="bin\Debug\ExcelDataReader.dll" />
+    <customAssembly location="ExcelDataReader.DataSet.dll" deploymentTarget="WebApplication" sourcePath="bin\Debug\ExcelDataReader.DataSet.dll" />
+  </assemblies>
+  <features>
+    <featureReference itemId="bb4edbb9-506b-4b01-ad6a-3ffb587946d4" />
+    <featureReference itemId="77d0d593-b8c3-44c1-9ed5-aa9b941f15d9" />
+  </features>
+</package>

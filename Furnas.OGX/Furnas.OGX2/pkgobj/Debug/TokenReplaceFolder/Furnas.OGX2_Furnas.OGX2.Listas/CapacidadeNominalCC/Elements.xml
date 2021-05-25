@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{e0fcff11-d48f-4415-92a6-f3f5e84ffb2e}"
+       Name="CapacidadeNominalCC"
+       DisplayName="Capacidade nominal de curto-circuito (kA)"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

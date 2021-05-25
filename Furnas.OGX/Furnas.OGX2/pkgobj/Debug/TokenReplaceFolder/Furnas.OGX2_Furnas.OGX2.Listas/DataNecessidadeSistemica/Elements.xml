@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{ab55706c-3fd3-4dea-97f6-922e93477a58}"
+       Name="DataNecessidadeSistemica"
+       DisplayName="Data de Necessidade Sistêmica"
+       Type="DateTime"
+       Format="DateOnly"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

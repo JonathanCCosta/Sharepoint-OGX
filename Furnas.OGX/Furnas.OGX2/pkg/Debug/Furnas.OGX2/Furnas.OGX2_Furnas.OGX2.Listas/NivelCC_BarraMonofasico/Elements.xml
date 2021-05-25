@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{517c70ae-978b-42b7-80ef-774da1c90ff2}"
+       Name="NivelCC_BarraMonofasico"
+       DisplayName="Nível de curto-circuito na barra monofásico (kA)"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

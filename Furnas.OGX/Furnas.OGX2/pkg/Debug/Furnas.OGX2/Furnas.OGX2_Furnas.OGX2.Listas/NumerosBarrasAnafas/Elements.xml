@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{315fb263-5f33-45fd-a955-769ee9048e35}"
+       Name="NumerosBarrasAnafas"
+       DisplayName="Número da Barra no Anafas"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

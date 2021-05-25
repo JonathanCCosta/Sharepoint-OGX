@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{0baa8f6a-f080-442f-bc24-6db368e23c7d}"
+       Name="XRDisjuntor"
+       DisplayName="X/R Do disjuntor (nominal)"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

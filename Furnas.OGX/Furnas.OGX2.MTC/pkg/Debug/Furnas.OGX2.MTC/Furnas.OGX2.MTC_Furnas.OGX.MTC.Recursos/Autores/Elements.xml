@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{f89d582d-4e51-4124-af1a-f2ef4e589be7}"
+       Name="Autores"
+       DisplayName="Autores"
+       Type="UserMulti" 
+       Mult="TRUE"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

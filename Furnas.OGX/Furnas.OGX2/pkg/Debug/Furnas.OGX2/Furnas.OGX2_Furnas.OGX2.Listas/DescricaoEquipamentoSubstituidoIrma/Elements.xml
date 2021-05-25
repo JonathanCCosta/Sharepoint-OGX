@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{b64d6d92-ea21-4096-bee5-63be6062f2c7}"
+       Name="DescricaoEquipamentoSubstituidoIrma"
+       DisplayName="Descrição Do equipamento a ser substituído ou dos componentes da linha"
+       Type="Note"
+       NumLines="6"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

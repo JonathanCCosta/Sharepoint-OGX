@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{2677f60d-f7ba-4039-aa2e-aac5a1cba900}"
+       Name="StatusRevitalizacao"
+       DisplayName="Status da Revitalização"
+       Type="Choice"
+       Required="FALSE"
+       Group="Custom Site Columns">
+    <CHOICES>
+      <CHOICE>Não Iniciada</CHOICE>
+      <CHOICE>Em Andamento</CHOICE>
+      <CHOICE>Executada</CHOICE>
+    </CHOICES>
+  </Field>
+</Elements>

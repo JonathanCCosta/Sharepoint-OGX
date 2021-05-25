@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Furnas.OGX2.MTC.Documentos.WP_MarcaDagua.WP_MarcaDagua, Furnas.OGX2.MTC.Documentos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a785710f29e3b8b3" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Furnas.OGX2.MTC.Documentos - WP_MarcaDagua</property>
+        <property name="Description" type="string">My Visual Web Part</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

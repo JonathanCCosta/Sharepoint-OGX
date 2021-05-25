@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{ebc145ed-be6f-4661-9759-d060a3467f79}"
+       Name="NumEquipamentoSAP"
+       DisplayName="N° do Equipamento SAP-PM"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

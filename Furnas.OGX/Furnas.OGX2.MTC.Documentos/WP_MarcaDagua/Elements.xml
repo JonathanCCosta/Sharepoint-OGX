@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="WP_MarcaDagua" List="113" Url="_catalogs/wp">
+    <File Path="WP_MarcaDagua\WP_MarcaDagua.webpart" Url="Furnas.OGX2.MTC.Documentos_WP_MarcaDagua.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="Custom" />
+    </File>
+  </Module>
+</Elements>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{5cc7fa1b-2000-4864-ab2b-74ebadf5cdb1}"
+       Name="FatorPrimeiroPolo"
+       DisplayName="Fator de primeiro polo nominal"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

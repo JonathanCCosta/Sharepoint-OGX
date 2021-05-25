@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{6ecbf0a4-505b-42b5-b9b8-fb9ecf554cbe}"
+       Name="LiberadoEm"
+       DisplayName="Liberado em"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

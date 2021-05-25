@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x010033F536D5074F4318A40229399F349CC1" Name="Plano por Superação - Mudanças" Group="Custom Content Types" Description="Solicitação de Mudança" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{d7c888b9-4aa3-48f6-9dcb-c33b0044df6e}" DisplayName="Numeração" Required="FALSE" Name="NumeracaoIrma" />
+      <FieldRef ID="{700f7762-b1c6-4285-973b-7231fc06cf94}" DisplayName="Ciclo" Required="FALSE" Name="CicloIrma" />
+      <FieldRef ID="{c077b6c0-4cad-4ed3-9bd4-1fb7f89bd67b}" DisplayName="Região" Required="TRUE" Name="RegiaoIrma" />
+      <FieldRef ID="{d752ed45-ceed-4780-8480-66b4249dc5dd}" DisplayName="Agente" Required="TRUE" Name="AgenteIrma" />
+      <FieldRef ID="{d9d1a2a6-8b96-435c-a6b5-538168041fb7}" DisplayName="Tipo de Equipamento" Required="FALSE" Name="TipoEquipamento" />
+      <FieldRef ID="{cd527826-9af6-4cb9-b9b8-81d062b408db}" DisplayName="Instalação" Required="TRUE" Name="InstalacaoIrma" />
+      <FieldRef ID="{da4be051-a329-432b-8b69-5c725ffbc7c4}" DisplayName="Instalação - Outros" Required="FALSE" Name="InstalacaoOutro" />
+      <FieldRef ID="{edb428b8-d15e-45a2-95e5-469fe578e816}" DisplayName="Tensão Nominal (KV)" Required="TRUE" Name="TensaoNominalIrma" />
+      <FieldRef ID="{139d7675-2c9b-428e-8a3e-caee238f8139}" DisplayName="Tipo de Agente" Required="TRUE" Name="TipoAgenteIrma" />
+      <FieldRef ID="{e08fbe03-80ee-4dfd-ae5d-dc619029be6b}" DisplayName="Razão principal para a superação deste equipamento" Required="FALSE" Name="RazaoPrincipal" NumLines="6" />
+      <FieldRef ID="{23d19191-db7b-4667-807d-e7106f5e6647}" DisplayName="Nome Do Vão" Required="FALSE" Name="NomeVao" />
+      <FieldRef ID="{24ac917d-ff66-4dc3-b76a-e86e2d91a90a}" DisplayName="Justificativa da Exclusão" Required="FALSE" Name="JustificativaExclusaoIrma" NumLines="6" />
+      <FieldRef ID="{644c051e-d1bc-47f1-b540-8f7e7dbb274d}" DisplayName="Código de Identificação" Required="FALSE" Name="CodigoIdentificacao" />
+      <FieldRef ID="{10640436-fd5d-480a-8ad5-3a8fd584b7b6}" DisplayName="Função de Transmissão" Required="TRUE" Name="FuncaoTransmissaoIrma" />
+      <FieldRef ID="{e2acd69f-df5f-4569-9601-92dd292528de}" DisplayName="Função de Transmissão - Outros" Required="FALSE" Name="FuncaoTransmissaoOutro" />
+      <FieldRef ID="{315fb263-5f33-45fd-a955-769ee9048e35}" DisplayName="Número da Barra no Anafas" Required="FALSE" Name="NumerosBarrasAnafas" />
+      <FieldRef ID="{517c70ae-978b-42b7-80ef-774da1c90ff2}" DisplayName="Nível de curto-circuito na barra monofásico (kA)" Required="FALSE" Name="NivelCC_BarraMonofasico" />
+      <FieldRef ID="{5eae3e07-e013-4575-8c6b-92da4dde5cf6}" DisplayName="Nível de curto-circuito na barra trifásico (kA)" Required="FALSE" Name="NivelCC_BarraTrifasico" />
+      <FieldRef ID="{fa90e8d8-0287-44ec-9aa7-2a8c547c3bec}" DisplayName="X/R na barra da subestação para curto-circuito monofásico" Required="FALSE" Name="XR_Substacao_CC_monofasico" />
+      <FieldRef ID="{cb5d196e-856a-4811-9ffb-586d91bbeec6}" DisplayName="X/R na barra da subestação para curto-circuito trifásico" Required="FALSE" Name="XR_Substacao_CC_trifasico" />
+      <FieldRef ID="{22e17341-d701-45c2-8892-3b2c16058c84}" DisplayName="Capacidade interrupção simétrica nominal (kA)" Required="FALSE" Name="CapacidadeInterrupcaoSimetricoNominal" />
+      <FieldRef ID="{0549db58-8032-489a-ba1e-caea4fa1210e}" DisplayName="Corrente de curto-circuito nominal (kA)" Required="FALSE" Name="CorrenteCCNominal" />
+      <FieldRef ID="{524fc788-d021-45af-89d6-ca2327b2946e}" DisplayName="Valor nominal da crista da corrente de curto-circuito (kA)" Required="FALSE" Name="ValorNominalCrita" />
+      <FieldRef ID="{aa1a5219-0ace-4d21-a7c9-c550a4e81836}" DisplayName="Quantidade de equipamentos superados" Required="FALSE" Name="QuantidadeEquipamentosSuperados" />
+      <FieldRef ID="{7aa74a75-5665-4624-811a-61230d9c3869}" DisplayName="Corrente de curto-circuito monofásica através Do disjuntor (calculada) (kA)" Required="FALSE" Name="CorrenteCCMonofasicoDisjuntor" />
+      <FieldRef ID="{ad70e3af-05c5-4b85-b6b6-197a6324f97a}" DisplayName="Corrente de curto-circuito trifásica através Do disjuntor (calculada) (kA)" Required="FALSE" Name="CorrenteCCTrifasicoDisjuntor" />
+      <FieldRef ID="{0baa8f6a-f080-442f-bc24-6db368e23c7d}" DisplayName="X/R Do disjuntor (nominal)" Required="FALSE" Name="XRDisjuntor" />
+      <FieldRef ID="{5cc7fa1b-2000-4864-ab2b-74ebadf5cdb1}" DisplayName="Fator de primeiro polo nominal" Required="FALSE" Name="FatorPrimeiroPolo" />
+      <FieldRef ID="{557b9158-395a-487b-a35c-5c8144488940}" DisplayName="Quantidade de secionadoras superadas no mesmo vão (bay) sem chave de terra" Required="FALSE" Name="QtdSecionadasVaoSemChaveTerra" />
+      <FieldRef ID="{4378c27a-1cd9-45c3-ae2a-e55d99cf2c55}" DisplayName="Quantidade de secionadoras superadas no mesmo vão (bay) com chave de terra" Required="FALSE" Name="QtdSecionadasVaoComChaveTerra" />
+      <FieldRef ID="{163e3d1a-95d0-4ea8-9992-3b0b1f9bc728}" DisplayName="Corrente de curto-circuito monofásica através da secionadora (calculada) (kA)" Required="FALSE" Name="CorrenteCCMonofasicoSecionara" />
+      <FieldRef ID="{c2c7dfe9-72c6-40cf-abf1-c8f84e850e26}" DisplayName="Corrente de curto-circuito trifásica através da secionadora (calculada) (kA)" Required="FALSE" Name="CorrenteCCTrifasicaSecionara" />
+      <FieldRef ID="{01f4d9cc-77e9-44ca-9bfb-31c6dfb27496}" DisplayName="Saturação" Required="FALSE" Name="Saturacao" />
+      <FieldRef ID="{b6f1b5d5-b849-4001-891f-e2acd371b126}" DisplayName="Corrente de curto-circuito monofásica através da Bobina de bloqueio (calculada) (kA)" Required="FALSE" Name="CorrenteCCMonofasicaBobinaBloqueio" />
+      <FieldRef ID="{6ea3eec6-0cbe-464c-9088-f7dc57850086}" DisplayName="Corrente de curto-circuito trifásica através da Bobina de bloqueio (calculada) (kA)" Required="FALSE" Name="CorrenteCCTrifasicaBobinaBloqueio" />
+      <FieldRef ID="{c38f27de-b01c-4fb7-bf4f-d252d99818e2}" DisplayName="Corrente de curto-circuito monofásica através Do TC (calculada) (kA)" Required="FALSE" Name="CorrenteCCMonofasicaTC" />
+      <FieldRef ID="{e1d72dba-dae3-4270-b01d-7551532bf07b}" DisplayName="Corrente de curto-circuito trifásica através Do TC (calculada) (kA)" Required="FALSE" Name="CorrenteCCTrifasicaTC" />
+      <FieldRef ID="{6d915b4e-0d0f-4d04-becf-f54a324a285a}" DisplayName="Fator térmico" Required="FALSE" Name="FatorTermico" />
+      <FieldRef ID="{dc14f930-3e3e-46b1-a113-a38d8f4dd8cb}" DisplayName="Corrente Nominal (A)" Required="FALSE" Name="CorrenteNominal" />
+      <FieldRef ID="{ca488a1b-dc43-4399-9f12-4bb58c2f8d53}" DisplayName="Corrente de carga calculada (A)" Required="FALSE" Name="CorrenteCarga" />
+      <FieldRef ID="{0f5ee0f8-e621-4864-a0cc-bd925d3baa80}" DisplayName="Origem da indicação (empresa solicitante/documento de referência)" Required="FALSE" Name="OrigemIndicacaoSuperacao" />
+      <FieldRef ID="{9f0643fc-b3eb-4b82-a801-7be006d8b075}" DisplayName="Data de Necessidade" Required="FALSE" Name="DataNecessidade" Format="DateOnly" />
+      <FieldRef ID="{a0bcf83d-78a5-4650-909a-e87ce4de86ed}" DisplayName="Observação" Required="FALSE" Name="ObservacaoIrma" NumLines="6" />
+      <FieldRef ID="{706bc52e-5c46-4c25-b51c-3124eb689d42}" DisplayName="Projeto que Originou a Indicação" Required="FALSE" Name="ProjetoOriginouIndicacaoIrma" />
+      <FieldRef ID="{f34dceba-72a0-42b6-a5f2-9aec2d72d24c}" DisplayName="DeRating 1F" Required="FALSE" Name="DeRating1F" />
+      <FieldRef ID="{e99e215d-3de3-4411-8b21-3d3b5546cdd4}" DisplayName="DeRating 3F" Required="FALSE" Name="DeRating3F" />
+      <FieldRef ID="{90216204-b821-4dd6-b9f2-1aea3d52b3c4}" DisplayName="Superação por corrente nominal" Required="FALSE" Name="SuperacaoCorrenteNominal" />
+      <FieldRef ID="{57219bfa-7b04-434b-bf67-e60838454bf2}" DisplayName="Superação por corrente de curto-circuito simétrica" Required="FALSE" Name="SuperacaoCCSimetrica" />
+      <FieldRef ID="{75fda20e-f477-475e-b100-a2b0bc102e2b}" DisplayName="Superação pela crista da corrente de curto-circuito" Required="FALSE" Name="SuperacaoCristaCC" />
+      <FieldRef ID="{6bcb9739-8054-4bb4-a5cf-65084fff007a}" DisplayName="Superação por X/R" Required="FALSE" Name="SuperacaoXR" />
+      <FieldRef ID="{e0fcff11-d48f-4415-92a6-f3f5e84ffb2e}" DisplayName="Capacidade nominal de curto-circuito (kA)" Required="FALSE" Name="CapacidadeNominalCC" />
+      <FieldRef ID="{be62cea5-af8d-4a40-a43a-9d6fe2e63e8e}" DisplayName="Capacidade nominal de corrente (A)" Required="FALSE" Name="CapacidadeNominalCorrente" />
+      <FieldRef ID="{7ca2076a-b431-433e-b642-29cbb6dc5496}" DisplayName="Outras" Required="FALSE" Name="Outras" />
+      <FieldRef ID="{8946babe-3cae-49b6-a827-7294a377e485}" DisplayName="Situação da Análise" Required="FALSE" Name="SituacaoAnaliseIrma" />
+      <FieldRef ID="{4c3ab845-1683-4c09-a0ee-ffd83ffc5f14}" DisplayName="Parecer final" Required="FALSE" Name="ParecerFinal" />
+      <FieldRef ID="{b387bf42-257c-42e1-aac3-ade79eca2193}" DisplayName="Observação ONS" Required="FALSE" Name="ObservacaoONS" NumLines="6" />
+      <FieldRef ID="{9ed54955-f3c6-49b2-b946-f76bd2255a7c}" DisplayName="Classificação" Required="TRUE" Name="ClassificacaoLookup" />
+      <FieldRef ID="{5ab8fd91-4200-4d66-aa03-082f8784020b}" DisplayName="Indicações" Required="FALSE" Name="Indicacao" />
+      <FieldRef ID="{6600c3ba-f40b-4105-9265-06756c945a9d}" DisplayName="Oficio/Resolução/Autorização ANEEL relativa a substituição Do equipamento" Required="FALSE" Name="OficioSubstituicaoDoEquipamento" />
+      <FieldRef ID="{1ca9e21a-aa51-437a-a5a1-31af246230fb}" DisplayName="Data da Autorização" Required="FALSE" Name="DataAutorizacaoSuperacao" Format="DateOnly" />
+      <FieldRef ID="{6de73962-63e9-40c6-8371-53133309def1}" DisplayName="Previsão da Implantação" Required="FALSE" Name="PrevisaoImplantacao" Format="DateOnly" />
+      <FieldRef ID="{b83ce992-0100-48b3-8c5b-6bf13996f098}" DisplayName="Data de Entrada em Operação" Required="FALSE" Name="DataEntradaOperacao" Format="DateOnly" />
+      <FieldRef ID="{0aaa2032-c99a-41e9-bd26-3eb39d66b227}" DisplayName="Status da Revitalização" Required="TRUE" Name="StatusRevitalizacaoIrma" />
+      <FieldRef ID="{f370c0f8-8955-4694-baa5-b2554975e790}" DisplayName="Aquisição de Materiais - Início" Required="FALSE" Name="AquisicaoMateriaisInicio" Format="DateOnly" />
+      <FieldRef ID="{87259042-6e52-452a-a949-fa9968d03b57}" DisplayName="Aquisição de Materiais - Fim" Required="FALSE" Name="AquisicaoMateriaisFim" Format="DateOnly" />
+      <FieldRef ID="{100ba749-ac02-4772-955d-ad49e71fea5a}" DisplayName="Obras Civis - Início" Required="FALSE" Name="InicioObrasCivis" Format="DateOnly" />
+      <FieldRef ID="{baa028f7-c53b-4d75-8661-47f625894836}" DisplayName="Obras Civis - Fim" Required="FALSE" Name="FimObrasCivis" Format="DateOnly" />
+      <FieldRef ID="{b1f57e11-6926-4385-86b2-527a7b2604c2}" DisplayName="Montagem Eletromecânica - Início" Required="FALSE" Name="InicioMontagemEletromecanica" Format="DateOnly" />
+      <FieldRef ID="{daa2230e-880f-4dff-9544-1737eb4cc133}" DisplayName="Montagem Eletromecânica - Fim" Required="FALSE" Name="FimMontagemEletromecanica" Format="DateOnly" />
+      <FieldRef ID="{c820fbfa-da6f-45b0-a2c4-89138efd8a03}" DisplayName="Comissionamento - Início" Required="FALSE" Name="InicioComissionamento" Format="DateOnly" />
+      <FieldRef ID="{20080975-371e-4120-928b-1107b980589f}" DisplayName="Comissionamento - Fim" Required="FALSE" Name="FimComissionamento" Format="DateOnly" />
+      <FieldRef ID="{dd569fb2-a5af-4498-9ea9-1f655390eb04}" DisplayName="Operação Comercial" Required="FALSE" Name="OperacaoComercial" Format="DateOnly" />
+      <FieldRef ID="{9425e97e-6daf-4f67-b3db-5690eb2fd8ed}" DisplayName="Observações Gerais" Required="FALSE" Name="ObservacaoGeral" NumLines="6" />
+      <FieldRef ID="{960179bb-c9b3-4e91-aee4-491fca05a0dc}" DisplayName="Status da solicitação" Required="TRUE" Name="StatusSolicitacao" ShowInNewForm="FALSE" />
+      <FieldRef ID="{05d2497d-d616-4c5a-b89d-b70d370237fa}" DisplayName="Alteração Solicitada" Required="FALSE" Name="AlteracaoSolicitada" ShowInEditForm="FALSE" ShowInNewForm="TRUE" />
+      <FieldRef ID="{74e0080b-1a62-4dd9-b06a-e478cce37bf0}" DisplayName="Colunas Alteradas" Required="FALSE" Name="AlteracoesProcessadas" NumLines="6" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInNewForm="FALSE" />
+      <FieldRef ID="{4c23fb87-f35f-4b74-b017-0679de014ea2}" DisplayName="Número de Gestão" Required="FALSE" Name="NumGestao" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

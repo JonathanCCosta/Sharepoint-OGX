@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Documentos Manual Técnico de Campo" OnQuickLaunch="TRUE" TemplateType="10019" Url="Lists/DocumentosManualTecnico" Description="My List Instance"></ListInstance>
+</Elements>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{0297aa84-8abe-40d6-9b79-8adc47141553}"
+       Name="ControleDeStatusMTC"
+       DisplayName="Controle de Status" 
+       Type="Choice" 
+       Required="TRUE"
+       Group="Custom Site Columns">
+    <CHOICES>
+      <CHOICE>Vigente</CHOICE>
+      <CHOICE>Aguardando Aprovação</CHOICE>
+      <CHOICE>Para comentários</CHOICE>
+      <CHOICE>Em consolidação</CHOICE>
+      <CHOICE>Em revisão</CHOICE>
+      <CHOICE>Histórico</CHOICE>
+      <CHOICE>Cancelado</CHOICE>
+    </CHOICES>
+    <Default>Aguardando Aprovação</Default>
+  </Field>
+</Elements>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" AlwaysForceInstall="TRUE" Id="0af87ab6-50f5-4fe1-ab35-7d1d91eada53" Scope="Site" Title="Furnas.OGX2.Chamados_Paginas">
+  <ElementManifests>
+    <ElementManifest Location="WP_PesquisaSatisfacao\Elements.xml" />
+    <ElementFile Location="WP_PesquisaSatisfacao\WP_PesquisaSatisfacao.webpart" />
+    <ElementManifest Location="GerenciaResponsavel\Elements.xml" />
+    <ElementManifest Location="WP_PesquisaChamado\Elements.xml" />
+    <ElementFile Location="WP_PesquisaChamado\WP_PesquisaChamado.webpart" />
+  </ElementManifests>
+</Feature>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{dea7a3e6-5b86-4b16-a15e-65791e6402fb}"
+       Name="Substituir4Anos"
+       DisplayName="Substituir nos próximos 4 anos (a partir de 1º de fevereiro Do ano corrente)?"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

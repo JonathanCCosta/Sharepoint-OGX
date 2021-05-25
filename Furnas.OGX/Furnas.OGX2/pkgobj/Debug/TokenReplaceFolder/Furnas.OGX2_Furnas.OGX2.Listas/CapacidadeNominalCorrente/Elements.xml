@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{be62cea5-af8d-4a40-a43a-9d6fe2e63e8e}"
+       Name="CapacidadeNominalCorrente"
+       DisplayName="Capacidade nominal de corrente (A)"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{f8d677e4-137a-4fb6-8506-203ff0c0241d}"
+       Name="EnviadoPublicadoEm"
+       DisplayName="Enviado para Liberação para Publicação em"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

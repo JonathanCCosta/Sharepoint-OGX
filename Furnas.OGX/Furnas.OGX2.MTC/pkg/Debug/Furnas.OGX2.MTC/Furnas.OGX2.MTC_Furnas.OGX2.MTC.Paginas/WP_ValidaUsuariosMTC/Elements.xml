@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="WP_ValidaUsuariosMTC" List="113" Url="_catalogs/wp">
+    <File Path="WP_ValidaUsuariosMTC\WP_ValidaUsuariosMTC.webpart" Url="Furnas.OGX2.MTC_WP_ValidaUsuariosMTC.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="Custom" />
+    </File>
+  </Module>
+</Elements>

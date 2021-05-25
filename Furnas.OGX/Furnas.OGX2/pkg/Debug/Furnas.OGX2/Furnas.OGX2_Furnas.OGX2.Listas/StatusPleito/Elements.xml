@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{0d80f3dd-bfec-49e1-90b7-724ad67c8d6e}"
+       Name="StatusPleito"
+       DisplayName="Status do pleito de Receita"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

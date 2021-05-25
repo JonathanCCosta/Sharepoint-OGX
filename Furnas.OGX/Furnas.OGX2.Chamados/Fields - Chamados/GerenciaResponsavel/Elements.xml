@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{75988151-f6f8-4292-b0bd-c1df51256b72}"
+       Name="GerenciaResponsavel"
+       DisplayName="Gerência Responsável"
+       Type="Lookup"
+       List="Lists/GerenciaResponsavel"
+       ShowField="Title"
+       ShowInNewForm="FALSE"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

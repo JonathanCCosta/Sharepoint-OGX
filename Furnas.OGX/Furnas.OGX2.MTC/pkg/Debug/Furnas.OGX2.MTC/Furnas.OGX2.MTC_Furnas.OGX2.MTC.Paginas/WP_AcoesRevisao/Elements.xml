@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="WP_AcoesRevisao" List="113" Url="_catalogs/wp">
+    <File Path="WP_AcoesRevisao\WP_AcoesRevisao.webpart" Url="Furnas.OGX2.MTC_WP_AcoesRevisao.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="Custom" />
+    </File>
+  </Module>
+</Elements>

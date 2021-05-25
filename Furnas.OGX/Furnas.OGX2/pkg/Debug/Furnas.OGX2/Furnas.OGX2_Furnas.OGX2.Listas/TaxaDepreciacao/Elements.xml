@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{80b6e3bf-3033-4671-a11a-afed51f866bd}"
+       Name="TaxaDepreciacao"
+       DisplayName="Taxa de Depreciação (MCPSE – versão 9)"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{d9f083b3-aae2-4d40-8efe-b7570aeaa383}"
+       Name="Comentarios"
+       DisplayName="Comentários" 
+       Type="Note"
+       NumLines="6"
+       AppendOnly="TRUE"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

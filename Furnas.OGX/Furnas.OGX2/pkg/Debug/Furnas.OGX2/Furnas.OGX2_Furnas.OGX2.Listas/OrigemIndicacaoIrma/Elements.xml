@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{4cd4e9b6-0845-4f3a-a344-77b226e41389}"
+       Name="OrigemIndicacaoIrma"
+       DisplayName="Origem da Indicação"
+       Type="Text"
+       Required="TRUE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

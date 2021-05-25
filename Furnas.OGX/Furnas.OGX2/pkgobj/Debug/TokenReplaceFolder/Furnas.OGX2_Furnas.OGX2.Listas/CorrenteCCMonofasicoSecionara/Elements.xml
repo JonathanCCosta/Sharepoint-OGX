@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{163e3d1a-95d0-4ea8-9992-3b0b1f9bc728}"
+       Name="CorrenteCCMonofasicoSecionara"
+       DisplayName="Corrente de curto-circuito monofásica através da secionadora (calculada) (kA)"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

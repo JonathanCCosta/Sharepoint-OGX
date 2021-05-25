@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{43b7450d-0168-4dcd-88bc-b41a068afeb7}"
+       Name="JustificativaCriacao"
+       DisplayName="Justificativa Solicitação" 
+       Type="Note"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

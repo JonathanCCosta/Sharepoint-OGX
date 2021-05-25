@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{21bcc761-3c2b-42ae-9310-2762cb8d6b78}"
+       Name="ResponsavelAnalise"
+       DisplayName="Responsável pela Análise"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

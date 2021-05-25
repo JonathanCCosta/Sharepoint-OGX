@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{5eae3e07-e013-4575-8c6b-92da4dde5cf6}"
+       Name="NivelCC_BarraTrifasico"
+       DisplayName="Nível de curto-circuito na barra trifásico (kA)"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

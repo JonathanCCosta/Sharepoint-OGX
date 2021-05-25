@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{90319844-f6ee-44e4-9eba-9e39b6e9871e}"
+       Name="DataUltimaAtualizacao"
+       DisplayName="Data da última atualização de informações"
+       Type="DateTime"
+       Format="DateOnly"
+       Required="FALSE"
+       Group="Custom Site Columns">
+    <Default>[Today]</Default>
+  </Field>
+</Elements>

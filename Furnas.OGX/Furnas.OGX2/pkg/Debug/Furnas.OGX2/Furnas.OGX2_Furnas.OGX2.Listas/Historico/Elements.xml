@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{7860184f-78d2-4fad-ab36-e82bf70a01ea}"
+       Name="Historico"
+       DisplayName="Histórico"
+       Type="Choice"
+       Required="FALSE"
+       ShowInEditForm="FALSE"
+       ShowInNewForm="FALSE"
+       Group="Custom Site Columns">
+    <CHOICES>
+      <CHOICE>Não</CHOICE>
+      <CHOICE>Sim</CHOICE>
+    </CHOICES>
+    <Default>Não</Default>
+  </Field>
+</Elements>

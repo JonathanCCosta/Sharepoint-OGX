@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D4F07F78-9649-41CE-8034-FDA003BF2A0A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Furnas.OGX2.Chamados</RootNamespace>
+    <AssemblyName>Furnas.OGX2.Chamados</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <SccProjectName>&lt;Project Location In Database&gt;</SccProjectName>
+    <SccLocalPath>&lt;Local Binding Root of Project&gt;</SccLocalPath>
+    <SccAuxPath>&lt;Source Control Database&gt;</SccAuxPath>
+    <SccProvider>Jazz Source Control Provider:{AC8810C5-F6E7-4145-83AA-FDFFF6F5506D}</SccProvider>
+    <ActiveDeploymentConfiguration>Default</ActiveDeploymentConfiguration>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ER_Chamados\ER_Chamados\ER_Chamados.cs" />
+    <Compile Include="ER_Chamados\ER_CodigoMTC\ER_CodigoMTC.cs" />
+    <Compile Include="ER_Chamados\ER_Pesquisa\ER_Pesquisa.cs" />
+    <Compile Include="Features\Furnas.OGX2.ListaDeChamados\Furnas.OGX2.EventReceiver.cs">
+      <DependentUpon>Furnas.OGX2.ListaDeChamados.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Jobs\Jobs.EventReceiver.cs">
+      <DependentUpon>Jobs.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Job\TimerJobChamados.cs" />
+    <Compile Include="Job\VerificadorJobs.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceChamados\ConfiguraChamados.cs" />
+    <Compile Include="ServiceChamados\Email.cs" />
+    <Compile Include="ServiceChamados\EventFiring.cs" />
+    <Compile Include="ServiceChamados\FiltrosPesquisa.cs" />
+    <Compile Include="ServiceChamados\PermissaoChamado.cs" />
+    <Compile Include="ServiceChamados\Suporte.cs" />
+    <Compile Include="WebPartPaginas\WP_PesquisaChamado\WP_PesquisaChamado.ascx.cs">
+      <DependentUpon>WP_PesquisaChamado.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPartPaginas\WP_PesquisaChamado\WP_PesquisaChamado.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WP_PesquisaChamado.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPartPaginas\WP_PesquisaSatisfacao\WP_PesquisaSatisfacao.ascx.cs">
+      <DependentUpon>WP_PesquisaSatisfacao.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPartPaginas\WP_PesquisaSatisfacao\WP_PesquisaSatisfacao.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WP_PesquisaSatisfacao.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ER_Chamados\ER_Chamados\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e3a18cbd-a65d-4ab5-989b-d239d59d2d14}</SharePointProjectItemId>
+    </None>
+    <None Include="ER_Chamados\ER_CodigoMTC\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{61d324ae-c861-4eeb-913b-641cd0404f1b}</SharePointProjectItemId>
+    </None>
+    <None Include="ER_Chamados\ER_Pesquisa\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{871d31f8-c621-4daf-b299-fdffcd5f249b}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Furnas.OGX2.WPPaginas\Furnas.OGX2.WPPaginas.feature">
+      <FeatureId>{87f217f0-f27d-4058-84be-957230a511c6}</FeatureId>
+    </None>
+    <None Include="Features\Jobs\Jobs.feature">
+      <FeatureId>{3768703c-a5cb-4109-bc48-5fed30c2f590}</FeatureId>
+    </None>
+    <None Include="Fields - ChamadoSemFormulario\ChamadosLookup\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7ef37d35-76d7-4352-acc0-d8a1a6545531}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - ChamadoSemFormulario\DescricaoChamado\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{16d9ef4e-0aff-4142-b61a-17bae4b2ede0}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Chamados\Assunto\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{47a13b12-8e22-4f97-9d14-55acf7732c1f}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Furnas.OGX2.ListaDeChamados\Furnas.OGX2.ListaDeChamados.feature">
+      <FeatureId>{05f4656d-3e92-4ef7-882f-d58655b0d744}</FeatureId>
+    </None>
+    <None Include="Fields - Chamados\Complexidade\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c65f917d-057d-43d9-a038-0c7f7a6f93a3}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Chamados\ControleDeStatus\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5f9c7477-66a0-4688-9def-b25caf63f18e}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Chamados\DataEncerramento\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{106f580e-2fe8-463d-a611-d39eb7139485}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Chamados\EsclarecimentosGerencia\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{05ceaac0-c29f-4a72-8ac2-53b61749695c}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Chamados\Esclarecimentos\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d872ff2b-8b44-4146-b9aa-2f247b51b9b7}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Chamados\GerenciaResponsavel\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ebbfb49d-133a-4c31-9388-2f01ce0c923d}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Chamados\ImediatoResponsavel\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3584eb12-155d-41e6-bb28-765614a35394}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Chamados\Importancia\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3e805f1e-d69e-4be4-8589-91eecd941cc4}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Chamados\Orgao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{841d92d9-900b-4836-8790-d64bcb12a15c}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Chamados\PrazoAtendimento\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{599920b2-9613-4ebd-b9e2-d6933e303955}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Chamados\ResponsavelEmail\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6b47ff6b-5d5d-4b57-b747-d8f836e57783}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Chamados\Responsavel\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f745e95a-5a41-40b4-9cd7-c72e52934af7}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Modelo\ModeloChamado\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a129c927-c58d-483d-9159-bf0f807e2ba6}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Modelo\ResponsavelImediato\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a497febd-8663-4fc6-9b54-ea5bda87ac97}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields - Modelo\TipoDeChamado\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1fad7046-c197-4de3-b7ea-96d1ef27ecab}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="ListaChamados\FabricanteMTC\FabricanteMTCInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{491bf9ab-6de0-46d9-ad49-361d8c73b946}</SharePointProjectItemId>
+    </None>
+    <None Include="ListaChamados\FabricanteMTC\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1a398032-b4d7-4fdd-a26d-1d95f7d2947d}</SharePointProjectItemId>
+    </None>
+    <None Include="ListaChamados\GerenciaResponsavelMTC\GerenciaResponsavelMTCInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2b865735-7307-4883-981d-d10792d8557f}</SharePointProjectItemId>
+    </None>
+    <None Include="ListaChamados\GerenciaResponsavelMTC\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{16ce88e2-07fc-404e-8f5e-b57b70743e68}</SharePointProjectItemId>
+    </None>
+    <None Include="ListaChamados\GerenciaResponsavel\GerenciaResponsavelInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{50b85504-009f-44d1-9a0b-fcddc85ee5d7}</SharePointProjectItemId>
+    </None>
+    <None Include="ListaChamados\GerenciaResponsavel\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{30efcfae-fba1-4e9e-b1c2-2c0070c7516d}</SharePointProjectItemId>
+    </None>
+    <None Include="ListaChamados\GrupoMTC\GrupoMTCInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{118fd777-c2bf-483c-aec2-9e051d9522a5}</SharePointProjectItemId>
+    </None>
+    <None Include="ListaChamados\GrupoMTC\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{67e55232-e96a-41d9-9224-b25121f65fd8}</SharePointProjectItemId>
+    </None>
+    <None Include="ListaChamados\LinksAdministracaoChamado\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{db8ce9be-00ba-459d-ba44-a04fcca0584b}</SharePointProjectItemId>
+    </None>
+    <None Include="ListaChamados\LinksAdministracaoManuaisMTC\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0e17ff23-39f6-459c-9896-ea560cffd022}</SharePointProjectItemId>
+    </None>
+    <None Include="ListaChamados\LinksAdministracao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4b81ca6d-8c4b-4dff-b104-fff282eba88f}</SharePointProjectItemId>
+    </None>
+    <None Include="ListaChamados\ManualTecnico\ManualTecnicoInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ab04eb13-3c56-48f1-b8a9-ee1b35ab1e74}</SharePointProjectItemId>
+    </None>
+    <None Include="ListaChamados\ManualTecnico\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{697086f9-a362-4bae-8e80-e843ee3db46a}</SharePointProjectItemId>
+    </None>
+    <None Include="ListaChamados\MenuHome\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6a093643-7b6e-4a0f-830c-e8de40c81336}</SharePointProjectItemId>
+    </None>
+    <None Include="ListaChamados\PesquisaSatisfacao\PesquisaSatisfacaoInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{410f36cd-4bde-43bd-891b-5e0f63384f97}</SharePointProjectItemId>
+    </None>
+    <None Include="ListaChamados\PesquisaSatisfacao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d94dd1bd-1ac0-4a13-9ae7-a2b88423c4cc}</SharePointProjectItemId>
+    </None>
+    <None Include="ListaChamados\Chamados\ChamadosInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6e05ee37-37bd-4352-9cd9-83eb4d57064a}</SharePointProjectItemId>
+    </None>
+    <None Include="ListaChamados\Chamados\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5bbda525-f71f-46ff-9f01-e53ccfaf3989}</SharePointProjectItemId>
+    </None>
+    <None Include="ListaChamados\ContadorChamado\ContadorChamadoInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{76d834ca-19f0-4274-8c35-214bd3d1782d}</SharePointProjectItemId>
+    </None>
+    <None Include="ListaChamados\ContadorChamado\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a91bf799-42f8-4bd3-a5f8-2c6f840b98aa}</SharePointProjectItemId>
+    </None>
+    <None Include="ListaChamados\ModeloDeChamado\ModeloDeChamadoInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a46bdbd3-615e-4e82-95fb-5846fe126bf0}</SharePointProjectItemId>
+    </None>
+    <None Include="ListaChamados\ModeloDeChamado\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ae3c0082-226a-4060-ab7c-c5c95e14f731}</SharePointProjectItemId>
+    </None>
+    <None Include="ListaChamados\SubgrupoMTC\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5c1f49cc-0f7e-41f7-99ef-b2b973ec9292}</SharePointProjectItemId>
+    </None>
+    <None Include="ListaChamados\SubgrupoMTC\SubgrupoMTCInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{08279485-f6b3-4ded-bbe5-85c72617d08b}</SharePointProjectItemId>
+    </None>
+    <None Include="ListaChamados\TipoChamado\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{36d3b1bf-76ac-412a-b68b-af77b9bc4923}</SharePointProjectItemId>
+    </None>
+    <None Include="ListaChamados\TipoChamado\TipoChamadoInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e75c6197-d775-4745-a9c9-186f640a6f95}</SharePointProjectItemId>
+    </None>
+    <None Include="ListaChamados\TipoMTC\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{47d6b616-5b8c-45fe-a112-5fd4726b3310}</SharePointProjectItemId>
+    </None>
+    <None Include="ListaChamados\TipoMTC\TipoMTCInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{adc30fc0-802d-4c3d-9de0-94a312f63fab}</SharePointProjectItemId>
+    </None>
+    <None Include="ModulosChamados\JSChamados\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4ea0ddc3-eb6e-4d75-a42f-1ea6f7e95647}</SharePointProjectItemId>
+    </None>
+    <None Include="ModulosChamados\JSManual\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{162d1708-6993-4f27-b36d-ac24f5f910a1}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{dd68e9ab-e47d-4bbd-92fd-7aaddea42cf7}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="WebPartPaginas\WP_PesquisaChamado\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f5c7a645-8cc9-4564-afd9-c48c7a4e3c0e}</SharePointProjectItemId>
+    </None>
+    <None Include="WebPartPaginas\WP_PesquisaChamado\WP_PesquisaChamado.webpart" />
+    <None Include="WebPartPaginas\WP_PesquisaSatisfacao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cbd91a57-4f84-44ba-8893-092887165451}</SharePointProjectItemId>
+    </None>
+    <None Include="WebPartPaginas\WP_PesquisaSatisfacao\WP_PesquisaSatisfacao.webpart" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="ER_Chamados\ER_Chamados\Elements.xml" />
+    <Content Include="ER_Chamados\ER_CodigoMTC\Elements.xml" />
+    <Content Include="ER_Chamados\ER_Pesquisa\Elements.xml" />
+    <Content Include="Features\Furnas.OGX2.WPPaginas\Furnas.OGX2.WPPaginas.Template.xml">
+      <DependentUpon>Furnas.OGX2.WPPaginas.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Jobs\Jobs.Template.xml">
+      <DependentUpon>Jobs.feature</DependentUpon>
+    </Content>
+    <Content Include="Fields - ChamadoSemFormulario\ChamadosLookup\Elements.xml" />
+    <Content Include="Fields - ChamadoSemFormulario\DescricaoChamado\Elements.xml" />
+    <Content Include="Fields - Chamados\Assunto\Elements.xml" />
+    <Content Include="Features\Furnas.OGX2.ListaDeChamados\Furnas.OGX2.ListaDeChamados.Template.xml">
+      <DependentUpon>Furnas.OGX2.ListaDeChamados.feature</DependentUpon>
+    </Content>
+    <Content Include="Fields - Chamados\Complexidade\Elements.xml" />
+    <Content Include="Fields - Chamados\ControleDeStatus\Elements.xml" />
+    <Content Include="Fields - Chamados\DataEncerramento\Elements.xml" />
+    <Content Include="Fields - Chamados\EsclarecimentosGerencia\Elements.xml" />
+    <Content Include="Fields - Chamados\Esclarecimentos\Elements.xml" />
+    <Content Include="Fields - Chamados\GerenciaResponsavel\Elements.xml" />
+    <Content Include="Fields - Chamados\ImediatoResponsavel\Elements.xml" />
+    <Content Include="Fields - Chamados\Importancia\Elements.xml" />
+    <Content Include="Fields - Chamados\Orgao\Elements.xml" />
+    <Content Include="Fields - Chamados\PrazoAtendimento\Elements.xml" />
+    <Content Include="Fields - Chamados\ResponsavelEmail\Elements.xml" />
+    <Content Include="Fields - Chamados\Responsavel\Elements.xml" />
+    <Content Include="Fields - Modelo\ModeloChamado\Elements.xml" />
+    <Content Include="Fields - Modelo\ResponsavelImediato\Elements.xml" />
+    <Content Include="Fields - Modelo\TipoDeChamado\Elements.xml" />
+    <Content Include="ListaChamados\FabricanteMTC\Elements.xml" />
+    <Content Include="ListaChamados\FabricanteMTC\FabricanteMTCInstance\Elements.xml" />
+    <Content Include="ListaChamados\FabricanteMTC\Schema.xml" />
+    <Content Include="ListaChamados\GerenciaResponsavelMTC\Elements.xml" />
+    <Content Include="ListaChamados\GerenciaResponsavelMTC\GerenciaResponsavelMTCInstance\Elements.xml" />
+    <Content Include="ListaChamados\GerenciaResponsavelMTC\Schema.xml" />
+    <Content Include="ListaChamados\GerenciaResponsavel\Elements.xml" />
+    <Content Include="ListaChamados\GerenciaResponsavel\GerenciaResponsavelInstance\Elements.xml" />
+    <Content Include="ListaChamados\GerenciaResponsavel\Schema.xml" />
+    <Content Include="ListaChamados\GrupoMTC\Elements.xml" />
+    <Content Include="ListaChamados\GrupoMTC\GrupoMTCInstance\Elements.xml" />
+    <Content Include="ListaChamados\GrupoMTC\Schema.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ListaChamados\LinksAdministracaoChamado\Elements.xml" />
+    <Content Include="ListaChamados\LinksAdministracaoManuaisMTC\Elements.xml" />
+    <Content Include="ListaChamados\LinksAdministracao\Elements.xml" />
+    <Content Include="ListaChamados\ManualTecnico\EditDlg.htm" />
+    <Content Include="ListaChamados\ManualTecnico\Elements.xml" />
+    <Content Include="ListaChamados\ManualTecnico\FileDlg.htm" />
+    <Content Include="ListaChamados\ManualTecnico\ManualTecnicoInstance\Elements.xml" />
+    <Content Include="ListaChamados\ManualTecnico\Repair.aspx" />
+    <Content Include="ListaChamados\ManualTecnico\Schema.xml" />
+    <Content Include="ListaChamados\ManualTecnico\Upload.aspx" />
+    <Content Include="ListaChamados\MenuHome\Elements.xml" />
+    <Content Include="ListaChamados\PesquisaSatisfacao\PesquisaSatisfacaoInstance\Elements.xml" />
+    <Content Include="ListaChamados\PesquisaSatisfacao\Elements.xml" />
+    <Content Include="ListaChamados\PesquisaSatisfacao\Schema.xml" />
+    <Content Include="ListaChamados\Chamados\ChamadosInstance\Elements.xml" />
+    <Content Include="ListaChamados\Chamados\Elements.xml" />
+    <Content Include="ListaChamados\Chamados\Schema.xml" />
+    <Content Include="ListaChamados\ContadorChamado\ContadorChamadoInstance\Elements.xml" />
+    <Content Include="ListaChamados\ContadorChamado\Elements.xml" />
+    <Content Include="ListaChamados\ContadorChamado\Schema.xml" />
+    <Content Include="ListaChamados\ModeloDeChamado\EditDlg.htm" />
+    <Content Include="ListaChamados\ModeloDeChamado\Elements.xml" />
+    <Content Include="ListaChamados\ModeloDeChamado\FileDlg.htm" />
+    <Content Include="ListaChamados\ModeloDeChamado\ModeloDeChamadoInstance\Elements.xml" />
+    <Content Include="ListaChamados\ModeloDeChamado\Repair.aspx" />
+    <Content Include="ListaChamados\ModeloDeChamado\Schema.xml" />
+    <Content Include="ListaChamados\ModeloDeChamado\Upload.aspx" />
+    <Content Include="ListaChamados\SubgrupoMTC\Elements.xml" />
+    <Content Include="ListaChamados\SubgrupoMTC\Schema.xml" />
+    <Content Include="ListaChamados\SubgrupoMTC\SubgrupoMTCInstance\Elements.xml" />
+    <Content Include="ListaChamados\TipoChamado\Elements.xml" />
+    <Content Include="ListaChamados\TipoChamado\Schema.xml" />
+    <Content Include="ListaChamados\TipoChamado\TipoChamadoInstance\Elements.xml" />
+    <Content Include="ListaChamados\TipoMTC\Elements.xml" />
+    <Content Include="ListaChamados\TipoMTC\Schema.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ListaChamados\TipoMTC\TipoMTCInstance\Elements.xml" />
+    <Content Include="ModulosChamados\JSChamados\AdministracaoChamados.js" />
+    <Content Include="ModulosChamados\JSChamados\AdministracaoManualMTC.js" />
+    <Content Include="ModulosChamados\JSChamados\CarregaGrupoMTC.js" />
+    <Content Include="ModulosChamados\JSChamados\Avaliacao.js" />
+    <Content Include="ModulosChamados\JSChamados\CarregaGerencia.js" />
+    <Content Include="ModulosChamados\JSChamados\CarregaGerenciaEdit.js" />
+    <Content Include="ModulosChamados\JSChamados\carregaModelo.css" />
+    <Content Include="ModulosChamados\JSChamados\DispChamado.js" />
+    <Content Include="ModulosChamados\JSChamados\EditChamado.js" />
+    <Content Include="ModulosChamados\JSChamados\Elements.xml" />
+    <Content Include="ModulosChamados\JSManual\DispManualTecnico.js" />
+    <Content Include="ModulosChamados\JSManual\EditManualTecnico.js" />
+    <Content Include="ModulosChamados\JSManual\HillbillyCascade.js" />
+    <Content Include="ModulosChamados\JSChamados\IncluirChamado.js" />
+    <Content Include="ModulosChamados\JSChamados\ModeloChamado.js" />
+    <Content Include="ModulosChamados\JSChamados\Pesquisa.js" />
+    <Content Include="ModulosChamados\JSManual\Elements.xml" />
+    <Content Include="ModulosChamados\JSManual\ManualTecnico.js" />
+    <Content Include="WebPartPaginas\WP_PesquisaChamado\Elements.xml" />
+    <Content Include="WebPartPaginas\WP_PesquisaChamado\WP_PesquisaChamado.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>WP_PesquisaChamado.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="WebPartPaginas\WP_PesquisaSatisfacao\Elements.xml" />
+    <Content Include="WebPartPaginas\WP_PesquisaSatisfacao\WP_PesquisaSatisfacao.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>WP_PesquisaSatisfacao.ascx.g.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

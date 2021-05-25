@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{22e6c826-5998-4228-9e68-71a5a82f056e}"
+       Name="ResponsavelSolicitante"
+       DisplayName="Responsável no órgão solicitante"
+       Type="Text"
+       Required="TRUE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

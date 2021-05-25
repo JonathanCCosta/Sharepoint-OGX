@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="WP_PesquisaChamado" List="113" Url="_catalogs/wp">
+    <File Path="WP_PesquisaChamado\WP_PesquisaChamado.webpart" Url="Furnas.OGX2.Chamados_WP_PesquisaChamado.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="Custom" />
+    </File>
+  </Module>
+</Elements>

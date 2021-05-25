@@ -1,0 +1,5 @@
+C:\Furnas.OGX2\Furnas.OGX2.Cargas\bin\Debug\Furnas.OGX2.Cargas.dll
+C:\Furnas.OGX2\Furnas.OGX2.Cargas\bin\Debug\Furnas.OGX2.Cargas.pdb
+C:\Furnas.OGX2\Furnas.OGX2.Cargas\obj\Debug\Furnas.OGX2.Cargas.csprojResolveAssemblyReference.cache
+C:\Furnas.OGX2\Furnas.OGX2.Cargas\obj\Debug\Furnas.OGX2.Cargas.dll
+C:\Furnas.OGX2\Furnas.OGX2.Cargas\obj\Debug\Furnas.OGX2.Cargas.pdb

@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Gestão Interna" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/GestaoInterna" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x01007b9fa0b443434cb3ba1e67476ec07fec" Name="ListFieldsContentType">
+        <FieldRefs>
+          <FieldRef ID="{8b8b79e1-5d00-4210-a2c6-8f13672ae666}" Name="NumeroSGPRM" />
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+          <FieldRef ID="{15869d30-b05b-4c38-8a0d-3f97441747b1}" Name="FormaSolicitacao" />
+          <FieldRef ID="{cb592c29-68f0-4963-95b0-fb1680da9bee}" Name="OrgaoSolicitante" />
+          <FieldRef ID="{22e6c826-5998-4228-9e68-71a5a82f056e}" Name="ResponsavelSolicitante" />
+          <FieldRef ID="{32837d22-53c7-4512-82d8-c0a9783fe977}" Name="DocumentoInterno" />
+          <FieldRef ID="{6783c5ce-1ed5-4d7f-998d-bd8a1ff011e1}" Name="OrgaoGestorObra" />
+          <FieldRef ID="{1d0629d7-d9a4-4efc-a961-b9fb23f455f7}" Name="ResponsavelOrgaoGestorObra" />
+          <FieldRef ID="{41f8dc51-6f48-4c23-9b0b-515517306145}" Name="ConsideracoesResponsavelGerenciamento" />
+          <FieldRef ID="{28386e07-bcf4-4e93-9dae-bebf272466f3}" Name="NumeroPEP" />
+          <FieldRef ID="{6edb1243-46be-4398-a55d-17efd1e11347}" Name="LocalInstalacaoSAP" />
+          <FieldRef ID="{ebc145ed-be6f-4661-9759-d060a3467f79}" Name="NumEquipamentoSAP" />
+          <FieldRef ID="{6d0b373e-d600-4080-a70c-ea4e5a2538df}" Name="ControleAtosAutorizados" />
+          <FieldRef ID="{2f2ebfb2-2060-46f7-9cd4-93a86c4943ac}" Name="AtoAutorizativoAtual" />
+          <FieldRef ID="{d58a5d40-e030-4127-8713-574c43e5abd5}" Name="PrevisaoImplantacaoGI" />
+          <FieldRef ID="{70d4628d-0ed8-4dc4-bf2d-458d01f6bbbd}" Name="StatusRevitalizacaoGI" />
+          <FieldRef ID="{2b67c06d-e0eb-4f1c-8d1e-6a992752afe4}" Name="DocumentoPleito" />
+          <FieldRef ID="{0d80f3dd-bfec-49e1-90b7-724ad67c8d6e}" Name="StatusPleito" />
+          <FieldRef ID="{bb1b4522-d8db-4928-953e-5fbdbdbcbdd0}" Name="ConsideracoesGestaoAtivos" />
+          <FieldRef ID="{90319844-f6ee-44e4-9eba-9e39b6e9871e}" Name="DataUltimaAtualizacao" />
+          <FieldRef ID="{11aeeabd-29cd-4c96-80e6-89ef3fb384f2}" Name="AprovacaoSolicitacao" />
+          <FieldRef ID="{7860184f-78d2-4fad-ab36-e82bf70a01ea}" Name="Historico" />
+        </FieldRefs>
+      </ContentType>
+      <ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef>
+      <ContentTypeRef ID="0x0120" />
+    </ContentTypes>
+    <Fields>
+      <Field ID="{8b8b79e1-5d00-4210-a2c6-8f13672ae666}" Name="NumeroSGPRM" DisplayName="No. SGPMR" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="Ver detalhes" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInNewForm="FALSE" Required="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255">
+        <Default>Ver detalhes</Default>
+      </Field>
+      <Field ID="{15869d30-b05b-4c38-8a0d-3f97441747b1}" Name="FormaSolicitacao" DisplayName="Forma de Solicitação" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{cb592c29-68f0-4963-95b0-fb1680da9bee}" Name="OrgaoSolicitante" DisplayName="Órgão solicitante" Type="Text" Required="TRUE" Group="Custom Site Columns"></Field>
+      <Field ID="{22e6c826-5998-4228-9e68-71a5a82f056e}" Name="ResponsavelSolicitante" DisplayName="Responsável no órgão solicitante" Type="Text" Required="TRUE" Group="Custom Site Columns"></Field>
+      <Field ID="{32837d22-53c7-4512-82d8-c0a9783fe977}" Name="DocumentoInterno" DisplayName="Documento interno de aprovação" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{6783c5ce-1ed5-4d7f-998d-bd8a1ff011e1}" Name="OrgaoGestorObra" DisplayName="Órgão Gestor da obra" Type="Text" Required="TRUE" Group="Custom Site Columns"></Field>
+      <Field ID="{1d0629d7-d9a4-4efc-a961-b9fb23f455f7}" Name="ResponsavelOrgaoGestorObra" DisplayName="Responsável no órgão gestor da obra" Type="Text" Required="TRUE" Group="Custom Site Columns"></Field>
+      <Field ID="{41f8dc51-6f48-4c23-9b0b-515517306145}" Name="ConsideracoesResponsavelGerenciamento" DisplayName="Considerações do Responsável pelo gerenciamento" Type="Note" NumLines="6" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{28386e07-bcf4-4e93-9dae-bebf272466f3}" Name="NumeroPEP" DisplayName="Número do PEP" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{6edb1243-46be-4398-a55d-17efd1e11347}" Name="LocalInstalacaoSAP" DisplayName="Local de instalação SAP-PM" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{ebc145ed-be6f-4661-9759-d060a3467f79}" Name="NumEquipamentoSAP" DisplayName="N° do Equipamento SAP-PM" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{6d0b373e-d600-4080-a70c-ea4e5a2538df}" Name="ControleAtosAutorizados" DisplayName="Controle de atos autorizativos" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{2f2ebfb2-2060-46f7-9cd4-93a86c4943ac}" Name="AtoAutorizativoAtual" DisplayName="Ato Autorizativo Atual, PAR, POT ou PET" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{d58a5d40-e030-4127-8713-574c43e5abd5}" Name="PrevisaoImplantacaoGI" DisplayName="Previsão de implantação FURNAS" Type="DateTime" Format="DateOnly" Required="TRUE" Group="Custom Site Columns"></Field>
+      <Field ID="{70d4628d-0ed8-4dc4-bf2d-458d01f6bbbd}" Name="StatusRevitalizacaoGI" DisplayName="Status de revitalização FURNAS" Type="Text" Required="TRUE" Group="Custom Site Columns"></Field>
+      <Field ID="{2b67c06d-e0eb-4f1c-8d1e-6a992752afe4}" Name="DocumentoPleito" DisplayName="Documento de pleito de receita" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{0d80f3dd-bfec-49e1-90b7-724ad67c8d6e}" Name="StatusPleito" DisplayName="Status do pleito de Receita" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{bb1b4522-d8db-4928-953e-5fbdbdbcbdd0}" Name="ConsideracoesGestaoAtivos" DisplayName="Consideracões de Gestão de Ativos" Type="Note" NumLines="6" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{90319844-f6ee-44e4-9eba-9e39b6e9871e}" Name="DataUltimaAtualizacao" DisplayName="Data da última atualização de informações" Type="DateTime" Format="DateOnly" Required="FALSE" Group="Custom Site Columns">
+        <Default>[Today]</Default>
+      </Field>
+      <Field ID="{11aeeabd-29cd-4c96-80e6-89ef3fb384f2}" Name="AprovacaoSolicitacao" DisplayName="Aprovação da solicitação" Type="Choice" Required="FALSE" Group="Custom Site Columns">
+        <CHOICES>
+          <CHOICE>Pendente</CHOICE>
+          <CHOICE>Aprovado</CHOICE>
+          <CHOICE>Rejeitado</CHOICE>
+        </CHOICES>
+        <Default>Pendente</Default>
+      </Field>
+      <Field ID="{7860184f-78d2-4fad-ab36-e82bf70a01ea}" Name="Historico" DisplayName="Histórico" Type="Choice" Required="FALSE" ShowInEditForm="FALSE" ShowInNewForm="FALSE" Group="Custom Site Columns">
+        <CHOICES>
+          <CHOICE>Não</CHOICE>
+          <CHOICE>Sim</CHOICE>
+        </CHOICES>
+        <Default>Não</Default>
+      </Field>
+      
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">1000</RowLimit>
+        <ViewFields>
+          <FieldRef Name="Edit" />
+          <FieldRef Name="LinkTitleNoMenu" />
+          <FieldRef Name="Created" />
+          <FieldRef Name="Author" />
+          <FieldRef Name="AprovacaoSolicitacao" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Created" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

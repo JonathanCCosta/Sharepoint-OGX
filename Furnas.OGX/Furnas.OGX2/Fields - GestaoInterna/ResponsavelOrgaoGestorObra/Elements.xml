@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{1d0629d7-d9a4-4efc-a961-b9fb23f455f7}"
+       Name="ResponsavelOrgaoGestorObra"
+       DisplayName="Responsável no órgão gestor da obra"
+       Type="Text"
+       Required="TRUE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

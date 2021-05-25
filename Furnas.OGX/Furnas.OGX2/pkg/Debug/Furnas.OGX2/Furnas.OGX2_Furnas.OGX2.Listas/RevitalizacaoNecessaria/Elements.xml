@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{a378b7b4-4b74-4a63-8c20-32dde1ae90a4}"
+       Name="RevitalizacaoNecessaria"
+       DisplayName="Revitalização Necessária"
+       Type="Note"
+       NumLines="6"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

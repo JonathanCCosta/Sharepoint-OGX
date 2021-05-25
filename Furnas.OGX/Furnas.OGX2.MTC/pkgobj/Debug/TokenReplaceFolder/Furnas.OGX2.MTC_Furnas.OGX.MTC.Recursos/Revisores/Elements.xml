@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{7e31e550-e19a-469a-b123-af8c2e0e68ee}"
+       Name="Revisores"
+       DisplayName="Revisores"
+       Type="UserMulti" 
+       Mult="TRUE"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

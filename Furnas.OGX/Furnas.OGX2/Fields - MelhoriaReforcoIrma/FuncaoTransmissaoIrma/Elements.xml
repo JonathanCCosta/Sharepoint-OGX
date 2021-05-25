@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{10640436-fd5d-480a-8ad5-3a8fd584b7b6}"
+       Name="FuncaoTransmissaoIrma"
+       DisplayName="Função de Transmissão"
+       Type="Lookup"
+       List="Lists/DominioFuncaoTrasmissao"
+       ShowField="Title"
+       Required="TRUE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

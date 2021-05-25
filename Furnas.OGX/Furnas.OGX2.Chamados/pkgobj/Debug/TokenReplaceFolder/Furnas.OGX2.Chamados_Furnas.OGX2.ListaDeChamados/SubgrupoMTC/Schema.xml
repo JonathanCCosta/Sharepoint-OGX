@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="SubgrupoMTC" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/SubgrupoMTC" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+
+
+
+
+
+
+      <ContentType ID="0x0100384239f4b83449cea7129532634c3ca1" Name="ListFieldsContentType">
+        <FieldRefs>
+
+
+
+
+
+
+          <FieldRef ID="{88b96d71-20f5-4367-adb3-b9c06481a6e4}" Name="Grupo" />
+          <FieldRef ID="{d36326ac-267f-4a3c-858f-58e54859005e}" Name="Codigo" />
+          <FieldRef ID="{4945cc5c-6ab5-4fd2-a97b-5c3ad6adacdc}" Name="Descricao" />
+          <FieldRef ID="{f495cbd2-b919-4c08-bf98-1a70deb7c26b}" Name="DescricaoSubgrupo" />
+        </FieldRefs>
+      </ContentType>
+      <ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef>
+      <ContentTypeRef ID="0x0120" />
+    </ContentTypes>
+    <Fields>
+
+
+
+
+
+
+      <Field Name="Grupo" ID="{88b96d71-20f5-4367-adb3-b9c06481a6e4}" DisplayName="Código do Grupo" Type="Lookup" List="Lists/GrupoMTC" ShowField="CodigoGrupoMTC" Required="TRUE" />
+      <Field Name="Codigo" ID="{d36326ac-267f-4a3c-858f-58e54859005e}" DisplayName="Código do Subgrupo" Type="Text" Required="TRUE" EnforceUniqueValues="TRUE" LinkToItem="TRUE" ListItemMenu="TRUE" Indexed="TRUE" />
+      <Field Name="Descricao" ID="{4945cc5c-6ab5-4fd2-a97b-5c3ad6adacdc}" DisplayName="Descrição do Subgrupo" Type="Text" Required="TRUE" />
+      <Field Name="DescricaoSubgrupo" ID="{f495cbd2-b919-4c08-bf98-1a70deb7c26b}" DisplayName="Descrição Subgrupo" Type="Text" />
+    </Fields>
+    <Views>
+
+
+
+
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+
+
+
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+
+
+
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+
+
+
+
+
+          <FieldRef Name="Codigo" />
+          <FieldRef Name="Grupo" />
+          <FieldRef Name="DescricaoSubgrupo" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+
+
+
+            <FieldRef Name="ID"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

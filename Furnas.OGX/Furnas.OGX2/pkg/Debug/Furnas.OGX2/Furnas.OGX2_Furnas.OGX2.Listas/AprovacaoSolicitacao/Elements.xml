@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{11aeeabd-29cd-4c96-80e6-89ef3fb384f2}"
+       Name="AprovacaoSolicitacao"
+       DisplayName="Aprovação da solicitação"
+       Type="Choice"
+       Required="FALSE"
+       Group="Custom Site Columns">
+    <CHOICES>
+      <CHOICE>Pendente</CHOICE>
+      <CHOICE>Aprovado</CHOICE>
+      <CHOICE>Rejeitado</CHOICE>
+    </CHOICES>
+    <Default>Pendente</Default>
+  </Field>
+</Elements>

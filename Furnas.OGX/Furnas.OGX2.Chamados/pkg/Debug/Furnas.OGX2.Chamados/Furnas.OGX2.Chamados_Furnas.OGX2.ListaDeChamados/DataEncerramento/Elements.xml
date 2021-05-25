@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{bc719ad7-7b0d-4023-8797-92c4c6e6aff5}"
+       Name="DataEncerramento"
+       DisplayName="Data de encerramento"
+       Type="DateTime"
+       Format="DateOnly"
+       ShowInNewForm="FALSE"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

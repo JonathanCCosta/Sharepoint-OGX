@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{54ced69f-4989-4ae8-b90c-aa384a305b64}"
+       Name="NumRecomendacaoSGRIrma"
+       DisplayName="N° da recomendação no SGR"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{e08fbe03-80ee-4dfd-ae5d-dc619029be6b}"
+       Name="RazaoPrincipal"
+       DisplayName="Razão principal para a superação deste equipamento"
+       Type="Note"
+       NumLines="6"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

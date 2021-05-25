@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{139d7675-2c9b-428e-8a3e-caee238f8139}"
+       Name="TipoAgenteIrma"
+       DisplayName="Tipo de Agente"
+       Type="Choice"
+       Required="TRUE"
+       Group="Custom Site Columns">
+    <CHOICES>
+      <CHOICE>Selecione uma opção</CHOICE>
+      <CHOICE>Consumidor Livre</CHOICE>
+      <CHOICE>Distribuição</CHOICE>
+      <CHOICE>Geração</CHOICE>
+      <CHOICE>Transmissão</CHOICE>
+    </CHOICES>
+    <Default>Selecione uma opção</Default>
+  </Field>
+</Elements>

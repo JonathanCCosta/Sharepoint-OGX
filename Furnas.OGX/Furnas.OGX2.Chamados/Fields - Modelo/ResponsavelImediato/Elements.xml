@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{83a019cb-2ad8-4d0a-b040-57b8a9dc14ea}"
+       Name="ResponsavelImediato"
+       DisplayName="Responsavel Imediato"
+       Type="UserMulti"
+       UserSelectionMode="PeopleOnly"
+       Required="FALSE"
+       ShowInNewForm="FALSE"
+       ShowInDisplayForm="FALSE"
+       ShowInEditForm="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

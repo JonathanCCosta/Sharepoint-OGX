@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{c38f27de-b01c-4fb7-bf4f-d252d99818e2}"
+       Name="CorrenteCCMonofasicaTC"
+       DisplayName="Corrente de curto-circuito monofásica através Do TC (calculada) (kA)"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

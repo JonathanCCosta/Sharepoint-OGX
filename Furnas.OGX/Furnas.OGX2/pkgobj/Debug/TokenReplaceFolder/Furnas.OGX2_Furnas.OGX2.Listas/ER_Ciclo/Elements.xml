@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Receivers ListUrl="Lists/Ciclos">
+      <Receiver>
+        <Name>ER_CicloItemAdded</Name>
+        <Type>ItemAdded</Type>
+        <Assembly>Furnas.OGX2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=fad643471c496b2a</Assembly>
+        <Class>Furnas.OGX2.ER_Listas.ER_Ciclo.ER_Ciclo</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>ER_CicloItemUpdated</Name>
+        <Type>ItemUpdated</Type>
+        <Assembly>Furnas.OGX2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=fad643471c496b2a</Assembly>
+        <Class>Furnas.OGX2.ER_Listas.ER_Ciclo.ER_Ciclo</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+  <Receiver>
+<Name>ER_CicloItemUpdating</Name>
+<Type>ItemUpdating</Type>
+<Assembly>Furnas.OGX2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=fad643471c496b2a</Assembly>
+<Class>Furnas.OGX2.ER_Listas.ER_Ciclo.ER_Ciclo</Class>
+<SequenceNumber>10000</SequenceNumber>
+</Receiver>
+</Receivers>
+</Elements>

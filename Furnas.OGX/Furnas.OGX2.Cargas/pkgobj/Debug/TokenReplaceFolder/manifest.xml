@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="da673076-1fc2-4bad-96ba-1786e864641a" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="ClosedXML.dll" DeploymentTarget="WebApplication" />
+    <Assembly Location="Furnas.OGX2.Cargas.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="Furnas.OGX2.Cargas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1b32697f108cc55d" Namespace="Furnas.OGX2.Cargas.WP_CargasAuxiliares" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="Furnas.OGX2.Cargas_Furnas.OGX2.CargasMTC\Feature.xml" />
+    <FeatureManifest Location="Furnas.OGX2.Cargas_Furnas.OGX2.CargasMTC.ER\Feature.xml" />
+  </FeatureManifests>
+</Solution>

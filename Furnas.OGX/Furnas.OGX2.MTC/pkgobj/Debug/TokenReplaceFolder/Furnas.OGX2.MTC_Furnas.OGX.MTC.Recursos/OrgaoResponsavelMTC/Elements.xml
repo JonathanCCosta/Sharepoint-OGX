@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{9b288770-4504-47f3-bab3-67eb7c5f25ef}"
+       Name="OrgaoResponsavelMTC"
+       DisplayName="Órgão Responsável"
+       Type="Lookup"
+       ShowField="Title"
+       List="Lists/GerenciaResponsavelMTC"
+       Required="TRUE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

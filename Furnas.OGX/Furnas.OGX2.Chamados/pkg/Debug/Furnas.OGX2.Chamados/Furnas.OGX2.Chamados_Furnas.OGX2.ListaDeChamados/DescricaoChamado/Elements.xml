@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{8b3a1ed9-7906-463b-8a5c-de57eee1f38c}"
+       Name="DescricaoChamado"
+       DisplayName="Descrição do chamado"
+       Type="Note"
+       NumLines="40"
+       Required="TRUE"
+       RichTextMode="FullHtml"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

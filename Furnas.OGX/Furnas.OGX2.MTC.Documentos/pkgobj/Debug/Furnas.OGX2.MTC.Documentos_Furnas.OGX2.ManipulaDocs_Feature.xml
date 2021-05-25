@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="246420ed-9f4f-4e71-ae99-19c59241cd12" Scope="Site" Title="Furnas.OGX2.MTC.Documentos_ManipulaDocumentos">
+  <ElementManifests>
+    <ElementManifest Location="WP_MarcaDagua\Elements.xml" />
+    <ElementFile Location="WP_MarcaDagua\WP_MarcaDagua.webpart" />
+  </ElementManifests>
+</Feature>

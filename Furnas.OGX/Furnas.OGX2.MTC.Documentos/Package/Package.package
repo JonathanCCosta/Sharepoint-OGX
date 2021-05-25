@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="6da57895-4ef0-4a5f-9c0f-4dab876d8c3b" solutionId="6da57895-4ef0-4a5f-9c0f-4dab876d8c3b" resetWebServer="false" sharePointProductVersion="15.0" name="Furnas.OGX2.MTC.Documentos" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <customAssembly location="PdfSharp.dll" deploymentTarget="WebApplication" sourcePath="bin\Debug\PdfSharp.dll" />
+  </assemblies>
+  <features>
+    <featureReference itemId="8c1f4771-f69a-4c2e-8e65-02695223067c" />
+  </features>
+</package>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{cccef1e0-6cf9-4047-899e-19571b9ce9a4}"
+       Name="CustoEstimadoIrma"
+       DisplayName="Custo Estimado (R$)"
+       Type="Currency"
+       Decimals="2"
+       LCID="1046"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

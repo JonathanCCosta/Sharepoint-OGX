@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="851231af-d9db-4c66-bc2a-7b5910dfe79e" Scope="Site" Title="Furnas.OGX2.Cargas Feature1">
+  <ElementManifests>
+    <ElementManifest Location="WP_CargasAuxiliares\Elements.xml" />
+    <ElementFile Location="WP_CargasAuxiliares\WP_CargasAuxiliares.webpart" />
+  </ElementManifests>
+</Feature>

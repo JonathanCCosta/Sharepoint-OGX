@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Fabricante MTC" OnQuickLaunch="FALSE" TemplateType="10014" Url="Lists/FabricanteMTC" Description=" Cadastro de Fabricante MTC para complementar as informações sobre Manual Técnico de Campo"></ListInstance>
+</Elements>

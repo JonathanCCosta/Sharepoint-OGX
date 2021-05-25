@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="CSS\" Type="ElementManifest" />
+    <ProjectItemFile Source="importexcel.css" Target="CSS\" Type="ElementFile" />
+    <ProjectItemFile Source="ajax-loader.gif" Target="CSS\" Type="ElementFile" />
+    <ProjectItemFile Source="Administracao.css" Target="CSS\" Type="ElementFile" />
+    <ProjectItemFile Source="Image\Colaboracao.png" Target="CSS\Image\" Type="ElementFile" />
+    <ProjectItemFile Source="Image\membros.png" Target="CSS\Image\" Type="ElementFile" />
+    <ProjectItemFile Source="Image\documentos.png" Target="CSS\Image\" Type="ElementFile" />
+    <ProjectItemFile Source="Image\planos.png" Target="CSS\Image\" Type="ElementFile" />
+    <ProjectItemFile Source="Image\ciclo.png" Target="CSS\Image\" Type="ElementFile" />
+    <ProjectItemFile Source="Image\admin.png" Target="CSS\Image\" Type="ElementFile" />
+    <ProjectItemFile Source="Image\ciclos.png" Target="CSS\Image\" Type="ElementFile" />
+    <ProjectItemFile Source="Image\arquivos.png" Target="CSS\Image\" Type="ElementFile" />
+    <ProjectItemFile Source="Image\colb.png" Target="CSS\Image\" Type="ElementFile" />
+    <ProjectItemFile Source="Image\planosG.png" Target="CSS\Image\" Type="ElementFile" />
+    <ProjectItemFile Source="favicon.ico" Target="CSS\" Type="ElementFile" />
+    <ProjectItemFile Source="Image\icon_chamados_menu.png" Target="CSS\Image\" Type="ElementFile" />
+    <ProjectItemFile Source="Image\icon_gerencia_responsavel.png" Target="CSS\Image\" Type="ElementFile" />
+    <ProjectItemFile Source="Image\icon_operar_manter.png" Target="CSS\Image\" Type="ElementFile" />
+    <ProjectItemFile Source="Image\icone_sgmpr.png" Target="CSS\Image\" Type="ElementFile" />
+    <ProjectItemFile Source="Image\img_fabricante.png" Target="CSS\Image\" Type="ElementFile" />
+    <ProjectItemFile Source="Image\img_gestao_vida.png" Target="CSS\Image\" Type="ElementFile" />
+    <ProjectItemFile Source="Image\img_manual_campo.png" Target="CSS\Image\" Type="ElementFile" />
+    <ProjectItemFile Source="Image\img_manual_mtc.png" Target="CSS\Image\" Type="ElementFile" />
+    <ProjectItemFile Source="Image\img_manual_tecnico.png" Target="CSS\Image\" Type="ElementFile" />
+    <ProjectItemFile Source="Image\icon_chamados.png" Target="CSS\Image\" Type="ElementFile" />
+    <ProjectItemFile Source="Image\icone_pesquisa_satisfacao.png" Target="CSS\Image\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

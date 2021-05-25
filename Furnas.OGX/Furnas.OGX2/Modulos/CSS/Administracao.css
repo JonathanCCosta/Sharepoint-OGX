@@ -1,0 +1,71 @@
+﻿span#pageTitle{
+	display:none;	
+}
+.atalhos {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.atalho {
+    float: left;
+}
+
+.atalhos .atalho {
+    width: 13%;
+    display: inline-block;
+    padding: 12px 0;
+    margin: 0 .9% 1em;
+    vertical-align: top;
+    text-decoration: none;
+    background: #f9f6f1;
+    border-radius: 3px;
+}
+
+.atalhos .atalho-label {
+    font-size: 11pt;
+    display: block;
+    font-weight: 400;
+    color: #545454;
+}
+
+.atalhos .atalho:hover {
+    background: #3ec9b2;
+}
+
+.TituloCategoria {
+    color: red;
+}
+
+.imagemPagina {
+    width: 64px;
+}
+
+.atalhosCategorias {
+    width: 100%;
+    float: left;
+}
+
+.titulo-adm{
+	text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 20px;
+	font-family: "Verdana"!important;
+}
+.titulo-categoria{
+	font-weight:600;
+	color:black;
+}
+.loader {
+  position: absolute;
+  top: 0;
+  bottom: 0%;
+  left: 0;
+  right: 0%;
+  background-color: white;
+  z-index: 99;
+  background-image: url('/SiteAssets/img/ring.gif');
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: center;
+}

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{e1d72dba-dae3-4270-b01d-7551532bf07b}"
+       Name="CorrenteCCTrifasicaTC"
+       DisplayName="Corrente de curto-circuito trifásica através Do TC (calculada) (kA)"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

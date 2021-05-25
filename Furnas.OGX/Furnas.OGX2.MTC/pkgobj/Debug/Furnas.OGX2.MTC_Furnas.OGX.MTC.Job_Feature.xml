@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="Verificador de Manuais Técnicos" Id="213cbe23-c28b-450e-8041-fc7a8c660cc3" ReceiverAssembly="Furnas.OGX2.MTC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b09f500d0789b42e" ReceiverClass="Furnas.OGX2.MTC.Features.Furnas.OGX.MTC.Job.FurnasOGXMTCEventReceiver" Scope="WebApplication" Title="Furnas.OGX2.MTC.Job_MTC"></Feature>

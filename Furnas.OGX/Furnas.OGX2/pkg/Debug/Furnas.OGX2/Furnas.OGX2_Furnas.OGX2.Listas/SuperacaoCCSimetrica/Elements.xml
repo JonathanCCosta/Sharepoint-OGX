@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{57219bfa-7b04-434b-bf67-e60838454bf2}"
+       Name="SuperacaoCCSimetrica"
+       DisplayName="Superação por corrente de curto-circuito simétrica"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

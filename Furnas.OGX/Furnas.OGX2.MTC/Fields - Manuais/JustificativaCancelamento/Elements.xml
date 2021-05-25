@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{5182beea-c48c-42e5-baff-05a71922f7a8}"
+       Name="JustificativaCancelamento"
+       DisplayName="Justificativa Cancelamento"
+       Type="Note"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

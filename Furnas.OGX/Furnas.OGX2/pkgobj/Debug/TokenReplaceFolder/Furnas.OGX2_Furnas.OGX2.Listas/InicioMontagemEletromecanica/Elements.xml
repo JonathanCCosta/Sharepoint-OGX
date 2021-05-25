@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{b1f57e11-6926-4385-86b2-527a7b2604c2}"
+       Name="InicioMontagemEletromecanica"
+       DisplayName="Montagem Eletromecânica - Início"
+       Type="DateTime"
+       Format="DateOnly"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

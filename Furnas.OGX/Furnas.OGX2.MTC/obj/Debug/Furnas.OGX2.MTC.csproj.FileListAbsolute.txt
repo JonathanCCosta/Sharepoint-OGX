@@ -1,0 +1,4 @@
+C:\Furnas.OGX2\Furnas.OGX2.MTC\bin\Debug\Furnas.OGX2.MTC.dll
+C:\Furnas.OGX2\Furnas.OGX2.MTC\bin\Debug\Furnas.OGX2.MTC.pdb
+C:\Furnas.OGX2\Furnas.OGX2.MTC\obj\Debug\Furnas.OGX2.MTC.dll
+C:\Furnas.OGX2\Furnas.OGX2.MTC\obj\Debug\Furnas.OGX2.MTC.pdb

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{308739e6-4862-447d-8cdb-07af8a8f802c}"
+       Name="AprovadoPor"
+       DisplayName="Aprovado por"
+       Type="User" 
+       Mult="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

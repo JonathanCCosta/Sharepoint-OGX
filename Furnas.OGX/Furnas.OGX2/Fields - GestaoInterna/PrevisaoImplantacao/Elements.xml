@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{d58a5d40-e030-4127-8713-574c43e5abd5}"
+       Name="PrevisaoImplantacaoGI"
+       DisplayName="Previsão de implantação FURNAS"
+       Type="DateTime"
+       Format="DateOnly"
+       Required="TRUE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

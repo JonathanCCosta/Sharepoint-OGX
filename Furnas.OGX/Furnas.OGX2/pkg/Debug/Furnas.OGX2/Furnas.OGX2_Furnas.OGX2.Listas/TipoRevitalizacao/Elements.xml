@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{9f3362f5-7ff3-4a31-9005-4bc97f0b2fa0}"
+       Name="TipoRevitalizacao"
+       DisplayName="Tipo de Revitalização"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

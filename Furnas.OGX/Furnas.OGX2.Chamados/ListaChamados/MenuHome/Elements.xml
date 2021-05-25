@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Menu Home" OnQuickLaunch="FALSE" TemplateType="170" FeatureId="192efa95-e50c-475e-87ab-361cede5dd7f" Url="Lists/MenuHome" Description="">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Id">1</Field>
+          <Field Name="Title">Gestão de fim de vida</Field>
+          <Field Name="Description"></Field>
+          <Field Name="LaunchBehavior">Navegação na página</Field>
+          <Field Name="TileOrder">1</Field>
+          <Field Name="BackgroundImageLocation">~site/SiteAssets/CSS/Image/img_gestao_vida.png</Field>
+          <Field Name="LinkLocation">~site/Lists/MenuHome/SGPMR.aspx</Field>
+        </Row>
+        <Row>
+          <Field Name="Id">2</Field>
+          <Field Name="Title">SGPMR</Field>
+          <Field Name="Description"></Field>
+          <Field Name="LaunchBehavior">Navegação na página</Field>
+          <Field Name="TileOrder">2</Field>
+          <Field Name="BackgroundImageLocation">~site/SiteAssets/CSS/Image/icone_sgmpr.png</Field>
+          <Field Name="LinkLocation">~site/Lists/Planos/AllItems.aspx</Field>
+        </Row>
+        <Row>
+          <Field Name="Id">3</Field>
+          <Field Name="Title">Operar e manter</Field>
+          <Field Name="Description"></Field>
+          <Field Name="LaunchBehavior">Navegação na página</Field>
+          <Field Name="TileOrder">3</Field>
+          <Field Name="BackgroundImageLocation">~site/SiteAssets/CSS/Image/icon_operar_manter.png</Field>
+          <Field Name="LinkLocation">~site/Lists/MenuHome/OperarManter.aspx</Field>
+        </Row>
+        <Row>
+          <Field Name="Id">4</Field>
+          <Field Name="Title">Chamados</Field>
+          <Field Name="Description"></Field>
+          <Field Name="LaunchBehavior">Navegação na página</Field>
+          <Field Name="Grupo">Geral</Field>
+          <Field Name="TileOrder">4</Field>
+          <Field Name="BackgroundImageLocation">~site/SiteAssets/CSS/Image/icon_chamados_menu.png</Field>
+          <Field Name="LinkLocation">~site/Lists/Chamados/AllItems.aspx</Field>
+        </Row>
+        <Row>
+          <Field Name="Id">5</Field>
+          <Field Name="Title">Manual Técnico de Campo MCT</Field>
+          <Field Name="Description"></Field>
+          <Field Name="LaunchBehavior">Navegação na página</Field>
+          <Field Name="Grupo">Geral</Field>
+          <Field Name="TileOrder">5</Field>
+          <Field Name="BackgroundImageLocation">~site/SiteAssets/CSS/Image/img_manual_tecnico.png</Field>
+          <Field Name="LinkLocation">~site/Lists/ManualTecnico/Forms/AllItems.aspx</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

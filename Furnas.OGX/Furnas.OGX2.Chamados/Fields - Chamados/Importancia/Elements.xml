@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{1bd831d5-6d66-418a-ab8f-1ce2041352b5}"
+       Name="Importancia"
+       DisplayName="Importância"
+       Type="Choice"
+       Required="FALSE"
+       ShowInNewForm="FALSE"
+       Group="Custom Site Columns">
+    <CHOICES>
+      <CHOICE>Baixa</CHOICE>
+      <CHOICE>Média</CHOICE>
+      <CHOICE>Alta</CHOICE>
+    </CHOICES>
+    <Default>Baixa</Default>
+  </Field>
+</Elements>

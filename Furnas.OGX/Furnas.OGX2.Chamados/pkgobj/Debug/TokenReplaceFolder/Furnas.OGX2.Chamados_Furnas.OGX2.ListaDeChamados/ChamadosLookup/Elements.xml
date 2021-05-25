@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{11292b85-b23f-467e-ac11-5609f2bc940d}"
+       Name="ChamadosLookup"
+       DisplayName="Número do Chamado"
+       Type="Lookup"
+       List="Lists/Chamados"
+       ShowField="Title"
+       Required="TRUE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

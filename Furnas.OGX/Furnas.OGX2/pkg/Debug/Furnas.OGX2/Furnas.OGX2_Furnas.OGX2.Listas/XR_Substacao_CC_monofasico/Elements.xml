@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{fa90e8d8-0287-44ec-9aa7-2a8c547c3bec}"
+       Name="XR_Substacao_CC_monofasico"
+       DisplayName="X/R na barra da subestação para curto-circuito monofásico"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

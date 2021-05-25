@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field
+       ID="{0aaa2032-c99a-41e9-bd26-3eb39d66b227}"
+       Name="StatusRevitalizacaoIrma"
+       DisplayName="Status da Revitalização"
+       Type="Choice"
+       Required="TRUE"
+       Group="Custom Site Columns">
+    <CHOICES>
+      <CHOICE>Selecione uma opção</CHOICE>
+      <CHOICE>Não Iniciada</CHOICE>
+      <CHOICE>Em Andamento</CHOICE>
+      <CHOICE>Executada</CHOICE>
+    </CHOICES>
+    <Default>Selecione uma opção</Default>
+  </Field>
+</Elements>

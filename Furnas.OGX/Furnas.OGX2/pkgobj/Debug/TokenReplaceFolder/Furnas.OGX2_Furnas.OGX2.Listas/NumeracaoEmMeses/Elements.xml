@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{924fd641-8a93-42cf-bf7b-cf8e0f862f01}"
+       Name="NumeracaoEmMeses"
+       DisplayName="Prazo após emissão Do PMI/Resolução Aneel (meses)"
+       Type="Choice"
+       Required="TRUE"
+       Group="Custom Site Columns">
+    <CHOICES>
+      <CHOICE>0</CHOICE>
+      <CHOICE>1</CHOICE>
+      <CHOICE>2</CHOICE>
+      <CHOICE>3</CHOICE>
+      <CHOICE>4</CHOICE>
+      <CHOICE>5</CHOICE>
+      <CHOICE>6</CHOICE>
+      <CHOICE>7</CHOICE>
+      <CHOICE>8</CHOICE>
+      <CHOICE>9</CHOICE>
+      <CHOICE>10</CHOICE>
+      <CHOICE>11</CHOICE>
+      <CHOICE>12</CHOICE>
+      <CHOICE>13</CHOICE>
+      <CHOICE>14</CHOICE>
+      <CHOICE>15</CHOICE>
+      <CHOICE>16</CHOICE>
+      <CHOICE>17</CHOICE>
+      <CHOICE>18</CHOICE>
+      <CHOICE>19</CHOICE>
+      <CHOICE>20</CHOICE>
+      <CHOICE>21</CHOICE>
+      <CHOICE>22</CHOICE>
+      <CHOICE>23</CHOICE>
+      <CHOICE>24</CHOICE>
+      <CHOICE>25</CHOICE>
+      <CHOICE>26</CHOICE>
+      <CHOICE>27</CHOICE>
+      <CHOICE>28</CHOICE>
+      <CHOICE>29</CHOICE>
+      <CHOICE>30</CHOICE>
+      <CHOICE>31</CHOICE>
+      <CHOICE>32</CHOICE>
+      <CHOICE>33</CHOICE>
+      <CHOICE>34</CHOICE>
+      <CHOICE>35</CHOICE>
+      <CHOICE>36</CHOICE>
+      <CHOICE>42</CHOICE>
+      <CHOICE>48</CHOICE>
+      <CHOICE>50</CHOICE>
+      <CHOICE>54</CHOICE>
+      <CHOICE>60</CHOICE>
+    </CHOICES>
+    <Default>0</Default>
+  </Field>
+</Elements>

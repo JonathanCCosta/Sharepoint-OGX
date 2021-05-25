@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{524fc788-d021-45af-89d6-ca2327b2946e}"
+       Name="ValorNominalCrita"
+       DisplayName="Valor nominal da crista da corrente de curto-circuito (kA)"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{05d84dc1-b06a-43c9-b923-094e2d91d21d}"
+       Name="ProjetoOriginouIndicacao"
+       DisplayName="Projeto que Originou a Indicação"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

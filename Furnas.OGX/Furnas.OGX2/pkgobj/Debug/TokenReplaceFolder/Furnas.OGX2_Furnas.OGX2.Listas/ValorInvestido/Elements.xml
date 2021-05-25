@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{f3706f24-c843-482b-bc86-e8b1a25fd86d}"
+       Name="ValorInvestido"
+       DisplayName="Valor a ser investido(R$)"
+       Type="Currency"
+       Decimals="2"
+       LCID="1046"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="dd68e9ab-e47d-4bbd-92fd-7aaddea42cf7" solutionId="dd68e9ab-e47d-4bbd-92fd-7aaddea42cf7" resetWebServer="false" sharePointProductVersion="15.0" name="Furnas.OGX2.Chamados" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="05f4656d-3e92-4ef7-882f-d58655b0d744" />
+    <featureReference itemId="3768703c-a5cb-4109-bc48-5fed30c2f590" />
+    <featureReference itemId="87f217f0-f27d-4058-84be-957230a511c6" />
+  </features>
+</package>

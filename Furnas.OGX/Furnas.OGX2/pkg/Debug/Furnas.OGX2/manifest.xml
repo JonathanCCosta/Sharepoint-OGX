@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="dc1021e7-1964-4e6e-9780-5815badf38e1" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="ClosedXML.dll" DeploymentTarget="WebApplication" />
+    <Assembly Location="Excel.dll" DeploymentTarget="WebApplication" />
+    <Assembly Location="ExcelDataReader.dll" DeploymentTarget="WebApplication" />
+    <Assembly Location="ExcelDataReader.DataSet.dll" DeploymentTarget="WebApplication" />
+    <Assembly Location="Furnas.OGX2.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="Furnas.OGX2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=fad643471c496b2a" Namespace="Furnas.OGX2.Webparts.WP_Importacao_Planos" TypeName="*" />
+        <SafeControl Assembly="Furnas.OGX2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=fad643471c496b2a" Namespace="Furnas.OGX2.Webparts.WP_RemoverPlanos" TypeName="*" />
+        <SafeControl Assembly="Furnas.OGX2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=fad643471c496b2a" Namespace="Furnas.OGX2.Webparts.WP_RequisitaMudanca" TypeName="*" />
+        <SafeControl Assembly="Furnas.OGX2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=fad643471c496b2a" Namespace="Furnas.OGX2.Webparts.WP_ExclusaoMudanca" TypeName="*" />
+        <SafeControl Assembly="Furnas.OGX2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=fad643471c496b2a" Namespace="Furnas.OGX2.Webparts.WP_ExclusaoMudancaJustificativa" TypeName="*" />
+        <SafeControl Assembly="Furnas.OGX2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=fad643471c496b2a" Namespace="Furnas.OGX2.Webparts.WP_ImportaGestaoInterna" TypeName="*" />
+        <SafeControl Assembly="Furnas.OGX2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=fad643471c496b2a" Namespace="Furnas.OGX2.Webparts.WP_ExportaPlanos" TypeName="*" />
+        <SafeControl Assembly="Furnas.OGX2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=fad643471c496b2a" Namespace="Furnas.OGX2.Webparts.WP_PesquisaSGPMR" TypeName="*" />
+        <SafeControl Assembly="Furnas.OGX2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=fad643471c496b2a" Namespace="Furnas.OGX2.Webparts.WP_ImportaSolicitacoes" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="Furnas.OGX2_Furnas.OGX2.Webparts\Feature.xml" />
+    <FeatureManifest Location="Furnas.OGX2_Furnas.OGX2.Listas\Feature.xml" />
+  </FeatureManifests>
+</Solution>

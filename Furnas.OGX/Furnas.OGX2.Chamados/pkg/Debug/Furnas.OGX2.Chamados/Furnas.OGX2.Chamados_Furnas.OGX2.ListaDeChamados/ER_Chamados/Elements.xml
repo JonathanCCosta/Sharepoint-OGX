@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Receivers ListUrl="Lists/Chamados">
+      <Receiver>
+        <Name>ER_ChamadosItemAdded</Name>
+        <Type>ItemAdded</Type>
+        <Assembly>Furnas.OGX2.Chamados, Version=1.0.0.0, Culture=neutral, PublicKeyToken=879c24bfa4b38c37</Assembly>
+        <Class>Furnas.OGX2.Chamados.ER_Chamados.ER_Chamados.ER_Chamados</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>ER_ChamadosItemUpdated</Name>
+        <Type>ItemUpdated</Type>
+        <Assembly>Furnas.OGX2.Chamados, Version=1.0.0.0, Culture=neutral, PublicKeyToken=879c24bfa4b38c37</Assembly>
+        <Class>Furnas.OGX2.Chamados.ER_Chamados.ER_Chamados.ER_Chamados</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+  <Receiver>
+<Name>ER_ChamadosItemUpdating</Name>
+<Type>ItemUpdating</Type>
+<Assembly>Furnas.OGX2.Chamados, Version=1.0.0.0, Culture=neutral, PublicKeyToken=879c24bfa4b38c37</Assembly>
+<Class>Furnas.OGX2.Chamados.ER_Chamados.ER_Chamados.ER_Chamados</Class>
+<SequenceNumber>10000</SequenceNumber>
+</Receiver>
+</Receivers>
+</Elements>

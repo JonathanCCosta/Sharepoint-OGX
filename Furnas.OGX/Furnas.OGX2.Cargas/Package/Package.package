@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="da673076-1fc2-4bad-96ba-1786e864641a" solutionId="da673076-1fc2-4bad-96ba-1786e864641a" resetWebServer="false" sharePointProductVersion="15.0" name="Furnas.OGX2.Cargas" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <customAssembly location="ClosedXML.dll" deploymentTarget="WebApplication" sourcePath="bin\Debug\ClosedXML.dll" />
+  </assemblies>
+  <features>
+    <featureReference itemId="1b04eda0-ad64-4d94-8acb-6c50f1a71a9c" />
+    <featureReference itemId="ec18ece9-00d3-479a-859f-b208d405cf1b" />
+  </features>
+</package>

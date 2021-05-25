@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{a0c6c9e0-1ce4-4cfd-a5e5-2b3427a577f1}"
+       Name="DataLimiteComentario"
+       DisplayName="Data limite comentário" 
+       Type="DateTime" 
+       Format="DateOnly"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>
